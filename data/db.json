@@ -1,0 +1,19 @@
+{
+    "users": [{
+            "id": "0001",
+            "firstName": "Kristof",
+            "lastName": "Friess",
+            "email": "e@mail.de",
+            "username": "kFriess",
+            "password": "123456"
+        },
+        {
+            "id": "0002",
+            "firstName": "Maxi",
+            "lastName": "Mustermann",
+            "email": "max@muster.de",
+            "username": "max01",
+            "password": "123456"
+        }
+    ]
+}
