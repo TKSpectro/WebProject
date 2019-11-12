@@ -36,6 +36,9 @@ switch($page)
 }
 ?>
 
+<?
+
+
 </main>
 
 <footer>
