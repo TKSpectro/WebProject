@@ -78,5 +78,6 @@ catch (\PDOException $e)
     </ul>
 </main>
 <footer></footer>
+    <? endif; ?>
 </body>
 </html>
