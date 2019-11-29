@@ -23,9 +23,9 @@ function logIn(&$error, $rememberMe = false)
 {
     $users = allUsers();
     $userRef = isset($_POST['validationName']) ? $_POST['validationName'] : '';
-    $password= isset($_POST['validatePassowrd']) ? $_POST['validatePassword'] : '';
+    $password= isset($_POST['validatePassword']) ? $_POST['validatePassword'] : '';
 
-    $uderId = null;
+    $userId = null;
 
     if($rememberMe === true && empty($_POST['validationName']) && empty($_POST['validationPassword']))
     {
@@ -45,15 +45,14 @@ function logIn(&$error, $rememberMe = false)
     }
     if(isset($userId))
     {
-        if($uses[$userIdx]['password'] === $password)
+        if($users[$userIdx]['password'] === $password)
         {
             $error = false;
 
             if(isset($_POST['rememberMe']))
             {
-                rememberMe($uderId, $users[$userIdx]['password']);
+                rememberMe($userId, $users[$userIdx]['password']);
             }
-            //vorzeitiges beenden der Funktion
             return $userId;
         }
         else
@@ -77,7 +76,7 @@ function logOut()
     session_destroy();
 }
 
-function rememberMe($id, $passowrd)
+function rememberMe($id, $password)
 {
     $duration = time() + 3600 * 24 * 30;
     setcookie('userId',$id,$duration,'/');

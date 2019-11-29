@@ -1,68 +1,82 @@
 <?php
-session_save_path(__DIR__.DIRECTORY_SEPARATOR.'data');
-session_start();
 
-require_once './core/config.php'; 
-require_once './core/functions.php'; 
+$dns = 'mysql:host=localhost;dbname=toyplanet';
+$dbuser = 'root';
+$dbpassword = '';
+$options    = [
+    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+];
 
-if(isset($_POST['submitLogin']))
+
+$database = null;
+
+try
 {
-    $error = true;
-    $user = logIn($error);
-    if(!$error)
-    {
-        $_SESSION['user'] = $user;
-    }
+    $database = new PDO($dns, $dbuser, $dbpassword, $options);
 }
-else if(isset($_POST['submitLogout']))
+catch(\PDOException $e)
 {
-    logOut();
-}
-else if(isset($_COOKIE['userId']))
-{
-    $error = true;
-    $user = logIn($error,true);
-    if(!$error)
-    {
-        $_SESSION['user']= $user;
-    }
+    die( 'Database connection failed: ' . $e->getMessage() );
 }
 
-$loggedIn = isset($_SESSION['user']);
+if(isset($_POST['create']))
+{
+    $sqlStr = 'INSERT INTO customer (firstname, lastname, eMail, passwordHash) VALUES (:firstname, :lastname, :email, :passwordHash)';
+    $stmt = $database->prepare($sqlStr);
 
-$title = 'Login';
-$page = isset($_GET['p']) ? $_GET['p'] : '';
+    $stmt->execute([
+        'firstname' => $_POST['firstname'],
+        'lastname' => $_POST['lastname'],
+        'email' => $_POST['email'],
+        'passwordHash' => password_hash($_POST['password'], PASSWORD_DEFAULT)
+    ]);
+}
+
+
+$accounts = null;
+$accountsErrorMessage = false;
+try
+{
+    // Execute the SQL Statement and fetch data
+    $accounts = $database->query('SELECT * FROM account WHERE 1')->fetchAll();
+}
+catch (\PDOException $e)
+{
+    $accountsErrorMessage = true;
+}
+
+
 ?>
-
-<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<?=ROOTPATH.'assets/styles/style.css'?>">
-    <title><?=$title?></title>
+    <title>Meine PDO Welt</title>
 </head>
 <body>
-
-    <?
-    if($loggedIn)
-    {
-        include (VIEWPATH.'site.php');
-    }
-    else
-    {
-        include (VIEWPATH.'login.php');
-    }
-    ?>
-
-    <? if(isset($error) && $error !== false) : ?>
+<header></header>
+<main>
+    <?php if($accountsErrorMessage === true) : ?>
         <div class="error">
-            <span onclick="{this.parentNode.parentNode.removeChild(this.parentNode);}">
-                x
-            </span>
-            <?=$error?>
+            Ja, mhhh irgendwie bekomm ich die Daten aus der Datenbank nicht!! Schau mal bitte nach.
         </div>
-    <? endif; ?>
-
+    <?php endif; ?>
+    <form method="post">
+        <lable>Firstname</lable><br />
+        <input type="text" name="firstname" value="<?=isset($_POST['firstname'])?htmlspecialchars($_POST['firstname']):''?>"/><br />
+        <lable>Lastname</lable><br />
+        <input type="text" name="lastname" value="<?=isset($_POST['lastname'])?htmlspecialchars($_POST['lastname']):''?>"/><br />
+        <lable>E-Mail</lable><br />
+        <input type="text" name="email" value="<?=isset($_POST['email'])?htmlspecialchars($_POST['email']):''?>"/><br />
+        <lable>Password</lable><br />
+        <input type="password" name="password"/><br /><br />
+        <input type="submit" name="create" value="Anlegen"/>
+    </form>
+    <ul>
+        <?php foreach($accounts as $account) : ?>
+            <li><?=$account['firstname'].' '.$account['lastname']?></li>
+        <?php endforeach; ?>
+    </ul>
+</main>
+<footer></footer>
 </body>
 </html>
