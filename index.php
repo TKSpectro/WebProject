@@ -63,6 +63,7 @@ $page = isset($_GET['p']) ? $_GET['p'] : '';
             <?=$error?>
         </div>
     <? endif; ?>
+        <h1>test</h1>
 
 </body>
 </html>
