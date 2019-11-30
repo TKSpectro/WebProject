@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a49a9fd2-771a-44b2-bdb3-98c02f503133" name="Default Changelist" comment="" />
+    <list default="true" id="a49a9fd2-771a-44b2-bdb3-98c02f503133" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/init/10_database.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/10_database.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +14,9 @@
       <executable />
     </execution>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1UKXd9mCbv9dOpMyrYAFAiPrqL4" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -21,7 +26,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Beispiel für ein (M)VC mit Controller für dynamisches Laden von Seiten und Views (leichtes Layout)-2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -46,6 +51,7 @@
       <option name="presentableId" value="Default" />
       <updated>1575106344115</updated>
       <workItem from="1575106345590" duration="124000" />
+      <workItem from="1575106830807" duration="14000" />
     </task>
     <servers />
   </component>

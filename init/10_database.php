@@ -1,9 +1,9 @@
 <?php
 
 
-$dns = 'mysql:host=localhost;dbname=projectdwp';
+$dns = 'mysql:host=localhost;dbname=toyplanet';
 $dbuser = 'root';
-$dbpassword = 'root';
+$dbpassword = '';
 $options    = [
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
