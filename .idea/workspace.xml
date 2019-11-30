@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a49a9fd2-771a-44b2-bdb3-98c02f503133" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/init/10_database.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/10_database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/_baseModel.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/account.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/address.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/20_imports.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/20_imports.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/account.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/ppAll.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/product.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,15 +25,24 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1UKXd9mCbv9dOpMyrYAFAiPrqL4" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/models" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\WebPrg\WebProject\models" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -51,14 +67,21 @@
       <option name="presentableId" value="Default" />
       <updated>1575106344115</updated>
       <workItem from="1575106345590" duration="124000" />
-      <workItem from="1575106830807" duration="14000" />
+      <workItem from="1575106830807" duration="1642000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="627" y="202" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1575108309922">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="627" y="202" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575108309922" />
     <state x="690" y="212" key="FileChooserDialogImpl" timestamp="1575106438907">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
