@@ -1,5 +1,7 @@
 <?php
+
 require_once './views/pages/formulare.php';
+
 
 session_start();
 

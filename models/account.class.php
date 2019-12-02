@@ -1,9 +1,9 @@
 <?php
 
-
 namespace app\models;
+ 
 
-class Account extends \app\core\BaseModel
+class Account extends BaseModel
 {
     const TABLENAME = '`account`';
 
@@ -20,31 +20,7 @@ class Account extends \app\core\BaseModel
         'phone' => ['type' => BaseModel::TYPE_STRING],
     ];
 
-    static function findAll()
-    {
-        $db = $GLOBALS['database'];
-
-        $result = [];
-
-        try
-        {
-            $dbResult = $db->query('SELECT * FROM account WHERE 1')->fetchAll();
-
-            foreach ($dbResult as $index => $dbAccountObj)
-            {
-                $accountObj = new Account($dbAccountObj);
-                $result[] = $accountObj;
-            }
-        }
-        catch (\PDOException $e)
-        {
-            // TODO: Handle Error!!
-        }
-
-        return $result;
-    }
-
-
+ 
     public function fullname()
     {
         return ($this->firstname ?? '') . ' ' . ($this->lastname ?? '');

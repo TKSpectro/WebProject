@@ -1,5 +1,7 @@
 <?php
 
+namespace app\models;
+
 abstract class BaseModel
 {
     const TYPE_INT = 'int';
@@ -80,6 +82,7 @@ abstract class BaseModel
 
             $sql = trim($sql, ',');
             $valueString = trim($valueString, ',');
+            $sql .= ')'.$valueString. ');' ; 
             $statement = $db->prepare($sql);
             $statement->execute();
 
