@@ -80,10 +80,10 @@ abstract class BaseModel
                 }
             }
 
-            $sql = trim($sql, ',');
-            $valueString = trim($valueString, ',');
-            $sql .= ')'.$valueString. ');' ; 
-            $statement = $db->prepare($sql);
+            $sql            = trim($sql, ',');
+            $valueString    = trim($valueString, ',');
+            $sql           .= ')'.$valueString. ');' ; 
+            $statement      = $db->prepare($sql);
             $statement->execute();
 
             return true;

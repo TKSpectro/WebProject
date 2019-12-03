@@ -9,6 +9,7 @@ session_start();
 require_once 'init/10_database.php';
 require_once 'init/20_imports.php';
 
+
 $controllerName = $_GET['c'] ?? 'pages';
 $actionName = $_GET['a'] ?? 'index';
 
@@ -53,7 +54,7 @@ else
 ?>
 <html>
 <head>
-    <title>Meine PDO Welt</title>
+    <title>Toyplanet</title>
 </head>
 <body>
 <header></header>
