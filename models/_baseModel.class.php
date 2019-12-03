@@ -14,20 +14,25 @@ abstract class BaseModel
 
     public function __construct($params)
     {
-        foreach ($this->schema as $key => $value)
+       
+       foreach ($this->schema as $key => $value)
         {
             if (isset($params[$key]))
             {
+                echo $params[$key].'<br>';
+                #echo 'test<br>';
                 $this->{$key} = $params[$key];
             }
             else
-            {
+            {   
+                echo 'null<br>';
                 $this->{$key} = null;
             }
         }
+    
     }
 
-    public function __get($key)
+   public function __get($key)
     {
         if (array_key_exists($key, $this->data))
         {
@@ -58,20 +63,25 @@ abstract class BaseModel
         }
     }
 
-    protected function insert(&$errors)
+    public function insert(&$errors)
     {
         $db = $GLOBALS['db'];
+       
         try
         {
+         
             $sql = 'INSERT INTO ' . self::tablename() . ' (';
             $valueString = ' VALUES (';
-
+            
             foreach ($this->schema as $key => $schemaOptions)
             {
+                
+                
                 $sql .= '`' . $key . '`,';
 
                 if ($this->data[$key] === null)
                 {
+                    #echo 'hallo 3 <br>';
                     $valueString .= 'NULL,';
                 }
                 else
@@ -90,7 +100,7 @@ abstract class BaseModel
         }
         catch (\PDOException $e)
         {
-            $errors[] = 'Error inserting' . get_called_class();
+            $errors[] = 'Error inserting ' . get_called_class();
         }
         return false;
     }
@@ -196,6 +206,7 @@ abstract class BaseModel
 
     public static function tablename()
     {
+        
         $class = get_called_class();
         if (defined($class . '::TABLENAME'))
         {
