@@ -3,7 +3,7 @@
 namespace app\models;
 
 require_once 'models/_baseModel.class.php';
-require_once 'models/address.class.php';
+#require_once 'models/address.class.php';
 
 
 
@@ -14,7 +14,8 @@ if(isset($_POST['sendForm']))
      &&!empty($_POST['city'])
      &&!empty($_POST['street'])
      &&!empty($_POST['houseNumber'])
-     &&!empty($_POST['zip']))
+     &&!empty($_POST['zip'])
+     )
     {
         $land         = $_POST['land'];
         $city         = $_POST['city'];
@@ -39,7 +40,8 @@ if(isset($_POST['sendForm']))
 
             $address = new Address($params);
             $error;
-            $address->insert($error);
+            #$address->insert($error);
+       
           
         }
     
