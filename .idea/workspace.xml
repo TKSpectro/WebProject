@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a49a9fd2-771a-44b2-bdb3-98c02f503133" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/models/_baseModel.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/account.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/address.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/20_imports.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/20_imports.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/account.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/ppAll.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/product.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +30,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/models" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DWP/project-01-db-models" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -68,6 +61,8 @@
       <updated>1575106344115</updated>
       <workItem from="1575106345590" duration="124000" />
       <workItem from="1575106830807" duration="1642000" />
+      <workItem from="1575370985245" duration="596000" />
+      <workItem from="1575377950701" duration="18000" />
     </task>
     <servers />
   </component>
@@ -82,9 +77,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="202" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575108309922" />
-    <state x="690" y="212" key="FileChooserDialogImpl" timestamp="1575106438907">
+    <state x="690" y="212" key="FileChooserDialogImpl" timestamp="1575377965625">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="212" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575106438907" />
+    <state x="690" y="212" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1575377965625" />
   </component>
 </project>
