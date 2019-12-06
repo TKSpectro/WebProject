@@ -1,13 +1,13 @@
 <?php
 
-require_once './views/pages/formulare.php';
-
 
 session_start();
 
 // all require stuff to work!!
 require_once 'init/10_database.php';
 require_once 'init/20_imports.php';
+require_once 'views/printAddress.php';
+
 
 
 $controllerName = $_GET['c'] ?? 'pages';

@@ -6,7 +6,7 @@ namespace app\models;
 class Address extends BaseModel
 {
     const TABLENAME = '`Address`';
-
+    
     protected $schema = [
         'addressID'   => ['type' => BaseModel::TYPE_INT],
         'createdAt'   => ['type' => BaseModel::TYPE_STRING],

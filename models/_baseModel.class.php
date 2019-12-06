@@ -19,13 +19,12 @@ abstract class BaseModel
         {
             if (isset($params[$key]))
             {
-                echo $params[$key].'<br>';
-                #echo 'test<br>';
+              
+                
                 $this->{$key} = $params[$key];
             }
             else
             {   
-                echo 'null<br>';
                 $this->{$key} = null;
             }
         }
@@ -238,4 +237,29 @@ abstract class BaseModel
 
         return $result;
     }
+
+    function validateInput($str, $check)
+{
+    if(is_array($check))
+    {
+        foreach($check as $checkValue)
+        {
+            if (strpos($str, $checkValue) !== false)
+            {
+                // vorzeitiges Beenden der Funktion
+                return false;
+            }
+        }
+    }
+    else
+    {
+        if (strpos($str, $check)!==false)
+        {
+            // vorzeitiges Beenden der Funktion
+            return false;
+        }
+        
+    }
+    return true;
+}
 }
