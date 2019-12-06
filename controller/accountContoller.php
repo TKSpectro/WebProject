@@ -40,7 +40,7 @@ if(isset($_POST['sendAccount']))
         && Account::validateInput($phone, $check))
         {
             //hash password for further usage in database
-            password_hash($password, PASSWORD_DEFAULT);
+            $password = password_hash($password, PASSWORD_DEFAULT);
           
             $params = [
             'firstname'     => $firstName,
