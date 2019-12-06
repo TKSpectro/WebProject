@@ -21,7 +21,7 @@ $test = Address::find();
         <?php foreach($test as $rows):?>
 <tr>
         <?foreach($rows as $index => $cols):?>
-        <td><?=$cols?></td>
+        <td><?=htmlspecialchars($cols)?></td>
         <?endforeach;?>
 </tr>
         <?endforeach;?>

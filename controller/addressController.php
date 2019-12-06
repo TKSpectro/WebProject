@@ -3,7 +3,7 @@
 namespace app\models;
 
 require_once 'models/_baseModel.class.php';
-require_once 'core/functionen.php';
+require_once 'models/address.class.php';
 
 
 
@@ -16,18 +16,18 @@ if(isset($_POST['sendForm']))
      &&!empty($_POST['houseNumber'])
      &&!empty($_POST['zip']))
     {
-        $land         = htmlspecialchars($_POST['land']);
-        $city         = htmlspecialchars($_POST['city']);
-        $street       = htmlspecialchars($_POST['street']);
-        $houseNumber  = htmlspecialchars($_POST['houseNumber']);
-        $zip          = htmlspecialchars($_POST['zip']);
+        $land         = $_POST['land'];
+        $city         = $_POST['city'];
+        $street       = $_POST['street'];
+        $houseNumber  = $_POST['houseNumber'];
+        $zip          = $_POST['zip'];
 
         $check = [',','>','<'];
-        if(validateInput($land,$check)
-        && validateInput($city, $check)
-        && validateInput($street, $check)
-        && validateInput($houseNumber, $check)
-        && validateInput($zip, $check))
+        if(Address::validateInput($land,$check)
+        && Address::validateInput($city, $check)
+        && Address::validateInput($street, $check)
+        && Address::validateInput($houseNumber, $check)
+        && Address::validateInput($zip, $check))
         {
             $params = [
             'land'        => $land,
@@ -38,7 +38,6 @@ if(isset($_POST['sendForm']))
             ];
 
             $address = new Address($params);
-            $result = $address->find();
             $error;
             $address->insert($error);
           
@@ -62,5 +61,6 @@ if(isset($_POST['sendForm']))
         
 
 } 
+
 ?>
 

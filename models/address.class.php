@@ -17,6 +17,31 @@ class Address extends BaseModel
         'houseNumber' => ['type' => BaseModel::TYPE_INT],
         'zip'         => ['type' => BaseModel::TYPE_STRING]
     ];
+
+    function validateInput($str, $check)
+{
+    if(is_array($check))
+    {
+        foreach($check as $checkValue)
+        {
+            if (strpos($str, $checkValue) !== false)
+            {
+                // vorzeitiges Beenden der Funktion
+                return false;
+            }
+        }
+    }
+    else
+    {
+        if (strpos($str, $check)!==false)
+        {
+            // vorzeitiges Beenden der Funktion
+            return false;
+        }
+        
+    }
+    return true;
+}
     
 
 /*
