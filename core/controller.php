@@ -20,6 +20,7 @@ class Controller
 	public function renderHTML()
 	{
 		$viewPath = $this->viewPath($this->_actionName, $this->_controllerName);
+		
 
 		if(file_exists($viewPath))
 		{
@@ -32,6 +33,7 @@ class Controller
 				include $viewPath;
 			}
 			$body = ob_get_clean();
+		
 
 			if(isset($noLayout) && $noLayout === true)
 			{
@@ -50,6 +52,8 @@ class Controller
 
 	protected function viewPath($actionName = null, $controllerName = null)
 	{
+		
 		return __DIR__.'/../views/'.$controllerName.'/'.$actionName.'.php';
+		
 	}
 }

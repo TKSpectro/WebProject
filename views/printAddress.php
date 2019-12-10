@@ -1,8 +1,6 @@
 <?php 
 namespace app\models;
-require_once 'models/address.class.php';
 
-$test = Address::find();
 
 ?>
 
@@ -22,7 +20,7 @@ $test = Address::find();
     <th>Hause Number</th>
     <th>ZIP</th>
 </tr>
-        <?php foreach($test as $rows):?>
+        <?php foreach(Address::find() as $rows):?>
 <tr>
         <?foreach($rows as $index => $cols):?>
         <td><?=htmlspecialchars($cols)?></td>

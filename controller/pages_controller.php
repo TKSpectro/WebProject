@@ -8,7 +8,8 @@ class PagesController extends \app\core\Controller
 	{
 		$this->_params['title'] = 'Startseite';
 		$this->_params['smallHeader'] = true;
-		$this->_params['accounts'] = \app\models\Account::find();
+		#$this->_params['accounts'] = \app\models\Account::find(); es ist nicht nötig
+		
 	}
 
 	public function actionImprint()

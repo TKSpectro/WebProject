@@ -9,6 +9,7 @@ require_once 'models/_baseModel.class.php';
 
 if(isset($_POST['sendForm']))
 {
+
     
     if(!empty($_POST['land'])
      &&!empty($_POST['city'])
@@ -17,6 +18,7 @@ if(isset($_POST['sendForm']))
      &&!empty($_POST['zip'])
      )
     {
+       
         $land         = $_POST['land'];
         $city         = $_POST['city'];
         $street       = $_POST['street'];
@@ -30,6 +32,7 @@ if(isset($_POST['sendForm']))
         && Address::validateInput($houseNumber, $check)
         && Address::validateInput($zip, $check))
         {
+            
             $params = [
             'land'        => $land,
             'city'        => $city,

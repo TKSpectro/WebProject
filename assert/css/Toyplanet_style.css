@@ -1,0 +1,55 @@
+body {
+    background-color: #EAE8DE;
+    margin: 0;
+    padding: 0;
+}
+
+::placeholder {
+    color: #E9BA65;
+}
+
+#search {
+    background-color: #EAE8DA;
+    float: right;
+    margin: -120 25;
+    width: 13em;
+    height: 2em;
+    border: none;
+    border-bottom: 2px #C38D8A solid;
+    font-family: akaDylan Collage;
+    text-align: left;
+    font-size: 23;
+}
+
+#logo {
+    width: 27em;
+    height: 11em;
+    margin: 0.5 2em;
+}
+
+tr {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#jung {
+    margin-left: 2.5em;
+    width: 25em;
+    height: 35em;
+    border: 10px #90B3B6 solid;
+}
+
+#vater {
+    width: 25em;
+    height: 35em;
+    border: 10px #E9BA65 solid;
+    margin-left: 2.5em;
+}
+
+#girls {
+    width: 25em;
+    height: 35em;
+    border: 10px #C38D8B solid;
+    margin-left: 2.5em;
+}

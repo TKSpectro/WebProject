@@ -4,9 +4,9 @@
 session_start();
 
 // all require stuff to work!!
-require_once 'init/10_database.php';
+
 require_once 'init/20_imports.php';
-require_once 'views/printAddress.php';
+
 
 
 
@@ -20,9 +20,11 @@ if(file_exists($controllerPath))
 	require_once $controllerPath;
 
 	$controllerClassName = '\\app\\controller\\'.ucfirst($controllerName).'Controller';
+	#echo $controllerClassName.'<br>';
 
 	if(class_exists($controllerClassName))
 	{
+	
 		$controllerInstance = new $controllerClassName($actionName, $controllerName);
 
 		$actionMethodName = 'action'.ucfirst($actionName);
@@ -39,6 +41,7 @@ if(file_exists($controllerPath))
 	}
 	else
 	{
+		
 		header('Location: index.php?c=pages&a=error404');
 	}
 

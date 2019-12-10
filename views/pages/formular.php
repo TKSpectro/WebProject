@@ -24,7 +24,7 @@
         </tr>
         <tr>
             <td><label for="houseNumber">House Number</label></td>
-            <td> <input type="text" name="houseNumber"></td>
+            <td> <input type="number" name="houseNumber"></td>
         </tr>
     
         <tr>
@@ -50,7 +50,7 @@
 
         <tr>
             <td><label for="email">EMail</label></td>
-            <td><input type="text" name="email"></td>
+            <td><input type="email" name="email"></td>
         </tr>
 
         <tr>

@@ -3,6 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="a49a9fd2-771a-44b2-bdb3-98c02f503133" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/addressController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/addressController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/pages_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/pages_controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init/20_imports.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/20_imports.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layout.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/pages/formular.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/formular.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/pages/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/printAddress.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/printAddress.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/shared/_headerSmall.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/shared/_headerSmall.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +40,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DWP/project-01-db-models" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -63,6 +73,7 @@
       <workItem from="1575106830807" duration="1642000" />
       <workItem from="1575370985245" duration="596000" />
       <workItem from="1575377950701" duration="18000" />
+      <workItem from="1575967560908" duration="152000" />
     </task>
     <servers />
   </component>
@@ -82,5 +93,9 @@
     </state>
     <state x="690" y="212" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575106438907" />
     <state x="690" y="212" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1575377965625" />
+    <state x="413" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1575967561696">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="413" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1575967561696" />
   </component>
 </project>
