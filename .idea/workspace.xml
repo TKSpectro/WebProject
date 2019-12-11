@@ -3,16 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a49a9fd2-771a-44b2-bdb3-98c02f503133" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/addressController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/addressController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/pages_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/pages_controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/20_imports.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/20_imports.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layout.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/pages/formular.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/formular.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/pages/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/printAddress.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/printAddress.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/shared/_headerSmall.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/shared/_headerSmall.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/account.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/account.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/database.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/database.mwb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/database.mwb.bak" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/database.mwb.bak" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +67,7 @@
       <workItem from="1575370985245" duration="596000" />
       <workItem from="1575377950701" duration="18000" />
       <workItem from="1575967560908" duration="152000" />
+      <workItem from="1576061033957" duration="518000" />
     </task>
     <servers />
   </component>

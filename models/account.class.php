@@ -5,7 +5,7 @@ namespace app\models;
 
 class Account extends BaseModel
 {
-    const TABLENAME = '`account`';
+    const TABLENAME = '`Account`';
 
     protected $schema = [
         'accountID'    => ['type' => BaseModel::TYPE_INT],
