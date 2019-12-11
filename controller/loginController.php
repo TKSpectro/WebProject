@@ -1,10 +1,10 @@
-<?=php
+<?php /*
 
-if(isset($_SESSION['login']) && $_SESSION['login'] === true)
+#if(isset($_SESSION['login']) && $_SESSION['login'] === true)
 {
 	//TODO if already logged in then go to "loggedIn"-page
 }
-
+?>*/
 /*TODO
 check if mail/password are empty and if they are valid
 ->give out error if not

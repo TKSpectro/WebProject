@@ -35,7 +35,7 @@ class PagesController extends \app\core\Controller
 	
 	public function actionLogin()
 	{
-		echo 'in der Funktion';
+	
 		if(!isset($_SESSION['loggedIn']) || $_SESSION['loggedIn'] === false)
 		{
 			if(isset($_POST['submit']))
@@ -43,11 +43,14 @@ class PagesController extends \app\core\Controller
 				$email    = $_POST['email'] ?? null;
 				$password = $_POST['password'] ?? null;
 
-				if($email === 'max@fh-erfurt.de' && $password === '12345678')
+				if($email === 'max@fh-erfurt.de' && $password === '123')
 				{
+					echo 'hey';
 					$_SESSION['loggedIn'] = true;
-					header('Location: formular.php');
-					echo 'Sie sind angemeldet';
+					header('Location:../index.php');
+					
+					
+					
 				}
 				else
 				{
@@ -59,18 +62,21 @@ class PagesController extends \app\core\Controller
 		else
 		{
 			echo 'else';
-			header('Location: index.php');
+			header('Location:../index.php');
 		}
 	}
 
 	public function actionLogout()
-	{
-		if($_SESSION['loggedIn'] === true)
+	{   
+		
+		if(isset($_POST['logout']))
 		{
 			$_SESSION['loggedIn'] = false;
 		}
+		session_destroy(); 
+	
 
-		header('Location: index.php');
+		header('Location:index.php');
 		exit();
 	}
 

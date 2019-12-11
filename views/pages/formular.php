@@ -32,26 +32,7 @@
         </tr>
     </table>
 </form> !-->
-<bod>
-<form action="<?=$_SERVER['PHP_SELF'];?>"  method="Post">
-    <table  width=50%  style = "float: right">
-        <tr>
-            <td><label for="email">Email</label></td>
-            
-            <td ><input type="email" name="login"></td>
-        </tr>
-
-        <tr>
-            <td><label for="password">Password</label></td>
-            <td><input type="password" name="lastName"></td>
-        </tr>
-
-        <tr>
-        <td><input type="submit"  name="submit" value="Anmelden"></td>
-        </tr>
- 
-</table>
-</form>  
+<body>
 
 
 <form action="<?=$_SERVER['PHP_SELF'].'?a=formular';?>"  method="Post">

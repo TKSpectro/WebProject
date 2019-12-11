@@ -30,7 +30,7 @@ class Controller
 
 			ob_start();
 			{
-				#echo $viewPath;
+				
 				include $viewPath;
 				
 

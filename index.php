@@ -43,19 +43,10 @@ if(file_exists($controllerPath))
 			$controllerInstance->$actionMethodName();
 			$controllerInstance->renderHTML();
 
-			/*if(isset($_GET['p']))
-			{
-				$actionName = $_GET['p'];
-				$actionMethodName = 'action'.ucfirst($actionName);
-				$controllerInstance->$actionMethodName();
-				$controllerInstance->renderHTML();
-	
-			}
-		*/
 		}
 		else
 		{
-			header('Location: index.php?c=pages&a=error404');
+			header('Location: index.php?c=page&a=error404');
 		}
 	}
 	else
@@ -67,9 +58,11 @@ if(file_exists($controllerPath))
 }
 else
 {
-    // Execute the SQL Statement and fetch data
-    $accounts = $database->query('SELECT * FROM account WHERE 1')->fetchAll();
+	header('Location: index.php?c=pages&a=error404');
 }
 
 ?>
+
+
+
 
