@@ -9,7 +9,10 @@
 
     <table>
         <tr>
-            <td><a href= "<?=$_SERVER['SCRIPT_NAME']?>/?p=formular" ><img id="jung" src="assert/photos/jung.png" alt=""></a></td>
+            <td><a href= "<?=$_SERVER['SCRIPT_NAME']?>/?a=formular" ><img id="jung" src="assert/photos/jung.png" alt=""></a></td>
+            <?php if(isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) : ?>
+                <h1>Sie sind angemeldet</h1>
+                <?php endif; ?>
             <td><img id="vater" src="assert/photos/vater.png" alt=""></td>
             <td><img id="girls" src="assert/photos/girls.png" alt=""></td>
             <td><img src="" alt=""></td>

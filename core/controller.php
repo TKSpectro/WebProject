@@ -32,20 +32,13 @@ class Controller
 			{
 				#echo $viewPath;
 				include $viewPath;
+				
 
 			}
 			$body = ob_get_clean();
 		
-			
-			if(isset($noLayout) && $noLayout === true)
-			{
-				echo 'hey';
-				echo $body;
-			}
-			else
-			{
 				include __DIR__.'/../views/layout.php';
-			}
+			
 		}
 		else
 		{
