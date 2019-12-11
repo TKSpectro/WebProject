@@ -1,11 +1,9 @@
 <?PHP 
 
-namespace app\models;
-
-require_once 'models/_baseModel.class.php';
-require_once 'models/account.class.php';
+namespace app\controller;
 
 
+use app\models\Account;
 
 if(isset($_POST['sendAccount']))
 {

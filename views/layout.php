@@ -1,19 +1,21 @@
-<?php namespace app\models; ?>
 
 <!DOCTYPE html>
 <html>
-	<head>
-		<title><?=$title?> | Project 01</title>
-		<meta charset="UTF-8">
-	</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assert/css/Toyplanet_style.css">
+</head>
+
 	<body>
 		<?php if(isset($smallHeader)) : ?>
 			<?php include __DIR__.'/shared/_headerSmall.php'; ?>
 		<?php else : ?>
 			<?php include __DIR__.'/shared/_headerBig.php'; ?>
 		<?php endif; ?>
-		<main>
-			<?=$body?>  
+	<main>
+			<?= $body?>  
 		<!--	<table border=1>
 		<tr>
 			<th>ID</th>

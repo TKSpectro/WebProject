@@ -30,13 +30,16 @@ class Controller
 
 			ob_start();
 			{
+				#echo $viewPath;
 				include $viewPath;
+
 			}
 			$body = ob_get_clean();
 		
-
+			
 			if(isset($noLayout) && $noLayout === true)
 			{
+				echo 'hey';
 				echo $body;
 			}
 			else

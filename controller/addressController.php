@@ -1,11 +1,8 @@
 <?PHP 
 
-namespace app\models;
+namespace app\controller;
 
-require_once 'models/_baseModel.class.php';
-#require_once 'models/address.class.php';
-
-
+use app\models\Address;
 
 if(isset($_POST['sendForm']))
 {

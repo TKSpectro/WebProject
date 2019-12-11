@@ -1,5 +1,4 @@
-
-
+<!--
 <form  action="<?$_SERVER['PHP_SELF']?>" method="Post"> 
     <table width=50% style = "float:right;">
       
@@ -32,10 +31,30 @@
             <td><input type="submit"  name="sendForm" value="Schicken"></td>
         </tr>
     </table>
-</form>
+</form> !-->
+<bod>
+<form action="<?=$_SERVER['PHP_SELF'].'?p=formular';?>"  method="Post">
+    <table  width=50%  style = "float: right">
+        <tr>
+            <td><label for="login">Email oder Benutzername</label></td>
+            
+            <td ><input type="text" name="login"></td>
+        </tr>
+
+        <tr>
+            <td><label for="password">Password</label></td>
+            <td><input type="password" name="lastName"></td>
+        </tr>
+
+        <tr>
+        <td><input type="submit"  name="submitLogin" value="Anmelden"></td>
+        </tr>
+ 
+</table>
+</form>  
 
 
-<form action="<?$_SERVER['PHP_SELF']?>" method="Post">
+<form action="<?=$_SERVER['PHP_SELF'].'?p=formular';?>"  method="Post">
     <table  width=50%  style = "float: left">
         <tr>
             <td><label for="firstName">First Name</label></td>
@@ -74,7 +93,8 @@
         <tr>
 
         <td><input type="submit"  name="sendAccount" value="SendAccount"></td>
-</tr>
+        </tr>
          
     </table>
 </form>  
+</body>

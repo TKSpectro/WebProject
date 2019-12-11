@@ -11,6 +11,12 @@ class PagesController extends \app\core\Controller
 		#$this->_params['accounts'] = \app\models\Account::find(); es ist nicht nötig
 		
 	}
+	public function actionFormular()
+	{
+		$this->_params['title'] = 'Formular';
+		$this->_params['bigHeader'] = true;
+		
+	}
 
 	public function actionImprint()
 	{

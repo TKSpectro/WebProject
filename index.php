@@ -4,14 +4,23 @@
 session_start();
 
 // all require stuff to work!!
-
 require_once 'init/20_imports.php';
 
 
 
 
 $controllerName = $_GET['c'] ?? 'pages';
+
+if(isset($_GET['p']))
+{
+	$actionName = $_GET['p'];
+}
+
+else {
 $actionName = $_GET['a'] ?? 'index';
+}
+
+
 
 $controllerPath = __DIR__.'/controller/'.$controllerName.'_controller.php';
 
@@ -33,6 +42,16 @@ if(file_exists($controllerPath))
 		{
 			$controllerInstance->$actionMethodName();
 			$controllerInstance->renderHTML();
+
+			/*if(isset($_GET['p']))
+			{
+				$actionName = $_GET['p'];
+				$actionMethodName = 'action'.ucfirst($actionName);
+				$controllerInstance->$actionMethodName();
+				$controllerInstance->renderHTML();
+	
+			}
+		*/
 		}
 		else
 		{
@@ -52,16 +71,5 @@ else
     $accounts = $database->query('SELECT * FROM account WHERE 1')->fetchAll();
 }
 
-
-
 ?>
-<html>
-<head>
-    <title>Toyplanet</title>
-</head>
-<body>
-<header></header>
 
-<footer></footer>
-</body>
-</html>
