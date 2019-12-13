@@ -10,7 +10,7 @@
 </head>
 
 	<body>
-		
+	
 		<?php if(isset($smallHeader)) : ?>
 			<?php include __DIR__.'/shared/_headerSmall.php'; ?>
 		<?php else : ?>
@@ -19,6 +19,7 @@
 		
 	<main>
 			<?= $body?>  
+			
 		<!--	<table border=1>
 		<tr>
 			<th>ID</th>

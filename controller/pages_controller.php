@@ -35,28 +35,40 @@ class PagesController extends \app\core\Controller
 	
 	public function actionLogin()
 	{
-	
 		if(!isset($_SESSION['loggedIn']) || $_SESSION['loggedIn'] === false)
 		{
 			if(isset($_POST['submit']))
 			{
-				$email    = $_POST['email'] ?? null;
-				$password = $_POST['password'] ?? null;
+				$email    = isset($_POST['email'])? $_POST['email'] :'';
+				$password = isset($_POST['password']) ? $_POST['password']: '';
 
-				if($email === 'max@fh-erfurt.de' && $password === '123')
+				$where= \app\models\Account::find('email = "'.$email. '"');
+				
+			if(!empty($email) && !empty($password))
+			{
+				if(!empty($where))
 				{
-					echo 'hey';
-					$_SESSION['loggedIn'] = true;
-					header('Location:../index.php');
-					
-					
-					
+					if($where['0']['passwordHash']==$password)
+					{
+						$_SESSION['loggedIn'] = true;
+						header('Location:../index.php');
+					}
+					else
+					{
+						echo 'Ihre Email oder Password ist nicht korrekt';
+						$_SESSION['loggedIn'] = false;
+					}
 				}
 				else
 				{
-					echo 'nicht gemeldet';
+					echo 'Ihre Email oder Password ist nicht korrekt';
 					$_SESSION['loggedIn'] = false;
 				}
+			}
+			else 
+			{
+				echo 'Sie müssen ihre Email und Password eingeben';
+			}
 			}
 		}
 		else
