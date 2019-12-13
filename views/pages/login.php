@@ -1,4 +1,4 @@
-<form  method="Post">
+<form  method="POST">
     <table  width=50%  style = "float: right">
         <tr>
             <td><label for="email">Email</label></td>
