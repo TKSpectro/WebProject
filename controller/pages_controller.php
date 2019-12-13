@@ -53,7 +53,7 @@ class PagesController extends \app\core\Controller
 					if($where['0']['passwordHash']==$password)
 					{
 						$_SESSION['loggedIn'] = true;
-						header('Location:../index.php');
+						header('Location: index.php');
 					}
 					else
 					{
@@ -76,7 +76,7 @@ class PagesController extends \app\core\Controller
 		else
 		{
 			echo 'else';
-			header('Location:../index.php');
+			header('Location: index.php');
 		}
 	}
 
