@@ -48,9 +48,8 @@ class PagesController extends \app\core\Controller
 			{
 				if(!empty($where))
 				{
-					//TODO next line is used if we hash passwords just replace the if with this one
-					//if(password_verify($password, $where['0']['passwordHash']))
-					if($where['0']['passwordHash']==$password)
+					if(password_verify($password, $where['0']['passwordHash']))
+				
 					{
 						$_SESSION['loggedIn'] = true;
 						header('Location: index.php');

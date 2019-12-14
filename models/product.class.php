@@ -5,7 +5,7 @@ namespace app\models;
 
 class Product extends BaseModel
 {
-    const TABLENAME = '`Product`';
+    const TABLENAME = '`product`';
 
     protected $schema = [
         'productID'    => ['type' => BaseModel::TYPE_INT],

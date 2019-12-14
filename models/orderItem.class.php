@@ -5,7 +5,7 @@ namespace app\models;
 
 class OrderItem extends BaseModel
 {
-    const TABLENAME = '`OrderItem`';
+    const TABLENAME = '`orderItem`';
 
     protected $schema = [
         'accountID'   	=> ['type' => BaseModel::TYPE_INT],
