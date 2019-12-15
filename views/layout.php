@@ -1,49 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
+<link rel="stylesheet" type="text/css" href="assert/css/Toyplanet_style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title><?=$title?></title>
-	<link rel="stylesheet" type="text/css" href="assert/css/Toyplanet_style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	
 </head>
 
-	<body>
+<body>
+	<?php if(isset($smallHeader)) : ?>
+		<?php include __DIR__.'/shared/_headerSmall.php'; ?>
+	<?php else : ?>
+		<?php include __DIR__.'/shared/_headerBig.php'; ?>
+	<?php endif; ?>
 	
-		<?php if(isset($smallHeader)) : ?>
-			<?php include __DIR__.'/shared/_headerSmall.php'; ?>
-		<?php else : ?>
-			<?php include __DIR__.'/shared/_headerBig.php'; ?>
-		<?php endif; ?>
-		
-	<main>
-			<?= $body?>  
-			
-		<!--	<table border=1>
-		<tr>
-			<th>ID</th>
-			<th>createdAt</th>
-			<th>updatedAt</th>
-			<th>Land</th>
-			<th>City</th>
-			<th>Street</th>
-			<th>Hause Number</th>
-			<th>ZIP</th>
-		</tr>
-				<?php /* foreach(Address::find() as $rows):?>
-		<tr>
-				<?foreach($rows as $index => $cols):?>
-				<td><?=htmlspecialchars($cols)?></td>
-				<?endforeach;?>
-		</tr>
-				<?endforeach;*/?>
-		</table>
-		!-->
-		
-		</main>
+<main>
+	<?= $body?>
+</main>
 
-		<footer></footer>
-	</body>
+	<footer></footer>
+</body>
 </html>
 	

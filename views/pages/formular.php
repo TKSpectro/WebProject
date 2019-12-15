@@ -33,48 +33,47 @@
     </table>
 </form> !-->
 <body>
-
-
+<h2>Benutzerkonto erstellen</h2>
 <form action="<?=$_SERVER['PHP_SELF'].'?a=formular';?>"  method="Post">
     <table  width=50%  style = "float: left">
-        <tr>
-            <td><label for="firstName">First Name</label></td>
-            
-            <td ><input type="text" name="firstName"></td>
-        </tr>
+       <tr><td>
+           <fieldset><legend>First Name</legend>
+           <input type="text" name="firstName"></fieldset>
+       </td></tr>
 
-        <tr>
-            <td><label for="lastName">Last Name</label></td>
-            <td><input type="text" name="lastName"></td>
-        </tr>
+       <tr><td>
+           <fieldset><legend>Last Name</legend>
+           <input type="text" name="lastName"></fieldset>
+       </td></tr>
 
-        <tr>
-            <td><label for="email">EMail</label></td>
-            <td><input type="email" name="email"></td>
-        </tr>
+       <tr><td>
+           <fieldset><legend>EMail</legend>
+           <input type="email" name="email"></fieldset>
+       </td></tr>
 
-        <tr>
-            <td><label for="password">Password</label></td>
-            <td><input type="password" name="password"></td>
-        </tr>
-        <tr>
-            <td><label for="birthday">Birthday</label></td>
-            <td> <input type="date" name="birthday"></td>
-        </tr>
+       <tr><td>
+           <fieldset><legend>Password</legend>
+           <input type="password" name="password"></fieldset>
+       </td></tr>
 
-        <tr>
-            <td><label for="mobile">Mobile</label></td>
-            <td> <input type="number" name="mobile"></td>
-        </tr>
+       <tr><td>
+           <fieldset><legend>Birthday</legend>
+           <input type="date" name="birthday"></fieldset>
+       </td></tr>
 
-        <tr>
-            <td><label for="phone">Phone</label></td>
-            <td> <input type="number" name="phone"></td>
-        </tr>
-        <tr>
+       <tr><td>
+           <fieldset><legend>Mobile</legend>
+           <input type="number" name="mobile"></fieldset>
+       </td></tr>
 
-        <td><input type="submit"  name="sendAccount" value="SendAccount"></td>
-        </tr>
+       <tr><td>
+           <fieldset><legend>Phone</legend>
+           <input type="number" name="phone"></fieldset>
+       </td></tr>
+       <tr>
+
+       <td><input type="submit"  name="sendAccount" value="Regestrieren"></td>
+       </tr>
          
     </table>
 </form>  

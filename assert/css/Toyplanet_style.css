@@ -11,9 +11,9 @@ body {
 #search {
     background-color: #EAE8DA;
     float: right;
-    margin: -120 25;
-    width: 13em;
-    height: 2em;
+    margin: 45px 35px;
+    width: 11em;
+    height: 1.5em;
     border: none;
     border-bottom: 2px #C38D8A solid;
     font-family: akaDylan Collage;
@@ -24,7 +24,7 @@ body {
 #logo {
     width: 27em;
     height: 11em;
-    margin: 0.5 2em;
+    margin: 0.5em 2em;
 }
 
 tr {
