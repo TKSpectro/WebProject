@@ -34,61 +34,105 @@ tr {
     overflow: hidden;
 }
 
-#jung {
-    margin-left: 2.5em;
+ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+}
+
+li {
+    display: inline;
+}
+
+.startseite img {
     width: 25em;
     height: 35em;
-    border: 10px #90B3B6 solid;
+    border: 10px solid red;
+}
+
+#jung {
+    margin-left: 2.5em;
+    border-color: #90B3B6;
 }
 
 #vater {
-    width: 25em;
-    height: 35em;
-    border: 10px #E9BA65 solid;
+    border-color: #E9BA65;
     margin-left: 2.5em;
 }
 
 #girls {
-    width: 25em;
-    height: 35em;
-    border: 10px #C38D8B solid;
+    border-color: #C38D8B;
     margin-left: 2.5em;
 }
 
-table.login {
+table {
     margin: 1% 30%;
     color: #96C1C5;
     background-color: rgba(183, 88, 91, 0.17);
-    height: 35em;
-    width: 30em;
-}
-
-table.login fieldset {
-    width: 25em;
-    height: 3.5em;
     border-radius: 5px;
-    border: solid 2px #96C1C5;
-    margin: -5em 1.3em;
 }
 
-table.login input {
-    width: 35em;
-    height: 2.9em;
+table.formular {
+    height: 55em;
+}
+
+table.login {
+    height: 35em;
+}
+
+table fieldset {
+    border-radius: 5px;
+    border: solid 3px #96C1C5;
+    font-weight: bold;
+}
+
+fieldset.login_fieldset {
+    margin: -1.5em 5em;
+}
+
+fieldset.register_fieldset {
+    margin: -0.8em 8em;
+}
+
+table input {
+    border-radius: 5px;
+    width: 20em;
+    height: 2em;
     background-color: #EAE8DE;
     border: solid 1px #96C1C5;
-    margin-left: 0.5em;
-}
-
-table.login input[type="submit"] {
-    width: 40em;
-    height: 5em;
-    background-color: #96C1C5;
-    border: none;
-    margin-left: 4%;
+    font-size: 18px;
+    color: #96C1C5;
+    font-weight: bold;
 }
 
 #title {
     padding: 0;
     font-size: 3em;
     text-align: center;
+}
+
+table input[type="checkbox"] {
+    margin-left: 5.3em;
+    width: 20px;
+    height: 18px;
+}
+
+table label {
+    font-size: 19px;
+}
+
+table input[type="submit"] {
+    background-color: #96C1C5;
+    color: #EAE8DE;
+    border: none;
+    height: 2.5em;
+}
+
+table.login input[type="submit"] {
+    margin-left: 5.5em;
+}
+
+table.formular input[type="submit"] {
+    margin-left: 8.3em;
 }
