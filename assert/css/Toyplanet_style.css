@@ -78,7 +78,7 @@ table.formular {
 }
 
 table.login {
-    height: 35em;
+    height: 30em;
 }
 
 table fieldset {
@@ -88,7 +88,7 @@ table fieldset {
 }
 
 fieldset.login_fieldset {
-    margin: -1.5em 5em;
+    margin: -0.5em 5em;
 }
 
 fieldset.register_fieldset {
