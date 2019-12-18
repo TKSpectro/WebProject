@@ -1,5 +1,6 @@
 body {
-    background-color: #EAE8DE;
+    background-image: url("../photos/background.png");
+    background-size: auto;
     margin: 0;
     padding: 0;
 }
@@ -9,7 +10,7 @@ body {
 }
 
 #search {
-    background-color: #EAE8DA;
+    background-color: rgba(234, 232, 218, 0.1);
     float: right;
     margin: 45px 35px;
     width: 11em;
@@ -52,4 +53,42 @@ tr {
     height: 35em;
     border: 10px #C38D8B solid;
     margin-left: 2.5em;
+}
+
+table.login {
+    margin: 1% 30%;
+    color: #96C1C5;
+    background-color: rgba(183, 88, 91, 0.17);
+    height: 35em;
+    width: 30em;
+}
+
+table.login fieldset {
+    width: 25em;
+    height: 3.5em;
+    border-radius: 5px;
+    border: solid 2px #96C1C5;
+    margin: -5em 1.3em;
+}
+
+table.login input {
+    width: 35em;
+    height: 2.9em;
+    background-color: #EAE8DE;
+    border: solid 1px #96C1C5;
+    margin-left: 0.5em;
+}
+
+table.login input[type="submit"] {
+    width: 40em;
+    height: 5em;
+    background-color: #96C1C5;
+    border: none;
+    margin-left: 4%;
+}
+
+#title {
+    padding: 0;
+    font-size: 3em;
+    text-align: center;
 }

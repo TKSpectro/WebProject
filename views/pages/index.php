@@ -1,4 +1,4 @@
-<section>
+<section class="startseite">
 <table>
   <tr>
   <td><a href= "index.php?a=formular" ><img id="jung" src="assert/photos/jung.png" alt=""></a></td>
