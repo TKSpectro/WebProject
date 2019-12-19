@@ -1,4 +1,4 @@
-body {
+body{
     background-image: url("../photos/background.png");
     background-size: auto;
     margin: 0;
@@ -6,29 +6,29 @@ body {
     box-sizing: border-box;
 }
 
-ul {
+ul{
     margin: 0;
     padding: 0;
     overflow: hidden;
     list-style: none;
 }
 
-li {
+li{
     display: inline;
 }
 
-::placeholder {
+::placeholder{
     color: #E9BA65;
 }
 
-.search {
+.search{
     float: right;
     width: 7em;
     height: 1.5em;
     text-align: left;
 }
 
-#small {
+#small{
     background-color: rgba(234, 232, 218, 0.1);
     font-family: akaDylan Collage;
     font-size: 23px;
@@ -38,13 +38,13 @@ li {
     border-bottom: 2px #C38D8A solid;
 }
 
-#logo {
+#logo{
     width: 27em;
     height: 11em;
     margin: 0.5em 2em;
 }
 
-.icons img {
+.icons img{
     width: 3em;
     height: 3em;
     float: right;
@@ -53,69 +53,71 @@ li {
     margin-bottom: 0em;
 }
 
-#warenkorb {}
+#warenkorb{
+}
 
-#account_verwaltung {}
+#account_verwaltung{
+}
 
-tr {
+tr{
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-.center {
+.center{
     text-align: center;
 }
 
-.startseite img {
+.startseite img{
     width: 25em;
     height: 35em;
     border: 10px solid;
     margin: 1.5em;
 }
 
-#jung {
+#jung{
     border-color: #90B3B6;
 }
 
-#vater {
+#vater{
     border-color: #E9BA65;
 }
 
-#girls {
+#girls{
     border-color: #C38D8B;
 }
 
-table {
+table{
     margin: 1% 26%;
     color: #96C1C5;
     background-color: rgba(183, 88, 91, 0.17);
     border-radius: 5px;
 }
 
-table.formular {
+table.formular{
     height: 55em;
 }
 
-table.login {
+table.login{
     height: 30em;
 }
 
-table fieldset {
+table fieldset{
     border-radius: 5px;
     border: solid 3px #96C1C5;
     font-weight: bold;
 }
 
-fieldset.login_fieldset {
+fieldset.login_fieldset{
     margin: -0.5em 4em;
 }
 
-fieldset.register_fieldset {
+fieldset.register_fieldset{
     margin: -0.8em 6em;
 }
 
-table input {
+table input{
     border-radius: 5px;
     width: 25em;
     height: 2em;
@@ -126,74 +128,86 @@ table input {
     font-weight: bold;
 }
 
-#title {
+#title{
     padding: 0;
     font-size: 3em;
     text-align: center;
 }
 
-table input[type="checkbox"] {
+table input[type="checkbox"]{
     margin-left: 5.3em;
     width: 20px;
     height: 18px;
 }
 
-table label {
+table label{
     font-size: 19px;
 }
 
-table input[type="submit"] {
+table input[type="submit"]{
     background-color: #96C1C5;
     color: #EAE8DE;
     border: none;
     height: 2.5em;
 }
 
-table.login input[type="submit"] {
+table.login input[type="submit"]{
     margin-left: 4.5em;
 }
 
-table.formular input[type="submit"] {
+table.formular input[type="submit"]{
     margin-left: 6.3em;
 }
-
 
 
 figure{
     margin: 0;
 }
 
-figure.einzel {
+figure.einzel{
     display: inline-block;
     padding: 10px;
     width: 33%;
     border: 1px solid gainsboro;
 }
 
-nav {
+nav{
     width: 100%;
 }
 
-nav ul {
+nav ul{
     display: flex;
     flex-direction: row;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
+nav ul li{
     list-style: none;
     flex-grow: 1;
     text-align: center;
 
 }
 
-nav ul li a {
+nav ul li a{
     display: block;
     text-decoration: none;
+    font-size: 12px;
 }
-nav ul li img{
 
-    width: 100px;
+nav ul li img{
+    width: 50px;
 }
+
+@media screen and (min-width: 600px){
+    nav ul li img{
+        width: 100px;
+    }
+
+    nav ul li a{
+        font-size: 17px;
+    }
+}
+
+
 

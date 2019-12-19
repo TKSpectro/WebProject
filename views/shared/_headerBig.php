@@ -33,7 +33,7 @@
             <li>
                 <a href="index.php?a=index">
                     <figure class="single">
-                        <img src="assets/images/girlIcon.png"  alt="Mädchen Bild">
+                        <img src="assets/images/iconGirl.png"  alt="Mädchen Bild">
                         <figcaption>MÄDCHEN</figcaption>
                     </figure>
                 </a>
