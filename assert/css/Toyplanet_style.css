@@ -3,35 +3,7 @@ body {
     background-size: auto;
     margin: 0;
     padding: 0;
-}
-
-::placeholder {
-    color: #E9BA65;
-}
-
-#search {
-    background-color: rgba(234, 232, 218, 0.1);
-    float: right;
-    margin: 45px 35px;
-    width: 11em;
-    height: 1.5em;
-    border: none;
-    border-bottom: 2px #C38D8A solid;
-    font-family: akaDylan Collage;
-    text-align: left;
-    font-size: 23px;
-}
-
-#logo {
-    width: 27em;
-    height: 11em;
-    margin: 0.5em 2em;
-}
-
-tr {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    box-sizing: border-box;
 }
 
 ul {
@@ -45,29 +17,77 @@ li {
     display: inline;
 }
 
+::placeholder {
+    color: #E9BA65;
+}
+
+.search {
+    float: right;
+    width: 7em;
+    height: 1.5em;
+    text-align: left;
+}
+
+#small {
+    background-color: rgba(234, 232, 218, 0.1);
+    font-family: akaDylan Collage;
+    font-size: 23px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px #C38D8A solid;
+}
+
+#logo {
+    width: 27em;
+    height: 11em;
+    margin: 0.5em 2em;
+}
+
+.icons img {
+    width: 3em;
+    height: 3em;
+    float: right;
+    margin-top: 1em;
+    margin-right: 2em;
+    margin-bottom: 0em;
+}
+
+#warenkorb {}
+
+#account_verwaltung {}
+
+tr {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.center {
+    text-align: center;
+}
+
 .startseite img {
     width: 25em;
     height: 35em;
-    border: 10px solid red;
+    border: 10px solid;
+    margin: 1.5em;
 }
 
 #jung {
-    margin-left: 2.5em;
     border-color: #90B3B6;
 }
 
 #vater {
     border-color: #E9BA65;
-    margin-left: 2.5em;
 }
 
 #girls {
     border-color: #C38D8B;
-    margin-left: 2.5em;
 }
 
 table {
-    margin: 1% 30%;
+    margin: 1% 26%;
     color: #96C1C5;
     background-color: rgba(183, 88, 91, 0.17);
     border-radius: 5px;
@@ -88,16 +108,16 @@ table fieldset {
 }
 
 fieldset.login_fieldset {
-    margin: -0.5em 5em;
+    margin: -0.5em 4em;
 }
 
 fieldset.register_fieldset {
-    margin: -0.8em 8em;
+    margin: -0.8em 6em;
 }
 
 table input {
     border-radius: 5px;
-    width: 20em;
+    width: 25em;
     height: 2em;
     background-color: #EAE8DE;
     border: solid 1px #96C1C5;
@@ -130,9 +150,9 @@ table input[type="submit"] {
 }
 
 table.login input[type="submit"] {
-    margin-left: 5.5em;
+    margin-left: 4.5em;
 }
 
 table.formular input[type="submit"] {
-    margin-left: 8.3em;
+    margin-left: 6.3em;
 }
