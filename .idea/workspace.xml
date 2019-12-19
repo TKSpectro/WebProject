@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a49a9fd2-771a-44b2-bdb3-98c02f503133" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +30,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -66,6 +65,8 @@
       <workItem from="1575377950701" duration="18000" />
       <workItem from="1575967560908" duration="152000" />
       <workItem from="1576061033957" duration="4691000" />
+      <workItem from="1576745916120" duration="22000" />
+      <workItem from="1576752169688" duration="12000" />
     </task>
     <servers />
   </component>
@@ -80,11 +81,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="202" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575108309922" />
-    <state x="690" y="212" key="FileChooserDialogImpl" timestamp="1575377965625">
+    <state x="690" y="212" key="FileChooserDialogImpl" timestamp="1576752180063">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="212" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575106438907" />
-    <state x="690" y="212" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1575377965625" />
+    <state x="690" y="212" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1576745936512" />
+    <state x="690" y="212" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1576752180063" />
     <state x="413" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1575967561696">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
