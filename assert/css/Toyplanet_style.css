@@ -159,6 +159,17 @@ table.formular input[type="submit"] {
 
 
 
+figure{
+    margin: 0;
+}
+
+figure.einzel {
+    display: inline-block;
+    padding: 10px;
+    width: 33%;
+    border: 1px solid gainsboro;
+}
+
 nav {
     width: 100%;
 }
@@ -183,5 +194,6 @@ nav ul li a {
 }
 nav ul li img{
 
-    width: 66px;
+    width: 100px;
 }
+
