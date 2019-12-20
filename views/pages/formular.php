@@ -33,49 +33,43 @@
     </table>
 </form> !-->
 <body>
-
+<div class="formular">
 <form action="<?=$_SERVER['PHP_SELF'].'?a=formular';?>"  method="Post"> 
 
-<table   class="formular">     
-    <tr><td id="title">Benutzerkonto Erstellen</td></tr>
+    
+<figure>
+    <img src="assert/photos/Account_verwaltung2.png"  alt="Account_verwaltung Bild">
+    <figcaption>Benutzerkonto Erstellen</figcaption>
+    </figure>
 
-    <tr><td>
-        <fieldset class="register_fieldset"><legend>First Name</legend>
-        <input type="text" name="firstName"></fieldset>
-    </td></tr>
+<fieldset class="register_fieldset"><legend>First Name</legend>
+<input type="text" name="firstName"></fieldset>
 
-    <tr><td>
-        <fieldset class="register_fieldset"><legend>Last Name</legend>
-        <input type="text" name="lastName"></fieldset>
-    </td></tr>
 
-    <tr><td>
-        <fieldset class="register_fieldset"><legend>EMail</legend>
-        <input type="email" name="email"></fieldset>
-    </td></tr>
+<fieldset class="register_fieldset"><legend>Last Name</legend>
+<input type="text" name="lastName"></fieldset>
 
-    <tr><td>
-        <fieldset class="register_fieldset"><legend>Password</legend>
-        <input type="password" name="password"></fieldset>
-    </td></tr>
 
-    <tr><td>
-        <fieldset class="register_fieldset"><legend>Birthday</legend>
-        <input type="date" name="birthday"></fieldset>
-    </td></tr>
+<fieldset class="register_fieldset"><legend>EMail</legend>
+<input type="email" name="email"></fieldset>
 
-    <tr><td>
-        <fieldset class="register_fieldset"><legend>Mobile</legend>
-        <input type="number" name="mobile"></fieldset>
-    </td></tr>
 
-    <tr><td>
-        <fieldset class="register_fieldset"><legend>Phone</legend>
-        <input type="number" name="phone"></fieldset>
-    </td></tr>
-    <tr>
-        <td><input type="submit"  name="sendAccount" value="Regestrieren"></td>
-    </tr>
-</table>
+<fieldset class="register_fieldset"><legend>Password</legend>
+<input type="password" name="password"></fieldset>
+
+
+<fieldset class="register_fieldset"><legend>Birthday</legend>
+<input type="date" name="birthday"></fieldset>
+
+
+<fieldset class="register_fieldset"><legend>Mobile</legend>
+<input type="number" name="mobile"></fieldset>
+
+
+<fieldset class="register_fieldset"><legend>Phone</legend>
+<input type="number" name="phone"></fieldset>
+
+<input type="submit"  name="sendAccount" value="Regestrieren">
 </form>  
+</div>
 </body>

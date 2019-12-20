@@ -1,4 +1,4 @@
-body{
+body {
     background-image: url("../photos/background.png");
     background-size: auto;
     margin: 0;
@@ -6,208 +6,176 @@ body{
     box-sizing: border-box;
 }
 
-ul{
+ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    list-style: none;
 }
 
-li{
+li {
+    list-style: none;
     display: inline;
 }
 
-::placeholder{
+ ::placeholder {
     color: #E9BA65;
 }
 
-.search{
+.search {
     float: right;
-    width: 7em;
+    width: 15%;
     height: 1.5em;
     text-align: left;
+    margin: 3% -6% 0%;
 }
 
-#small{
+#headerSmall {
+    margin: 0;
     background-color: rgba(234, 232, 218, 0.1);
     font-family: akaDylan Collage;
     font-size: 23px;
     border: none;
-    margin: 0;
-    padding: 0;
     border-bottom: 2px #C38D8A solid;
 }
 
-#logo{
+#logo {
     width: 27em;
     height: 11em;
     margin: 0.5em 2em;
+    float: left;
 }
 
-.icons img{
+ul.icons img {
     width: 3em;
     height: 3em;
     float: right;
     margin-top: 1em;
-    margin-right: 2em;
+    margin-right: 1.5em;
     margin-bottom: 0em;
 }
 
-#warenkorb{
-}
-
-#account_verwaltung{
-}
-
-tr{
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-.center{
+.center {
     text-align: center;
 }
 
-.startseite img{
+.startseite img {
     width: 25em;
     height: 35em;
     border: 10px solid;
     margin: 1.5em;
 }
 
-#jung{
+#jung {
     border-color: #90B3B6;
 }
 
-#vater{
+#vater {
     border-color: #E9BA65;
 }
 
-#girls{
+#girls {
     border-color: #C38D8B;
 }
 
-table{
-    margin: 1% 26%;
-    color: #96C1C5;
-    background-color: rgba(183, 88, 91, 0.17);
+div {
+    width: 45%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+div img {
+    width: 15%;
+    margin: -8% 42.5% 2%;
+}
+
+form {
     border-radius: 5px;
+    color: #96C1C5;
+    font-size: 18px;
+    background-color: rgba(183, 88, 91, 0.17);
 }
 
-table.formular{
-    height: 55em;
-}
-
-table.login{
-    height: 30em;
-}
-
-table fieldset{
+fieldset {
     border-radius: 5px;
     border: solid 3px #96C1C5;
     font-weight: bold;
+    margin: 2.5% 10%;
 }
 
-fieldset.login_fieldset{
-    margin: -0.5em 4em;
-}
-
-fieldset.register_fieldset{
-    margin: -0.8em 6em;
-}
-
-table input{
+input {
     border-radius: 5px;
-    width: 25em;
-    height: 2em;
+    width: 100%;
     background-color: #EAE8DE;
     border: solid 1px #96C1C5;
-    font-size: 18px;
     color: #96C1C5;
     font-weight: bold;
+    padding: 15px 0px;
 }
 
-#title{
-    padding: 0;
-    font-size: 3em;
-    text-align: center;
-}
-
-table input[type="checkbox"]{
-    margin-left: 5.3em;
+input[type="checkbox"] {
     width: 20px;
     height: 18px;
+    margin-left: 10%;
+    padding: 20px 30x;
 }
 
-table label{
-    font-size: 19px;
+div figcaption {
+    text-align: center;
+    margin-top: 1%;
+    font-size: 35px;
 }
 
-table input[type="submit"]{
+input[type="submit"] {
     background-color: #96C1C5;
     color: #EAE8DE;
+    font-size: 21px;
     border: none;
-    height: 2.5em;
+    cursor: pointer;
+    width: 80%;
+    margin: 3% 10%;
 }
 
-table.login input[type="submit"]{
-    margin-left: 4.5em;
-}
-
-table.formular input[type="submit"]{
-    margin-left: 6.3em;
-}
-
-
-figure{
+figure {
     margin: 0;
 }
 
-figure.einzel{
+figure.einzel {
     display: inline-block;
     padding: 10px;
     width: 33%;
     border: 1px solid gainsboro;
 }
 
-nav{
+nav {
     width: 100%;
 }
 
-nav ul{
+nav ul {
     display: flex;
     flex-direction: row;
-    margin: 0;
-    padding: 0;
 }
 
-nav ul li{
-    list-style: none;
+nav ul li {
     flex-grow: 1;
     text-align: center;
-
 }
 
-nav ul li a{
+nav ul li a {
     display: block;
     text-decoration: none;
     font-size: 12px;
 }
 
-nav ul li img{
+nav ul li img {
     width: 50px;
 }
 
-@media screen and (min-width: 600px){
-    nav ul li img{
+@media screen and (min-width: 600px) {
+    nav ul li img {
         width: 100px;
     }
-
-    nav ul li a{
+    nav ul li a {
         font-size: 17px;
     }
 }
-
-
-
