@@ -30,7 +30,7 @@ div.search {
     text-align: left;
     padding: 0px;
     width: 18%;
-    margin: 1em 1.5em;
+    margin: 0.5em 1.5em;
     ;
 }
 
@@ -42,19 +42,18 @@ div.search {
     float: right;
 }
 
-#headerSmall {
+#suchword {
     padding: 2px;
     padding-top: 0px;
     background-color: rgba(234, 232, 218, 0.1);
-    font-family: akaDylan Collage;
     font-size: 23px;
     border: none;
     border-bottom: 2px #C38D8A solid;
 }
 
 #logo {
-    width: 25em;
-    height: 4em;
+    width: 23em;
+    height: 3em;
     margin: 0em 2em;
     float: left;
     padding: 0em;
@@ -81,7 +80,7 @@ ul.icons img {
     width: 25em;
     height: 35em;
     border: 10px solid;
-    margin: 1.5em;
+    margin: 5em 1.5em;
 }
 
 #jung {
@@ -152,7 +151,7 @@ input[type="submit"] {
     border: none;
     cursor: pointer;
     width: 80%;
-    margin: 3% 10%;
+    margin: 4% 10%;
 }
 
 figure {

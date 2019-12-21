@@ -5,7 +5,7 @@
 <li><a href="index.php"><img id="logo" src="assert/photos/Logo.png" alt="Toyplanet_logo"></a>
 <li><div class="search">
 <img id="searchIcon"  src="assert/photos/search_icon.png" alt="searchIcon">
-<input id="headerSmall" type="text" placeholder="Search">
+<input id="suchword" type="text" placeholder="Search">
 </div></li>
 </ul> 
 
