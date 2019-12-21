@@ -1,6 +1,13 @@
-<header class="header_big">
-  <a href="index.php"><img id="logo" src="assert/photos/Logo_Klein.png" alt="Toyplanet_logo"></a>
-  <input id="search" type="text" placeholder="Search">
+<header class="big">
+
+
+<ul class="iamlogo">
+<li><a href="index.php"><img id="logo" src="assert/photos/Logo.png" alt="Toyplanet_logo"></a>
+<li><div class="search">
+<img id="searchIcon"  src="assert/photos/search_icon.png" alt="searchIcon">
+<input id="headerSmall" type="text" placeholder="Search">
+</div></li>
+</ul> 
 
     <!--
     <div class="pill-nav">

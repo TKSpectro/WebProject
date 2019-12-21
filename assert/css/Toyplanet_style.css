@@ -17,20 +17,34 @@ li {
     display: inline;
 }
 
- ::placeholder {
+::placeholder {
     color: #E9BA65;
 }
 
-.search {
+.iamlogo {
+    margin: 4em 0em;
+}
+
+div.search {
     float: right;
-    width: 15%;
-    height: 1.5em;
     text-align: left;
-    margin: 3% -6% 0%;
+    padding: 0px;
+    width: 18%;
+    margin: 1em 1.5em;
+    ;
+}
+
+#searchIcon {
+    margin: 0px 0px -25px;
+    padding: 0;
+    width: 2em;
+    height: 2em;
+    float: right;
 }
 
 #headerSmall {
-    margin: 0;
+    padding: 2px;
+    padding-top: 0px;
     background-color: rgba(234, 232, 218, 0.1);
     font-family: akaDylan Collage;
     font-size: 23px;
@@ -39,10 +53,11 @@ li {
 }
 
 #logo {
-    width: 27em;
-    height: 11em;
-    margin: 0.5em 2em;
+    width: 25em;
+    height: 4em;
+    margin: 0em 2em;
     float: left;
+    padding: 0em;
 }
 
 ul.icons img {
@@ -52,6 +67,10 @@ ul.icons img {
     margin-top: 1em;
     margin-right: 1.5em;
     margin-bottom: 0em;
+}
+
+#Warenkorb {
+    margin-right: 4em;
 }
 
 .center {
@@ -179,3 +198,5 @@ nav ul li img {
         font-size: 17px;
     }
 }
+
+s
