@@ -35,8 +35,12 @@ if(file_exists($controllerPath))
 		if(method_exists($controllerInstance, $actionMethodName))
 		{
 			$controllerInstance->$actionMethodName();
+			if (isset($_COOKIE['email']))
+			{
+			 logIn();
+			}
 			$controllerInstance->renderHTML();
-
+			
 		}
 		else
 		{

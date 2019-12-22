@@ -2,7 +2,7 @@
 
 // core
 require_once 'init/10_database.php';
-require_once './core/function.php'; 
+require_once 'core/function.php'; 
 
 //require_once 'core/model.php';
 

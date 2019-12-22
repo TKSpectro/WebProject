@@ -33,11 +33,13 @@ class PagesController extends \app\core\Controller
 		exit(0);
 	}
 	
-	public function actionLogin()
+	public function actionLogin($rememberMe= false)
 	{
 		$this->_params['title'] = 'Login';
 		$this->_params['bigHeader'] = true;
 		
+	
+
 		if(!isset($_SESSION['loggedIn']) || $_SESSION['loggedIn'] === false)
 		{
 			if(isset($_POST['submit']))
@@ -54,6 +56,11 @@ class PagesController extends \app\core\Controller
 					if(password_verify($password, $where['0']['passwordHash']))
 					{
 						$_SESSION['loggedIn'] = true;
+						if(isset($_POST['rememberMe']))
+						{
+							rememberMe($where['0']['email'],$password);
+					
+						}
 						header('Location: index.php');
 					}
 					else
@@ -76,7 +83,7 @@ class PagesController extends \app\core\Controller
 		}
 		else
 		{
-			echo 'else';
+			
 			header('Location: index.php');
 		}
 	}
@@ -86,6 +93,9 @@ class PagesController extends \app\core\Controller
 		
 		if(isset($_POST['logout']))
 		{
+			setcookie('email','',-1,'/');
+			setcookie('password','',-1,'/');
+
 			$_SESSION['loggedIn'] = false;
 		}
 		session_destroy(); 

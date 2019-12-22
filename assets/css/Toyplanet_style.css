@@ -22,7 +22,7 @@ li {
 }
 
 .iamlogo {
-    margin: 4em 0em;
+    margin-bottom: 2em;
 }
 
 div.search {
@@ -41,11 +41,24 @@ div.search {
     float: right;
 }
 
-.test {
+#logoutButton {
+    margin-top: 1.8em;
     float: right;
-    font-size: 23px;
+}
+
+#logoutButton input[type="submit"] {
+    font-size: 20px;
+    width: 100%;
     color: #E9BA65;
-    background-color: red;
+    background-color: #EAE8DE;
+    border: none;
+    display: block;
+    cursor: pointer;
+}
+
+#logoutButton input[type="submit"]:hover {
+    color: rgba(183, 88, 91, 1);
+    font-weight: bolder;
 }
 
 #suchword {
@@ -101,7 +114,7 @@ ul.icons img {
     border-color: #C38D8B;
 }
 
-div {
+div.formular {
     width: 45%;
     margin: auto;
     margin-top: 5%;
@@ -113,11 +126,24 @@ div img {
     margin: -8% 42.5% 2%;
 }
 
-form {
+.iamform {
     border-radius: 5px;
     color: #96C1C5;
     font-size: 18px;
     background-color: rgba(183, 88, 91, 0.17);
+}
+
+#kontoErstellenlink {
+    color: #96C1C5;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    float: right;
+    margin-right: 10%;
+}
+
+a#kontoErstellenlink:hover {
+    font-size: 24px;
 }
 
 fieldset {
@@ -127,7 +153,7 @@ fieldset {
     margin: 2.5% 10%;
 }
 
-input {
+.iamform input {
     border-radius: 5px;
     width: 100%;
     background-color: #EAE8DE;
@@ -151,7 +177,7 @@ div figcaption {
     font-size: 35px;
 }
 
-input[type="submit"] {
+.iamform input[type="submit"] {
     background-color: #96C1C5;
     color: #EAE8DE;
     font-size: 21px;
@@ -204,3 +230,5 @@ nav ul li img {
         font-size: 17px;
     }
 }
+
+bbb

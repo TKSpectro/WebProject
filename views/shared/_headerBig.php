@@ -1,11 +1,18 @@
 <header class="big">
 
-
+<ul class="icons">
+    <li> <img id="Warenkorb" src="assets/images/shopping-cart.png" alt="Warenkorb"></li>
+    <?php if(isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) : ?>
+    <form id="logoutButton"  action="<?=$_SERVER['PHP_SELF'].'?a=logout';?>" method="Post">
+      <li><input type="submit" id="logout"  name="logout" value="abmelden"></li>
+    </form> 
+    <?php endif; ?>
+    </ul> 
 <ul class="iamlogo">
 <li><a href="index.php"><img id="logo" src="assets/images/Logo.png" alt="Toyplanet_logo"></a>
 <li><div class="search">
 <img id="searchIcon"  src="assets/images/search_icon.png" alt="searchIcon">
-<input id="suchword" type="text" placeholder="Search">
+<input id="suchword" type="text" placeholder="Suchen">
 </div></li>
 </ul> 
 
