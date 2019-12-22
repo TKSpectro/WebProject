@@ -18,6 +18,31 @@ class PagesController extends \app\core\Controller
 		
 	}
 
+	public function actionGirls()
+	{
+		$this->_params['title'] = 'MädchenToys';
+		$this->_params['bigHeader'] = true;
+		
+	}
+	public function actionBoys()
+	{
+		$this->_params['title'] = 'JungsToys';
+		$this->_params['bigHeader'] = true;
+		
+	}
+	public function actionConsole()
+	{
+		$this->_params['title'] = 'ConsoleToys';
+		$this->_params['bigHeader'] = true;
+		
+	}
+	public function actionAccount()
+	{
+		$this->_params['title'] = 'Mein Konto';
+		$this->_params['bigHeader'] = true;
+		
+	}
+
 	public function actionImprint()
 	{
 		$this->_params['title'] = 'Impressum';

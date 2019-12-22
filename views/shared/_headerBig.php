@@ -3,6 +3,8 @@
 <ul class="icons">
     <li> <img id="Warenkorb" src="assets/images/shopping-cart.png" alt="Warenkorb"></li>
     <?php if(isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) : ?>
+        <li><a href= "index.php?a=account" ><img src="assets/images/Account_verwaltung.png" alt="Account"></a></li>
+
     <form id="logoutButton"  action="<?=$_SERVER['PHP_SELF'].'?a=logout';?>" method="Post">
       <li><input type="submit" id="logout"  name="logout" value="abmelden"></li>
     </form> 
@@ -37,7 +39,7 @@
                 </a>
             </li>
             <li>
-                <a href="index.php?a=index">
+                <a href="index.php?a=boys">
                     <figure class="single">
                         <img src="assets/images/boyIcon.png"  alt="Jungen Bild">
                         <figcaption>JUNGEN</figcaption>
@@ -45,15 +47,15 @@
                 </a>
             </li>
             <li>
-                <a href="index.php?a=index">
+                <a href="index.php?a=girls">
                     <figure class="single">
-                        <img src="assets/images/iconGirl.png"  alt="Mädchen Bild">
+                       <img src="assets/images/iconGirl.png"  alt="Mädchen Bild">
                         <figcaption>MÄDCHEN</figcaption>
                     </figure>
                 </a>
             </li>
             <li>
-                <a href="index.php?a=index">
+                <a href="index.php?a=console">
                     <figure class="single">
                         <img src="assets/images/iconController.png"  alt="Konsolen Bild">
                         <figcaption>KONSOLEN</figcaption>
@@ -61,7 +63,7 @@
                 </a>
             </li>
             <li>
-                <a href="index.php?a=index">
+                <a href="index.php?a=account">
                     <figure class="single">
                         <img src="assets/images/headIcon.png"  alt="Konto Bild">
                         <figcaption>KONTO</figcaption>

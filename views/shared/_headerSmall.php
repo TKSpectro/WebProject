@@ -2,7 +2,8 @@
     <ul class="icons">
     <li> <img id="Warenkorb" src="assets/images/shopping-cart.png" alt="Warenkorb"></li>
     <?php if(isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) : ?>
-     
+      <li><a href= "index.php?a=account" ><img src="assets/images/Account_verwaltung.png" alt="Account"></a></li>
+
     <form id="logoutButton"  action="<?=$_SERVER['PHP_SELF'].'?a=logout';?>" method="Post">
       <li><input type="submit" id="logout"  name="logout" value="abmelden"></li>
     </form> 
