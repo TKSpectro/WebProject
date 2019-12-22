@@ -5,10 +5,13 @@
     <figcaption>Kunden Login</figcaption>
     </figure>
     <fieldset class="login_fieldset"><legend>E-Mail</legend>
-    <input class= "login_input" type="email" name="email"></fieldset>
+    <input type="email" name="email"
+    <?=isset($_POST['email'])?  'value="'.htmlspecialchars($_POST['email']).'"' :'' ?>></fieldset>
     <fieldset class="login_fieldset"><legend>Password</legend>
-    <input type="password" name="password"></fieldset>
-    <input type="checkbox" name="rememberMe"> <label for="rememberMe">Meine ID Speichern </label>
+    <input type="password" name="password"
+    <?=isset($_POST['password'])?  'value="'.htmlspecialchars($_POST['password']).'"' :'' ?>></fieldset>
+    <input type="checkbox" name="rememberMe"
+    <?=isset($_POST['rememberMe'])?  'checked' : '' ?>> <label for="rememberMe">Meine ID Speichern </label>
      <a id="kontoErstellenlink" href= "index.php?a=formular">Noch kein Konto?</a>
     <input type="submit"  name="submit" value="anmelden">   
   </form> 
