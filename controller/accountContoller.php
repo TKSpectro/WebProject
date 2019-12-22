@@ -53,27 +53,25 @@ if(isset($_POST['sendAccount']))
             $account = new Account($params);
             $error;
             $account->insert($error);
-       
+          
           
         }
     
-            else 
+        else 
+        {
+        $error = 'Ihre Eingabe dürfen keine der folgenden Sonderzeichen beinhalten :<br>';
+            foreach($check as $checkValue)
             {
-            $error = 'Ihre Eingabe dürfen keine der folgenden Sonderzeichen beinhalten :<br>';
-                foreach($check as $checkValue)
-                {
-                    $error .= ' '. $checkValue . ' ';
-                } 
-            }
+                $error .= ' '. $checkValue . ' ';
+            } 
+        }
     }
     else
         {
          $error = 'Alle Felder müssen ausgefüllt sein';
  
         }
-
-        
-
+       
 } 
 
 ?>

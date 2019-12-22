@@ -1,3 +1,4 @@
+
 <!--
 <form  action="<?#$_SERVER['PHP_SELF']?>" method="Post"> 
     <table width=50% style = "float:right;">
@@ -38,7 +39,7 @@
 
     
 <figure>
-    <img src="assert/photos/Account_verwaltung2.png"  alt="Account_verwaltung Bild">
+    <img src="assets/images/Account_verwaltung2.png"  alt="Account_verwaltung Bild">
     <figcaption>Benutzerkonto Erstellen</figcaption>
     </figure>
 
@@ -71,5 +72,7 @@
 
 <input type="submit"  name="sendAccount" value="Regestrieren">
 </form>  
+
 </div>
+
 </body>

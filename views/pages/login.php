@@ -1,7 +1,7 @@
 <div class="login">
   <form  method="POST">
     <figure >
-    <img src="assert/photos/Account_verwaltung2.png"  alt="Account_verwaltung Bild">
+    <img src="assets/images/Account_verwaltung2.png"  alt="Account_verwaltung Bild">
     <figcaption>Kunden Login</figcaption>
     </figure>
     <fieldset class="login_fieldset"><legend>E-Mail</legend>

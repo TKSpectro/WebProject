@@ -1,5 +1,5 @@
 body {
-    background-image: url("../photos/background.png");
+    background-color: red;
     background-size: auto;
     margin: 0;
     padding: 0;
@@ -31,7 +31,6 @@ div.search {
     padding: 0px;
     width: 18%;
     margin: 0.5em 1.5em;
-    ;
 }
 
 #searchIcon {
@@ -40,6 +39,13 @@ div.search {
     width: 2em;
     height: 2em;
     float: right;
+}
+
+.test {
+    float: right;
+    font-size: 23px;
+    color: #E9BA65;
+    background-color: red;
 }
 
 #suchword {
@@ -128,7 +134,8 @@ input {
     border: solid 1px #96C1C5;
     color: #96C1C5;
     font-weight: bold;
-    padding: 15px 0px;
+    padding: 10px 0px;
+    font-size: 27px;
 }
 
 input[type="checkbox"] {
@@ -197,5 +204,3 @@ nav ul li img {
         font-size: 17px;
     }
 }
-
-s

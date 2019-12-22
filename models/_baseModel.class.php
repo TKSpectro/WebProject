@@ -19,8 +19,6 @@ abstract class BaseModel
         {
             if (isset($params[$key]))
             {
-              
-                
                 $this->{$key} = $params[$key];
             }
             else
@@ -74,13 +72,10 @@ abstract class BaseModel
             
             foreach ($this->schema as $key => $schemaOptions)
             {
-                
-                
                 $sql .= '`' . $key . '`,';
 
                 if ($this->data[$key] === null)
                 {
-                    #echo 'hallo 3 <br>';
                     $valueString .= 'NULL,';
                 }
                 else

@@ -35,6 +35,9 @@ class PagesController extends \app\core\Controller
 	
 	public function actionLogin()
 	{
+		$this->_params['title'] = 'Login';
+		$this->_params['bigHeader'] = true;
+		
 		if(!isset($_SESSION['loggedIn']) || $_SESSION['loggedIn'] === false)
 		{
 			if(isset($_POST['submit']))

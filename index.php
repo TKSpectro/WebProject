@@ -11,14 +11,8 @@ require_once 'init/20_imports.php';
 
 $controllerName = $_GET['c'] ?? 'pages';
 
-/*if(isset($_GET['f']))
-{
-	$actionName = $_GET['f'];
-}
 
-else {*/
 $actionName = $_GET['a'] ?? 'index';
-#}
 
 
 
@@ -29,7 +23,7 @@ if(file_exists($controllerPath))
 	require_once $controllerPath;
 
 	$controllerClassName = '\\app\\controller\\'.ucfirst($controllerName).'Controller';
-	#echo $controllerClassName.'<br>';
+	
 
 	if(class_exists($controllerClassName))
 	{

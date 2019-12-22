@@ -2,9 +2,9 @@
 
 
 <ul class="iamlogo">
-<li><a href="index.php"><img id="logo" src="assert/photos/Logo.png" alt="Toyplanet_logo"></a>
+<li><a href="index.php"><img id="logo" src="assets/images/Logo.png" alt="Toyplanet_logo"></a>
 <li><div class="search">
-<img id="searchIcon"  src="assert/photos/search_icon.png" alt="searchIcon">
+<img id="searchIcon"  src="assets/images/search_icon.png" alt="searchIcon">
 <input id="suchword" type="text" placeholder="Search">
 </div></li>
 </ul> 
