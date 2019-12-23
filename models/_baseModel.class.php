@@ -99,7 +99,7 @@ abstract class BaseModel
         return false;
     }
 
-    protected function update(&$errors)
+    public function update(&$errors)
     {
         $db = $GLOBALS['db'];
 
@@ -115,7 +115,7 @@ abstract class BaseModel
             }
 
             $sql = trim($sql, ',');
-            $sql .= ' WHERE id = ' . $this->data['id'];
+            $sql .= ' WHERE accountID = ' . $_SESSION['accountID'];
 
             $statement = $db->prepare($sql);
             $statement->execute();

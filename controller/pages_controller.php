@@ -41,6 +41,8 @@ class PagesController extends \app\core\Controller
 		$this->_params['title'] = 'Mein Konto';
 		$this->_params['bigHeader'] = true;
 		
+		$this->_params['accounts'] = \app\models\Account::find('accountID = "'.$_SESSION['accountID']. '"'); 
+		
 	}
 
 	public function actionImprint()
@@ -81,6 +83,7 @@ class PagesController extends \app\core\Controller
 					if(password_verify($password, $where['0']['passwordHash']))
 					{
 						$_SESSION['loggedIn'] = true;
+						$_SESSION['accountID']=$where['0']['accountID'];
 						if(isset($_POST['rememberMe']))
 						{
 							rememberMe($where['0']['email'],$password);
