@@ -20,19 +20,19 @@ class PagesController extends \app\core\Controller
 
 	public function actionGirls()
 	{
-		$this->_params['title'] = 'MädchenToys';
+		$this->_params['title'] = 'Mädchen-Toys';
 		$this->_params['bigHeader'] = true;
 		
 	}
 	public function actionBoys()
 	{
-		$this->_params['title'] = 'JungsToys';
+		$this->_params['title'] = 'Jungs-Toys';
 		$this->_params['bigHeader'] = true;
 		
 	}
 	public function actionConsole()
 	{
-		$this->_params['title'] = 'ConsoleToys';
+		$this->_params['title'] = 'Konsolespiele';
 		$this->_params['bigHeader'] = true;
 		
 	}

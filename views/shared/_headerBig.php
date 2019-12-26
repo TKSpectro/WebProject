@@ -63,11 +63,19 @@
                 </a>
             </li>
             <li>
+            <?php if(isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) : ?>
                 <a href="index.php?a=account">
                     <figure class="single">
                         <img src="assets/images/headIcon.png"  alt="Konto Bild">
                         <figcaption>KONTO</figcaption>
                     </figure>
+            <?php else :?>
+                <a href="index.php?a=login">
+                    <figure class="single">
+                        <img src="assets/images/headIcon.png"  alt="Konto Bild">
+                        <figcaption>KONTO</figcaption>
+                    </figure>
+                    <?php endif; ?>
                 </a>
             </li>
             <li>
