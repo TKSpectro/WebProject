@@ -185,17 +185,8 @@ div figcaption {
     margin: 4% 10%;
 }
 
-figure {
-    margin: 0;
-}
 
-figure.einzel {
-    display: inline-block;
-    padding: 10px;
-    width: 33%;
-    border: 1px solid gainsboro;
-}
-
+<<<<<<< HEAD
 nav {
     width: 100%;
 }
@@ -233,12 +224,8 @@ nav ul li img {
     height: 100%;
     width: 300px;
     position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
     background-color: #111;
-    overflow-x: hidden;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .sidenav a {
@@ -253,11 +240,14 @@ nav ul li img {
     color: #f1f1f1;
 }
 
-.main {
-    margin-left: 300px; /* Same as the width of the sidenav */
-}
-
 @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
 }
+=======
+
+>>>>>>> 16fbbd70d7e9843b7d62057c758ac4c7a0a0e11a
