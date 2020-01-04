@@ -186,4 +186,7 @@ div figcaption {
 }
 
 
-
+/*Import other css files*/
+@import url('productList.css');
+@import url('topNav.css');
+@import url('sideNav.css');
