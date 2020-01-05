@@ -45,15 +45,6 @@ class PagesController extends \app\core\Controller
 //
 //	}
 
-<<<<<<< HEAD
-    
-=======
-    public function actionProducts()
-    {
-        $this->_params['title'] = 'Produkte';
-        $this->_params['bigHeader'] = true;
-    }
->>>>>>> b2e4ed5a1fd1555bd19a58ed1470e5fca7a9a58e
 
 	public function actionAccount()
 	{
