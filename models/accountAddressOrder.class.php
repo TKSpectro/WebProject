@@ -13,7 +13,7 @@ class AccountAddress extends BaseModel
         'updatedAt'  	=> ['type' => BaseModel::TYPE_STRING],
         'orderID'    	=> ['type' => BaseModel::TYPE_INT],
         'accountID'     => ['type' => BaseModel::TYPE_INT],
-        'addressID'     => ['type' => BaseModel::TYPE_INT],
+        'addressID'     => ['type' => BaseModel::TYPE_INT]
     ];
 }
 

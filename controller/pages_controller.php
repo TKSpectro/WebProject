@@ -43,7 +43,7 @@ class PagesController extends \app\core\Controller
         $this->_params['title'] = 'Produkte';
         $this->_params['bigHeader'] = true;
     }
-    
+
 	public function actionAccount()
 	{
 		$this->_params['title'] = 'Mein Konto';
