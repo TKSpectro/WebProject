@@ -185,9 +185,17 @@ div figcaption {
     margin: 4% 10%;
 }
 
+figure {
+    margin: 0;
+}
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+figure.einzel {
+    display: inline-block;
+    padding: 10px;
+    width: 33%;
+    border: 1px solid gainsboro;
+}
+
 nav {
     width: 100%;
 }
@@ -241,6 +249,11 @@ nav ul li img {
     color: #f1f1f1;
 }
 
+.main {
+    margin-left: 300px;
+    /* Same as the width of the sidenav */
+}
+
 @media screen and (max-height: 450px) {
     .sidenav {
         padding-top: 15px;
@@ -249,9 +262,3 @@ nav ul li img {
         font-size: 18px;
     }
 }
-=======
-
->>>>>>> 16fbbd70d7e9843b7d62057c758ac4c7a0a0e11a
-=======
-
->>>>>>> 16fbbd70d7e9843b7d62057c758ac4c7a0a0e11a
