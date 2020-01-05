@@ -1,6 +1,8 @@
 <?php
 
 namespace app\controller;
+use app\models\product;
+use app\models\prodCat;
 class PagesController extends \app\core\Controller
 {
 	public function actionIndex()
@@ -36,12 +38,14 @@ class PagesController extends \app\core\Controller
 //
 //	}
 
-    public function actionProducts(){
+    public function actionProducts()
+    {
         $this->_params['title'] = 'Produkte';
         $this->_params['bigHeader'] = true;
-        $this->_params['products'] = \app\models\product::find();
-        $this->_params['prodCats'] = \app\models\prodCat::find();
+        //$this->_params['product'] = product::find();
+        //$this->_params['prodCat'] = prodCat::find();
     }
+
 	public function actionAccount()
 	{
 		$this->_params['title'] = 'Mein Konto';
