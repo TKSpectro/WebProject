@@ -1,7 +1,5 @@
 <?php
 ?>
-
-
 <div class="productList">
     <div class="row">
         <div class="column">
