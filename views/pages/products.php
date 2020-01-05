@@ -1,8 +1,6 @@
 <?php
 namespace app\models;
-
-$allProducts = Product::find();
-var_dump($allProducts);
+var_dump($product);
 ?>
 <div class="productList">
     <div class="row">
