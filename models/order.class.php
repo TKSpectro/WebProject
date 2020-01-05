@@ -13,7 +13,7 @@ class Order extends BaseModel
         'updatedAt'    	=> ['type' => BaseModel::TYPE_DATE],
         'orderDate'  	=> ['type' => BaseModel::TYPE_DATE],
         'shipDate'  	=> ['type' => BaseModel::TYPE_DATE],
-        'sum'       	=> ['type' => BaseModel::TYPE_FLOAT],
+        'sum'       	=> ['type' => BaseModel::TYPE_FLOAT]
     ];
 }
 

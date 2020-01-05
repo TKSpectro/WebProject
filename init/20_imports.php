@@ -12,6 +12,8 @@ require_once 'core/controller.php';
 require_once 'models/_baseModel.class.php';
 require_once 'models/account.class.php';
 require_once 'models/address.class.php';
+require_once 'models/product.class.php';
+
 
 require_once 'controller/addressController.php';
 require_once 'controller/accountContoller.php';

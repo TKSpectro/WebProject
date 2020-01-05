@@ -14,7 +14,7 @@ class OrderItem extends BaseModel
         'actPrice'		=> ['type' => BaseModel::TYPE_FLOAT],
         'qty'    		=> ['type' => BaseModel::TYPE_INT],
         'orderID'       => ['type' => BaseModel::TYPE_INT],
-        'prodID' 		=> ['type' => BaseModel::TYPE_INT],
+        'prodID' 		=> ['type' => BaseModel::TYPE_INT]
     ];
 }
 

@@ -1,5 +1,6 @@
 <?php
-use app\models\product as Product;
+namespace app\models;
+
 $allProducts = Product::find();
 var_dump($allProducts);
 ?>

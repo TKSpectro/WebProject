@@ -1,8 +1,7 @@
 <?php
 
 namespace app\controller;
-use app\models\product;
-use app\models\prodCat;
+
 class PagesController extends \app\core\Controller
 {
 	public function actionIndex()
@@ -12,6 +11,14 @@ class PagesController extends \app\core\Controller
 		$this->_params['accounts'] = \app\models\Account::find(); 
 		
 	}
+
+	public function actionProducts()
+    {
+        $this->_params['title'] = 'Produkte';
+        $this->_params['bigHeader'] = true;
+        $this->_params['product'] = \app\models\Product::find();
+	}
+	
 	public function actionFormular()
 	{
 		$this->_params['title'] = 'Formular';
@@ -38,19 +45,16 @@ class PagesController extends \app\core\Controller
 //
 //	}
 
+<<<<<<< HEAD
+    
+=======
     public function actionProducts()
     {
         $this->_params['title'] = 'Produkte';
         $this->_params['bigHeader'] = true;
-<<<<<<< HEAD
-	}
-	
-=======
-        //$this->_params['product'] = product::find();
-        //$this->_params['prodCat'] = prodCat::find();
     }
+>>>>>>> b2e4ed5a1fd1555bd19a58ed1470e5fca7a9a58e
 
->>>>>>> 5d4e8b825fb844b8940e364fde688f10844d0e57
 	public function actionAccount()
 	{
 		$this->_params['title'] = 'Mein Konto';
