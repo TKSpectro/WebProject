@@ -42,15 +42,8 @@ class PagesController extends \app\core\Controller
     {
         $this->_params['title'] = 'Produkte';
         $this->_params['bigHeader'] = true;
-<<<<<<< HEAD
-	}
-	
-=======
-        //$this->_params['product'] = product::find();
-        //$this->_params['prodCat'] = prodCat::find();
     }
-
->>>>>>> 5d4e8b825fb844b8940e364fde688f10844d0e57
+    
 	public function actionAccount()
 	{
 		$this->_params['title'] = 'Mein Konto';
