@@ -17,7 +17,7 @@
 	<?php else : ?>
 		<?php include __DIR__.'/shared/_headerBig.php'; ?>
 	<?php endif; ?>
-    <?php if(isset($products)){
+    <?php if(isset($_GET['type'])){
         include __DIR__.'/shared/_sideNav.php';}
         ?>
 <main>
