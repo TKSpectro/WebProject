@@ -1,14 +1,6 @@
-<body>
 <div class="sidenav">
-    <?php
-
-    use app\models\Product;
-
-//    $prodCat = new Product();
-//    foreach ($prodCat->find() as &$value)
-//    {
-//        print_r($value);
-//    }
-    ?>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
 </div>
-</body>
