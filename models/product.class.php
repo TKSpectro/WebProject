@@ -9,7 +9,11 @@ class Product extends BaseModel
 
     protected $schema = [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'prodID'       => ['type' => BaseModel::TYPE_INT],
+=======
+        'prodID'    => ['type' => BaseModel::TYPE_INT],
+>>>>>>> b2e4ed5a1fd1555bd19a58ed1470e5fca7a9a58e
 =======
         'prodID'    => ['type' => BaseModel::TYPE_INT],
 >>>>>>> b2e4ed5a1fd1555bd19a58ed1470e5fca7a9a58e
