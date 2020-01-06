@@ -1,5 +1,6 @@
 <?php
 namespace app\models;
+$productCounter = 0;
 ?>
 <div class="productList">
         <?php foreach ($product as $prod)
