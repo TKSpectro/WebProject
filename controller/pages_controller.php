@@ -14,7 +14,7 @@ class PagesController extends \app\core\Controller
 
 	public function actionProducts()
     {
-        $this->_params['title'] = 'Produkte';
+        $this->_params['title'] = $_GET['type'];
         $this->_params['bigHeader'] = true;
         $this->_params['product'] = \app\models\Product::find();
 	}
