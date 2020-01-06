@@ -4,17 +4,18 @@
 
 .column {
     float: right;
-    width: 18%;
+    width: 25%;
     padding: 0 10px;
+    margin-bottom: 20px;
 }
 
 .row {
-    margin: 0 -5px;
+    margin: 0 20px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     .column {
-        width: 60%;
+        width: 90%;
         display: block;
         margin-bottom: 20px;
     }
