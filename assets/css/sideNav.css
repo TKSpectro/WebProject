@@ -2,7 +2,7 @@
     box-sizing: border-box;
     height: 100%;
     width: 300px;
-    background-color: #111;
+    background-color: red;
     overflow-x: hidden;
     padding-top: 20px;
 }

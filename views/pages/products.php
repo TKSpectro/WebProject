@@ -1,6 +1,5 @@
 <?php
 namespace app\models;
-var_dump($product);
 ?>
 <div class="productList">
     <div class="row">

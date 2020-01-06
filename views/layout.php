@@ -19,9 +19,11 @@
 	<?php endif; ?>
    
 <main>
+<div>
 		<?php if(isset($_GET['type'])){
         include __DIR__.'/shared/_sideNav.php';}
         ?>
+		</div>
 	<?= $body?>
 </main>
 

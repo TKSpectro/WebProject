@@ -29,7 +29,7 @@
                 </a>
             </li>
             <li>
-                <a href="index.php?a=products&type=boy">
+                <a href="index.php?a=products&type=Jungs-Toys">
                     <figure class="single">
                         <img src="assets/images/boyIcon.png"  alt="Jungen Bild">
                         <figcaption>JUNGEN</figcaption>
@@ -37,7 +37,7 @@
                 </a>
             </li>
             <li>
-                <a href="index.php?a=products&type=girl">
+                <a href="index.php?a=products&type=Mädchen-Toys">
                     <figure class="single">
                        <img src="assets/images/iconGirl.png"  alt="Mädchen Bild">
                         <figcaption>MÄDCHEN</figcaption>
@@ -45,7 +45,7 @@
                 </a>
             </li>
             <li>
-                <a href="index.php?a=products&type=console">
+                <a href="index.php?a=products&type=Konsolespiele">
                     <figure class="single">
                         <img src="assets/images/iconController.png"  alt="Konsolen Bild">
                         <figcaption>KONSOLEN</figcaption>
