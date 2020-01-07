@@ -1,3 +1,8 @@
+.topNav {
+    border-bottom: 2px solid #C38D8B;
+    padding-bottom: 10px;
+}
+
 figure {
     margin: 0;
 }

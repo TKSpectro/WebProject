@@ -1,5 +1,4 @@
-<header class="big">
-    <nav>
+<nav class="topNav">
         <ul>
 
             <li>
@@ -38,5 +37,5 @@
             </li>
         </ul>
     </nav>
-</header>
+
    
