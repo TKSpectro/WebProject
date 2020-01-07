@@ -1,4 +1,4 @@
-<header class="header">
+<header >
   <ul class="icons">
   <li> <img id="Warenkorb" src="assets/images/shopping-cart.png" alt="Warenkorb"></li>
 
@@ -11,7 +11,6 @@
   <?php else :?>
   <li><a href= "index.php?a=login" ><img src="assets/images/Account_verwaltung.png" alt="Account"></a></li>
   <?php endif; ?>
-
   </ul> 
 
   <ul>

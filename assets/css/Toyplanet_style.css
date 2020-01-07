@@ -6,6 +6,10 @@ body {
     box-sizing: border-box;
 }
 
+header {
+    margin-bottom: 1em;
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -132,9 +136,9 @@ div img {
 
 .iamform {
     border-radius: 5px;
-    color: #96C1C5;
-    font-size: 18px;
-    background-color: rgba(183, 88, 91, 0.17);
+    color: rgb(108, 182, 189);
+    font-size: 21px;
+    background-color: rgba(183, 88, 91, 0.25);
 }
 
 #kontoErstellenlink {

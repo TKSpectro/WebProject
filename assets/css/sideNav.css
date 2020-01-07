@@ -11,12 +11,12 @@
     padding: 12px;
     text-decoration: none;
     font-size: 21px;
-    color: #818181;
+    color: rgb(195, 123, 121);
     display: block;
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: #90B3B6;
 }
 
 @media screen and (max-height: 450px) {
@@ -26,4 +26,16 @@
     .sidenav a {
         font-size: 18px;
     }
+}
+
+.overCat a {
+    margin-left: 8px;
+    padding-bottom: 3px;
+    color: #E9BA65;
+    font-size: 25px;
+    border-bottom: 2px solid rgb(195, 123, 121);
+}
+
+.overCat a:hover {
+    color: rgb(108, 182, 189);
 }
