@@ -9,6 +9,27 @@ figure.einzel {
     border: 1px solid gainsboro;
 }
 
+.single figcaption {
+    font-size: 20px;
+}
+
+.single figcaption#junge {
+    color: rgb(65, 164, 173);
+    ;
+}
+
+.single figcaption#mädchen {
+    color: rgb(170, 65, 61);
+}
+
+.single figcaption#konsole {
+    color: rgb(247, 183, 65);
+}
+
+.single figcaption#überUns {
+    color: rgb(52, 146, 134);
+}
+
 nav {
     width: 100%;
 }
