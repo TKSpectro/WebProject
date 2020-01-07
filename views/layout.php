@@ -14,7 +14,11 @@
 <body>
 <?php
 include __DIR__ . '/shared/headerSmall.php';
-include __DIR__ . '/shared/topNav.php'; ?>
+if (isset($_GET['a']))
+{
+    include __DIR__ . '/shared/topNav.php';
+}
+?>
 
 <div class="contentCon">
     <?php if (isset($_GET['type']))
