@@ -18,16 +18,12 @@
 		<?php include __DIR__.'/shared/_headerBig.php'; ?>
 	<?php endif; ?>
    
-<main>
-<div>
-		<?php if(isset($_GET['type'])){
-        include __DIR__.'/shared/_sideNav.php';}
-        ?>
-		</div>
-	<?= $body?>
+<div class="contentCon">
+<?php if(isset($_GET['type']))
+{include __DIR__.'/shared/_sideNav.php';}?>
+<?= $body?>
 </main>
-
-	<footer></footer>
+<footer></footer>
 </body>
 </html>
 	

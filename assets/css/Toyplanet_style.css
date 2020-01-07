@@ -112,6 +112,12 @@ ul.icons img {
     border-color: #C38D8B;
 }
 
+.contentCon {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+}
+
 div.formular {
     width: 45%;
     margin: auto;

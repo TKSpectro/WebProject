@@ -16,7 +16,8 @@ class PagesController extends \app\core\Controller
     {
         $this->_params['title'] = $_GET['type'];
         $this->_params['bigHeader'] = true;
-        $this->_params['product'] = \app\models\Product::find();
+		$this->_params['product'] = \app\models\Product::find();
+
 	}
 	
 	public function actionFormular()

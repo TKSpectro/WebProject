@@ -1,6 +1,7 @@
+<?php 
+namespace app\models; ?>
 <div class="sidenav">
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
+<?php foreach(ProdCat::find() as $rows):?>
+<a href="#"><?php echo $rows['descrip'];?></a>
+<?endforeach;?>
 </div>

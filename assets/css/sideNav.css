@@ -1,27 +1,23 @@
 .sidenav {
-    box-sizing: border-box;
+    float: left;
     height: 100%;
-    width: 20%;
+    width: 200px;
     background-color: red;
     overflow-x: hidden;
     padding-top: 20px;
+    margin: 0em;
 }
 
 .sidenav a {
-    padding: 6px 6px 6px 32px;
+    padding: 12px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 21px;
     color: #818181;
     display: block;
 }
 
 .sidenav a:hover {
     color: #f1f1f1;
-}
-
-.main {
-    margin-left: 300px;
-    /* Same as the width of the sidenav */
 }
 
 @media screen and (max-height: 450px) {

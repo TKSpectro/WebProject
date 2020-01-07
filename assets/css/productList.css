@@ -1,16 +1,15 @@
 .productList {
-    box-sizing: border-box;
+    width: 100%;
+    float: right;
+    background-color: green;
+    padding-left: 50px;
 }
 
 .column {
-    float: right;
-    width: 25%;
-    padding: 0 10px;
-    margin-bottom: 20px;
-}
-
-.row {
-    margin: 0 20px;
+    float: left;
+    width: 29%;
+    padding: 1.1%;
+    margin: 1%;
 }
 
 @media screen and (max-width: 900px) {
