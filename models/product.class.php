@@ -14,7 +14,8 @@ class Product extends BaseModel
         'updatedAt'    => ['type' => BaseModel::TYPE_STRING],
         'descrip'      => ['type' => BaseModel::TYPE_STRING],
         'stdPrice'     => ['type' => BaseModel::TYPE_FLOAT],
-        'prodCatID'        => ['type' => BaseModel::TYPE_INT]
+        'photo'        => ['type' => BaseModel::TYPE_STRING],
+        'prodCatID'    => ['type' => BaseModel::TYPE_INT]
     ];
 }
 
