@@ -16,16 +16,26 @@
 include __DIR__ . '/shared/headerSmall.php';
 if (isset($_GET['a']))
 {
-    include __DIR__ . '/shared/topNav.php';
-}
+include __DIR__ . '/shared/topNav.php';
 ?>
-
 <div class="contentCon">
     <?php if (isset($_GET['type']))
     {
         include __DIR__ . '/shared/sideNav.php';
     } ?>
-    <?= $body ?>
+    <?= $body;
+    }
+    else
+    {
+        if (isset($_GET['type']))
+        {
+            include __DIR__ . '/shared/sideNav.php';
+        } ?>
+        <?= $body;
+    }
+    ?>
+
+
     </main>
     <footer></footer>
 </body>
