@@ -4,13 +4,30 @@ $productCounter = 0;
 ?>
 <div class="productList">
 <ul>
-<?php if(isset($_GET['prodCat'])) 
+
+<?php if(isset($_GET['cat'])) 
+{
+    foreach (ProdCat::find( 'catID = "'. $_GET['cat']. '"' ) as $prodCat)
+    {
+        foreach (Product::find( 'prodCatID = "'. $prodCat['prodCatID']. '"' ) as $prod):?>
+        
+        <div class="column">
+        <li><div class="card">
+        <h3><?= $prodCat['prodCatID']?></h3>
+        <p><?= $prodCat['descrip'] ?></p>
+        <p><?= $prod['stdPrice'] ?>€</p>
+</div></li>
+</div> 
+    <?endforeach; }?>
+
+<?php } 
+elseif(isset($_GET['prodCat'])) 
 {foreach (Product::find( 'prodCatID = "'. $_GET['prodCat']. '"' ) as $prod):?>
 <div class="column">
     <li><div class="card">
-        <h3><?= htmlspecialchars($prod['prodID']) ?></h3>
-        <p><?= htmlspecialchars($prod['descrip']) ?></p>
-        <p><?= htmlspecialchars($prod['stdPrice']) ?>€</p>
+        <h3><?= $prod['prodID'] ?></h3>
+        <p><?= $prod['descrip'] ?></p>
+        <p><?= $prod['stdPrice'] ?>€</p>
 </div></li>
 </div> 
     <?endforeach; ?>
@@ -19,9 +36,9 @@ $productCounter = 0;
     { foreach ($product as $prod):?>
     <div class="column">
         <li><div class="card">
-            <h3><?= htmlspecialchars($prod['prodID']) ?></h3>
-            <p><?= htmlspecialchars($prod['descrip']) ?></p>
-            <p><?= htmlspecialchars($prod['stdPrice']) ?>€</p>
+            <h3><?= $prod['prodID'] ?></h3>
+            <p><?= $prod['descrip'] ?></p>
+            <p><?= $prod['stdPrice'] ?>€</p>
     </div></li>
 </div> 
     <?endforeach; }?>
