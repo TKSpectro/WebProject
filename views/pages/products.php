@@ -12,6 +12,7 @@ $productCounter = 0;
     foreach (Product::find( 'prodCatID = "'. $prodCat['prodCatID']. '"' ) as $prod):?> 
     <div class="column">
         <li><div class="card">
+        <img  src="<?=$prod['photo']?>" alt="produckt">
         <h3><?= $prod['prodCatID']?></h3>
         <p><?= $prod['descrip'] ?></p>
         <p><?= $prod['stdPrice'] ?>€</p>
@@ -24,6 +25,7 @@ elseif(isset($_GET['prodCat']))
 {foreach (Product::find( 'prodCatID = "'. $_GET['prodCat']. '"' ) as $prod):?>
 <div class="column">
     <li><div class="card">
+    <img  src="<?=$prod['photo']?>" alt="produckt">
         <h3><?= $prod['prodID'] ?></h3>
         <p><?= $prod['descrip'] ?></p>
         <p><?= $prod['stdPrice'] ?>€</p>
