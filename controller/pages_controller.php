@@ -15,7 +15,7 @@ class PagesController extends \app\core\Controller
 	public function actionProducts()
     {
         $this->_params['title'] = $_GET['type'];
-        $this->_params['bigHeader'] = true;
+        $this->_params['smallHeader'] = true;
 		$this->_params['product'] = \app\models\Product::find();
 
 	}
@@ -26,26 +26,6 @@ class PagesController extends \app\core\Controller
 		$this->_params['bigHeader'] = true;
 		
 	}
-//Get replaced by Products
-//	public function actionGirls()
-//	{
-//		$this->_params['title'] = 'Mädchen-Toys';
-//		$this->_params['bigHeader'] = true;
-//
-//	}
-//	public function actionBoys()
-//	{
-//		$this->_params['title'] = 'Jungs-Toys';
-//		$this->_params['bigHeader'] = true;
-//
-//	}
-//	public function actionConsole()
-//	{
-//		$this->_params['title'] = 'Konsolespiele';
-//		$this->_params['bigHeader'] = true;
-//
-//	}
-
 
 	public function actionAccount()
 	{
