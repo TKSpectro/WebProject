@@ -1,4 +1,4 @@
-<header class="small">
+<header class="header">
   <ul class="icons">
   <li> <img id="Warenkorb" src="assets/images/shopping-cart.png" alt="Warenkorb"></li>
 

@@ -13,7 +13,7 @@
 
 <body>
 <?php
-include __DIR__ . '/shared/headerSmall.php';
+include __DIR__ . '/shared/header.php';
 if (isset($_GET['a']))
 {
 include __DIR__ . '/shared/topNav.php';
