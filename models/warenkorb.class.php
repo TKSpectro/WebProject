@@ -5,7 +5,7 @@ namespace app\models;
 
 class Warenkorb extends BaseModel
 {
-    const TABLENAME = '`product`';
+    const TABLENAME = '`warenkorb`';
 
     protected $schema = [
        
