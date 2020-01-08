@@ -1,6 +1,7 @@
 
-<form  action=""  methode="GET">
-<input type="submit" name="addButton" > </form>
+
+<input type="text">
+<input type="submit" name="addButton" >
 <?php if(isset($_GET['addButton']))
     {echo 'huhuhuhu';}
     else

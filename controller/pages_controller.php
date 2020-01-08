@@ -67,7 +67,7 @@ class PagesController extends \app\core\Controller
 
 		if(!isset($_SESSION['loggedIn']) || $_SESSION['loggedIn'] === false)
 		{
-			if(isset($_POST['submit']))
+			if(isset($_POST['login']))
 			{
 				$email    = isset($_POST['email'])? $_POST['email'] :'';
 				$password = isset($_POST['password']) ? $_POST['password']: '';

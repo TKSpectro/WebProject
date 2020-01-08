@@ -42,6 +42,8 @@ elseif(isset($_GET['prodCat']))
             <h3><?= $prod['prodID'] ?></h3>
             <p><?= $prod['descrip'] ?></p>
             <p><?= $prod['stdPrice'] ?>€</p>
+            <form  action="" >
+            <input type="submit" value="Add To Warnkorb" > </form>
     </div></li>
 </div> 
 <?endforeach; }?>

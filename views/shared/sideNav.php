@@ -1,7 +1,6 @@
 <?php 
 namespace app\models; ?>
 <div class="sidenav">
-
 <?php foreach(Cat::find() as $overCat):?> 
 <div class="overCat">
 <a href="index.php?a=products&type=Jungs-Toys&cat=<?=$overCat['catID'] ?>"><?=$overCat['descrip'];?></a>
