@@ -7,7 +7,7 @@ class PagesController extends \app\core\Controller
 	public function actionIndex()
 	{
 		$this->_params['title'] = 'Startseite';
-		$this->_params['smallHeader'] = true;
+		$this->_params['Header'] = true;
 		$this->_params['accounts'] = \app\models\Account::find(); 
 		
 	}
@@ -15,22 +15,29 @@ class PagesController extends \app\core\Controller
 	public function actionProducts()
     {
         $this->_params['title'] = $_GET['type'];
-        $this->_params['smallHeader'] = true;
+        $this->_params['Header'] = true;
 		$this->_params['product'] = \app\models\Product::find();
+
+	}
+	public function actionWarenkorb()
+    {
+        $this->_params['title'] = 'Warenkorb';
+        $this->_params['Header'] = true;
+		$this->_params['product'] = \app\models\Warenkorb::find();
 
 	}
 	
 	public function actionFormular()
 	{
 		$this->_params['title'] = 'Formular';
-		$this->_params['bigHeader'] = true;
+		$this->_params['Header'] = true;
 		
 	}
 
 	public function actionAccount()
 	{
 		$this->_params['title'] = 'Mein Konto';
-		$this->_params['bigHeader'] = true;
+		$this->_params['Header'] = true;
 		
 		$this->_params['accounts'] = \app\models\Account::find('accountID = "'.$_SESSION['accountID']. '"'); 
 		
@@ -39,7 +46,7 @@ class PagesController extends \app\core\Controller
 	public function actionImprint()
 	{
 		$this->_params['title'] = 'Impressum';
-		$this->_params['smallHeader'] = true;
+		$this->_params['Header'] = true;
 	}
 
 	public function actionSubscribe()
@@ -54,7 +61,7 @@ class PagesController extends \app\core\Controller
 	public function actionLogin($rememberMe= false)
 	{
 		$this->_params['title'] = 'Login';
-		$this->_params['bigHeader'] = true;
+		$this->_params['Header'] = true;
 		
 	
 
