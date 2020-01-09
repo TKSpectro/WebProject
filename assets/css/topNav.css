@@ -7,7 +7,7 @@ body{
 
 .navbar{
     overflow: hidden;
-    background-color: rgba(183, 88, 91, 0.5);
+    background-color: rgba(183, 88, 91, 0.7);
     width: 100%;
 }
 
@@ -36,14 +36,14 @@ body{
 }
 
 .navbar a:hover, .subnav:hover .subnavbtn{
-    background-color: rgba(183, 88, 91, 0.5);
+    background-color: rgba(183, 88, 91, 0.7);
 }
 
 .subnav-content{
     display: none;
     position: absolute;
     left: 0;
-    background-color: rgba(183, 88, 91, 0.5);
+    background-color: rgba(183, 88, 91, 0.7);
     width: 100%;
     z-index: 1;
 }
