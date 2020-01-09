@@ -8,13 +8,13 @@ body{
 
 .navbar{
     display: flex;
+    flex-direction: row;
     overflow: hidden;
     background-color: rgba(183, 88, 91, 0.7);
     width: 100%;
 }
 
 .subnav{
-
     float: bottom;
     overflow: hidden;
     display: inline-block;
@@ -36,6 +36,7 @@ body{
     display: block;
     margin: 0 auto;
     width: 60px;
+    padding-bottom: 0.5em;
 }
 
 .navbar a:hover, .subnav:hover .subnavbtn{
