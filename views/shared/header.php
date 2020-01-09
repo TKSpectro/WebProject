@@ -1,6 +1,6 @@
 <header >
   <ul class="icons">
-  <li><a href= "index.php?a=warenkorb" ><img id="Warenkorb" src="assets/images/shopping-cart.png" alt="Warenkorb"></a></li>
+  <li><a href= "index.php?a=shoppingCart" ><img id="Warenkorb" src="assets/images/shopping-cart.png" alt="Warenkorb"></a></li>
 
   <?php if(isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) : ?>
     <li><a href= "index.php?a=account" ><img src="assets/images/Account_verwaltung.png" alt="Account"></a></li>

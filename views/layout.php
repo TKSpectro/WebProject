@@ -19,7 +19,7 @@ if (isset($_GET['a']))
 include __DIR__ . '/shared/topNav.php';
 ?>
 <div class="contentCon">
-    <?php if (isset($_GET['type']))
+    <?php if (isset($_GET['type']) || $_GET['a'] =='warenkorb') 
     {
         include __DIR__ . '/shared/sideNav.php';
     } ?>

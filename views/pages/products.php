@@ -48,9 +48,9 @@ $productCounter = 0;
                             <p><?= $prod['descrip'] ?></p>
                             <p><?= $prod['stdPrice'] ?>€</p>
                             <iframe name="hiddenFrame" class="hide"></iframe>
-                            <form method="post" action="?a=warenkorb" target="hiddenFrame">
+                            <form method="post" action="?a=shoppingCart" target="hiddenFrame">
                                 <input type="hidden" name="prodID" value="<?= $prod['prodID'] ?>">
-                                <input type="submit" name="addToWarenkorb" value="Add To Warnkorb">
+                                <input type="submit" name="addToShoppingCart" value="Add To ShoppingCart">
                             </form>
                         </div>
                     </li>

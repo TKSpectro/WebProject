@@ -19,11 +19,11 @@ class PagesController extends \app\core\Controller
 		$this->_params['product'] = \app\models\Product::find();
 
 	}
-	public function actionWarenkorb()
+	public function actionShoppingCart()
     {
-        $this->_params['title'] = 'Warenkorb';
+        $this->_params['title'] = 'ShoppingCart';
         $this->_params['Header'] = true;
-		$this->_params['product'] = \app\models\Warenkorb::find();
+		$this->_params['product'] = \app\models\ShoppingCart::find();
 
 	}
 	

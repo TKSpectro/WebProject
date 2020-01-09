@@ -2,20 +2,20 @@
 namespace app\controller;
 
 
-use app\models\Warenkorb;
+use app\models\ShoppingCart;
 
-if(isset($_POST['addToWarenkorb']))
+if(isset($_POST['addToShoppingCart']))
 {
-    echo 'hh';
+   
         
         $prodID = $_POST['prodID'];
        
-        echo 'hdhfhdhfhdhdhdhdh';
+       
             $params = [
             'prodID'     => $prodID
             ];
 
-            $warenkorb = new Warenkorb($params);
+            $warenkorb = new ShoppingCart($params);
             $error;
             $warenkorb->insert($error);
             /*$_SESSION['loggedIn'] = true;

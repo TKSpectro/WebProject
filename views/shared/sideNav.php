@@ -1,5 +1,7 @@
 <?php 
-namespace app\models; ?>
+namespace app\models; 
+?>
+
 <div class="sidenav">
 <?php foreach(Cat::find() as $overCat):?> 
 <div class="overCat">
