@@ -47,7 +47,7 @@ $productCounter = 0;
                             <h3><?= $prod['prodID'] ?></h3>
                             <p><?= $prod['descrip'] ?></p>
                             <p><?= $prod['stdPrice'] ?>€</p>
-                            <form>
+                            <form method="post" action="">
                                 <input type="submit" value="Add To Warnkorb">
                             </form>
                         </div>
