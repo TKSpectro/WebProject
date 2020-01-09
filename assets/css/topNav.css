@@ -44,10 +44,11 @@ body{
 }
 
 .subnav-content{
+    list-style-type: none;
     display: none;
     position: relative;
     left: 0;
-    width: 100%;
+    width: 25%;
     z-index: 1;
 }
 
