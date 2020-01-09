@@ -11,7 +11,8 @@ class Cat extends BaseModel
         'catID'        => ['type' => BaseModel::TYPE_INT],
         'createdAt'    => ['type' => BaseModel::TYPE_STRING],
         'updatedAt'    => ['type' => BaseModel::TYPE_STRING],
-        'descrip'      => ['type' => BaseModel::TYPE_STRING]
+        'descrip'      => ['type' => BaseModel::TYPE_STRING],
+        'type'         => ['type' => BaseModel::TYPE_STRING]
     ];
 }
 

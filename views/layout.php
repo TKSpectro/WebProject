@@ -36,8 +36,8 @@ include __DIR__ . '/shared/topNav.php';
     ?>
 
 
-    </main>
-    <footer></footer>
+</div>
+<footer></footer>
 </body>
 </html>
 	
