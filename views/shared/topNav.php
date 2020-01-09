@@ -2,40 +2,43 @@
 namespace app\models;
 ?>
 
-<div class="navbar">
-    <div class="subnav">
+<ul class="navbar">
+    <li class="subnav">
         <button class="subnavbtn"><img src="assets/images/boyIcon.png" alt="Jungen Bild">Jungen</button>
-        <div class="subnav-content">
-            <? foreach (Cat::find('type = "boy" OR type ="both"') as $boyCats)
+        <ul class="subnav-content">
+            <? foreach (Cat::find('type = "boy" OR type ="both"') as $Cat)
             {
                 ?>
-                <a href=""><?= $boyCats['descrip']; ?></a>
+                <li><a href="index.php?a=products&type=Jungs-Toys&cat=<?= $Cat['catID'] ?>">
+                        <?= $Cat['descrip']; ?></a></li>
             <? } ?>
-        </div>
-    </div>
-    <div class="subnav">
+        </ul>
+    </li>
+    <li class="subnav">
         <button class="subnavbtn"><img src="assets/images/controllerIcon.png" alt="Konsolen Bild">Konsolen</button>
-        <div class="subnav-content">
-            <? foreach (Cat::find('type = "console"') as $consoleCats)
+        <ul class="subnav-content">
+            <? foreach (Cat::find('type = "console"') as $Cat)
             {
                 ?>
-                <a href=""><?= $consoleCats['descrip']; ?></a>
+                <li><a href="index.php?a=products&type=Konsolespiele&cat=<?= $Cat['catID'] ?>">
+                        <?= $Cat['descrip']; ?></a></li>
             <? } ?>
-        </div>
-    </div>
-    <div class="subnav">
+        </ul>
+    </li>
+    <li class="subnav">
         <button class="subnavbtn"><img src="assets/images/iconGirl.png" alt="Mädchen Bild">Mädchen</button>
-        <div class="subnav-content">
-            <? foreach (Cat::find('type = "girl" OR type ="both"') as $girlCats)
+        <ul class="subnav-content">
+            <? foreach (Cat::find('type = "girl" OR type ="both"') as $Cat)
             {
                 ?>
-                <a href=""><?= $girlCats['descrip']; ?></a>
+                <li><a href="index.php?a=products&type=Mädchen-Toys&cat=<?= $Cat['catID'] ?>">
+                        <?= $Cat['descrip']; ?></a></li>
             <? } ?>
 
-        </div>
-    </div>
-    <div class="subnav">
+        </ul>
+    </li>
+    <li class="subnav">
         <button class="subnavbtn"><img src="assets/images/aboutIcon.png" alt="Über uns Bild">Über Uns</button>
-    </div>
-</div>
+    </li>
+</ul>
    

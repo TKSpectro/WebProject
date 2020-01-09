@@ -2,17 +2,20 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    padding: 0;
     border: none;
 }
 
 .navbar{
+    display: flex;
     overflow: hidden;
     background-color: rgba(183, 88, 91, 0.7);
     width: 100%;
 }
 
 .subnav{
-    float: left;
+
+    float: bottom;
     overflow: hidden;
     display: inline-block;
     width: 25%;
@@ -36,14 +39,13 @@ body{
 }
 
 .navbar a:hover, .subnav:hover .subnavbtn{
-    background-color: rgba(183, 88, 91, 0.7);
+    background-color: rgba(183, 88, 91, 0.2);
 }
 
 .subnav-content{
     display: none;
-    position: absolute;
+    position: relative;
     left: 0;
-    background-color: rgba(183, 88, 91, 0.7);
     width: 100%;
     z-index: 1;
 }
@@ -53,8 +55,9 @@ body{
     font-size: 16px;
     text-align: center;
     padding: 14px 16px;
-    color: white;
+    background-color: rgba(183, 88, 91, 0.2);
     text-decoration: none;
+    color: white;
 }
 
 .subnav-content a:hover{
