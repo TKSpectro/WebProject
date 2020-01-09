@@ -23,7 +23,7 @@ class PagesController extends \app\core\Controller
     {
         $this->_params['title'] = 'ShoppingCart';
         $this->_params['Header'] = true;
-		$this->_params['product'] = \app\models\ShoppingCart::find();
+		$this->_params['ShoppingCartProduct'] = \app\models\ShoppingCart::find();
 
 	}
 	
