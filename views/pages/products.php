@@ -44,11 +44,13 @@ $productCounter = 0;
                     <li>
                         <div class="card">
                             <img src="<?= $prod['photo'] ?>" alt="produckt">
-                            <h3><?= $prod['prodID'] ?></h3>
+        
                             <p><?= $prod['descrip'] ?></p>
                             <p><?= $prod['stdPrice'] ?>€</p>
-                            <form method="post" action="">
-                                <input type="submit" value="Add To Warnkorb">
+                            <iframe name="hiddenFrame" class="hide"></iframe>
+                            <form method="post" action="?a=warenkorb" target="hiddenFrame">
+                                <input type="hidden" name="prodID" value="<?= $prod['prodID'] ?>">
+                                <input type="submit" name="addToWarenkorb" value="Add To Warnkorb">
                             </form>
                         </div>
                     </li>
