@@ -112,8 +112,12 @@ if(isset($_POST['accountÄndern']))
         && Account::validateInput($mobile, $check)
         && Account::validateInput($phone, $check))
         {
-            //hash password for further usage in database
-            $password = password_hash($password, PASSWORD_DEFAULT);
+            //if input password is same as before dont hash and sent it again
+            $oldPassword=\app\models\Account::find('email = "'.$email. '"')['passwordHash'];
+            if($password == $oldPassword){
+                //hash password for further usage in database
+                $password = password_hash($password, PASSWORD_DEFAULT);
+            }
           
             $params = [
             'firstname'     => $firstName,
