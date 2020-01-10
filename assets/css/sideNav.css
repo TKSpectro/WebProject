@@ -11,7 +11,7 @@
     padding: 12px;
     text-decoration: none;
     font-size: 21px;
-    color: rgb(195, 123, 121);
+    color: rgb(73, 73, 73);
     display: block;
 }
 
@@ -31,7 +31,7 @@
 .overCat a {
     margin-left: 8px;
     padding-bottom: 3px;
-    color: #E9BA65;
+    color: rgb(134, 14, 10);
     font-size: 25px;
     border-bottom: 2px solid rgb(195, 123, 121);
 }
