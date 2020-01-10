@@ -1,58 +1,39 @@
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    border: none;
-}
-
-.navbar{
+.navbar {
     display: flex;
-    flex-direction: row;
-    overflow: hidden;
+    padding: 0% 9% 0%;
     background-color: rgba(183, 88, 91, 0.7);
     width: 100%;
 }
 
-.subnav{
-    float: bottom;
-    overflow: hidden;
-    display: inline-block;
+.subnav {
     width: 25%;
 }
 
-.subnav .subnavbtn{
+.subnav .subnavbtn {
     font-size: 16px;
     border: none;
-    outline: none;
     color: white;
-    padding: 0px 0px;
     background-color: inherit;
-    font-family: inherit;
     margin: 0;
 }
 
-.subnav .subnavbtn img{
+.subnav .subnavbtn img {
     display: block;
-    margin: 0 auto;
     width: 60px;
     padding-bottom: 0.5em;
 }
 
-.navbar a:hover, .subnav:hover .subnavbtn{
+.navbar a:hover,
+.subnav:hover .subnavbtn {
     background-color: rgba(183, 88, 91, 0.2);
 }
 
-.subnav-content{
-    list-style-type: none;
+.subnav-content {
     display: none;
-    position: relative;
-    left: 0;
     width: 25%;
-    z-index: 1;
 }
 
-.subnav-content a{
+.subnav-content a {
     float: left;
     font-size: 16px;
     text-align: center;
@@ -62,12 +43,12 @@ body{
     color: white;
 }
 
-.subnav-content a:hover{
+.subnav-content a:hover {
     background-color: #eee;
     color: black;
 }
 
-.subnav:hover .subnav-content{
+.subnav:hover .subnav-content {
     display: block;
 }
 
@@ -102,7 +83,7 @@ figure.einzel{
     color: rgb(65, 164, 173);;
 }
 
-.single figcaption#mädchen{
+.single figcaption#mÃ¤dchen{
     color: rgb(170, 65, 61);
 }
 
@@ -110,7 +91,7 @@ figure.einzel{
     color: rgb(247, 183, 65);
 }
 
-.single figcaption#überUns{
+.single figcaption#Ã¼berUns{
     color: rgb(52, 146, 134);
 }
 
