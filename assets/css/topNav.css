@@ -1,7 +1,6 @@
 .navbar {
     display: flex;
     padding: 0% 9% 0%;
-    background-color: rgba(183, 88, 91, 0.7);
     width: 100%;
 }
 
@@ -12,7 +11,7 @@
 .subnav .subnavbtn {
     font-size: 16px;
     border: none;
-    color: white;
+    color: #E9BA65;
     background-color: inherit;
     margin: 0;
 }
@@ -38,9 +37,7 @@
     font-size: 16px;
     text-align: center;
     padding: 14px 16px;
-    background-color: rgba(183, 88, 91, 0.2);
     text-decoration: none;
-    color: white;
 }
 
 .subnav-content a:hover {
