@@ -88,6 +88,7 @@ class PagesController extends \app\core\Controller
 					
 						}
 						header('Location: index.php');
+						exit(0);
 					}
 					else
 					{
@@ -104,13 +105,14 @@ class PagesController extends \app\core\Controller
 			else 
 			{
 				echo 'Sie müssen ihre Email und Password eingeben';
+				exit(0);
 			}
 			}
 		}
 		else
 		{
-			
 			header('Location: index.php');
+			exit(0);
 		}
 	}
 
