@@ -6,10 +6,6 @@ body {
     box-sizing: border-box;
 }
 
-header {
-    margin-bottom: 1em;
-}
-
 ul {
     margin: 0;
     padding: 0;
@@ -201,4 +197,10 @@ div figcaption {
     left: -1px;
     width: 1px;
     height: 1px;
+}
+
+.fabutton {
+    background: none;
+    padding: 0px;
+    border: none;
 }

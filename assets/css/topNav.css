@@ -7,46 +7,48 @@
     .subnav {
         width: 25%;
         font-size: 23px;
+        padding-top: 2px;
     }
     
-    #test {
-        padding-left: 10%;
+    .paddLeft {
+        padding-left: 15%;
     }
     
     .subnav .subnavbtn {
-        border: none;
         color: #E9BA65;
-        background-color: inherit;
-        margin: 0;
+        text-decoration: none;
     }
     
-    #topNavBoy {
-        color: rgb(108, 182, 189);
+    .topNavBoy {
+        color: #6cb6bd;
     }
     
-    #topNavKonsole {
-        color: #E9BA65;
+    .topNavConsole {
+        color: #e9ba65;
     }
     
-    #topNavGirl {
-        color: rgb(190, 73, 69);
+    .topNavGirl {
+        color: #be4945;
     }
     
-    #topNavInfo {
+    .topNavAbout {
         color: #90B3B6;
     }
     
     .subnav .subnavbtn img {
         display: block;
         width: 60px;
-        padding-bottom: 0.5em;
         padding-left: 8px;
     }
-    
-    .navbar a:hover,
-    .subnav:hover .subnavbtn {
-        background-color: rgba(183, 88, 91, 0.2);
+
+    .activeShadow{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
+
+    .activeUnderline{
+        text-decoration-line: underline;
+    }
+
     
     .subnav-content {
         display: none;
@@ -57,13 +59,12 @@
         float: left;
         font-size: 16px;
         text-align: center;
-        padding: 14px 16px;
         text-decoration: none;
+        padding: 14px 100% 14px 16px;
     }
     
     .subnav-content a:hover {
-        background-color: #eee;
-        color: black;
+        text-shadow: 1px 1px 2px rgba(121, 121, 121, 0.67);
     }
     
     .subnav:hover .subnav-content {
