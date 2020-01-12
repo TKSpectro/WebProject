@@ -178,31 +178,4 @@ div figcaption {
     height: 1px;
 }
 
-.searchButton {
-    background: none;
-    padding: 0px;
-    border: none;
-}
 
-.searchInput {
-    padding: 2px;
-    background-color: rgba(234, 232, 218, 0.1);
-    font-size: 23px;
-    border: none;
-    border-bottom: 2px #C38D8A solid;
-}
-
-div.search {
-    float: right;
-    text-align: left;
-    padding: 0px;
-    width: 18%;
-    margin: 0.5em 1.5em;
-}
-
-.searchIcon {
-    padding: 0;
-    width: 30px;
-    height: 30px;
-    float: right;
-}
