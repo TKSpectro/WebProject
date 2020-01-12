@@ -22,9 +22,9 @@
         <li>
             <div class="search">
                 <form action="javascript:searchByWord();">
-                    <input id="searchWord" type="search" placeholder="Suchen">
+                    <input class="searchInput" id="searchWord" type="search" placeholder="Suchen">
                     <button type="submit" class="searchButton">
-                        <img src="assets/images/search_icon.png" alt="searchButton">
+                        <img class="searchIcon" src="assets/images/search_icon.png" alt="searchButton">
                     </button>
                 </form>
             </div>
