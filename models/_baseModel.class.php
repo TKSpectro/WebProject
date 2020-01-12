@@ -35,7 +35,7 @@ abstract class BaseModel
         {
             return $this->data[$key];
         }
-        throw new \Exception('You can not access to property"' . §key . '"" for the class "' . get_called_class());
+        throw new \Exception('You can not access to property"' . $key . '"" for the class "' . get_called_class());
     }
 
     public function __set($key, $value)
@@ -99,7 +99,7 @@ abstract class BaseModel
         return false;
     }
 
-    public function update(&$errors)
+    public function update(&$errors,$where = '')
     {
         $db = $GLOBALS['db'];
 
@@ -115,7 +115,7 @@ abstract class BaseModel
             }
 
             $sql = trim($sql, ',');
-            $sql .= ' WHERE accountID = ' . $_SESSION['accountID'];
+            $sql .= ' WHERE ' . $where . ';';
 
             $statement = $db->prepare($sql);
             $statement->execute();
@@ -129,13 +129,13 @@ abstract class BaseModel
         return false;
     }
 
-    public function delete(&$errors = null)
+    public function delete(&$errors = null,$where)
     {
         $db = $GLOBALS['db'];
 
         try
         {
-            $sql = 'DELETE FROM ' . self::tablename() . ' WHERE id = ' . $this->id;
+            $sql = 'DELETE FROM ' . self::tablename() . ' WHERE '.$where;
             $db->exec($sql);
             return true;
         }

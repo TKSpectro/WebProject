@@ -131,7 +131,7 @@ if(isset($_POST['accountÄndern']))
 
             $account = new Account($params);
             $error;
-            $account->update($error);
+            $account->update($error,'accountID = "' . $_SESSION['accountID']. '"');
             $_SESSION['loggedIn'] = true;
             $where=\app\models\Account::find('email = "'.$email. '"');
             $_SESSION['accountID']=$where['0']['accountID'];
