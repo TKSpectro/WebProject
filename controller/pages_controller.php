@@ -34,7 +34,7 @@ class PagesController extends \app\core\Controller
 
     public function actionShoppingCart()
     {
-        $this->_params['title'] = 'ShoppingCart';
+        $this->_params['title'] = 'Warenkorb';
         $this->_params['Header'] = true;
         $this->_params['ShoppingCartProduct'] = \app\models\ShoppingCart::find();
 

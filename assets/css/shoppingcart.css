@@ -1,18 +1,29 @@
+body {
+    background-image: none;
+    background-color: #EAE8DA;
+}
+
+.navbar {
+    border-top: 2px solid rgba(208, 200, 200, 0.63);
+    border-bottom: 2px solid rgba(208, 200, 200, 0.63);
+    padding: 0.5em 0em 0.5em;
+    margin: 0em 1em;
+}
+
 div.shoppingcart {
+    padding-top: 1.5em;
     margin: 2% 10%;
     color: rgb(134, 14, 10);
-    background-color: rgba(183, 88, 91, 0.25);
+    background-color: rgba(208, 200, 200, 0.63);
     border-radius: 5px;
 }
 
-h1 {
-    text-align: center;
-    margin-top: 0.5em;
+.Titl {
+    font-size: 23px;
+    text-align: left;
+    margin: 0.5em 0em 1em;
     color: rgb(73, 73, 73);
-}
-
-thead {
-    font-weight: bold;
+    padding-left: 1em;
 }
 
 table img {
@@ -23,11 +34,11 @@ table img {
 
 td {
     width: 9em;
-    font-size: 21px;
+    font-size: 18px;
 }
 
 .prodTitl {
-    padding-left: 4em;
+    padding-left: 1em;
     text-align: left;
 }
 
@@ -51,5 +62,36 @@ div.seprator {
 }
 
 .summe {
-    padding-left: 80%;
+    margin-left: 60%;
+    margin-right: 3%;
+    padding: 2em 0em 2em;
+    font-size: 18px;
+    text-align: right;
+    padding-right: 3.5em;
+}
+
+.gesamt {
+    border-top: 3px solid gray;
+    padding-top: 0.7em;
+    font-size: 23px;
+    text-align: left;
+}
+
+.anzahl {
+    padding-bottom: 0.7em;
+    padding-right: 80%;
+}
+
+.entfernbtn {
+    background-color: rgb(73, 73, 73);
+    color: #EAE8DE;
+    border: none;
+    cursor: pointer;
+    width: 60%;
+    font-size: 12px;
+    padding: 4px 0 4px;
+}
+
+.test {
+    margin-right: 5em;
 }
