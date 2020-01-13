@@ -7,13 +7,13 @@
     <fieldset class="login_fieldset"><legend>E-Mail</legend>
     <input type="email" name="email"
     <?=isset($_POST['email'])?  'value="'.htmlspecialchars($_POST['email']).'"' :'' ?>></fieldset>
-    <fieldset class="login_fieldset"><legend>Password</legend>
+    <fieldset class="login_fieldset"><legend>Passwort</legend>
     <input type="password" name="password"
     <?=isset($_POST['password'])?  'value="'.htmlspecialchars($_POST['password']).'"' :'' ?>></fieldset>
     <input type="checkbox" name="rememberMe"
     <?=isset($_POST['rememberMe'])?  'checked' : '' ?>> <label for="rememberMe">Meine ID Speichern </label>
      <a id="kontoErstellenlink" href= "index.php?a=formular">Noch kein Konto?</a>
-    <input type="submit"  name="login" value="anmelden">   
+    <input type="submit"  name="login" value="Anmelden">
   </form> 
 </div>
 

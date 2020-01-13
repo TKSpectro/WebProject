@@ -43,34 +43,34 @@
     <figcaption>Benutzerkonto Erstellen</figcaption>
     </figure>
 
-<fieldset class="register_fieldset"><legend>First Name</legend>
+<fieldset class="register_fieldset"><legend>Vorname</legend>
 <input type="text" name="firstName"></fieldset>
 
 
-<fieldset class="register_fieldset"><legend>Last Name</legend>
+<fieldset class="register_fieldset"><legend>Nachname</legend>
 <input type="text" name="lastName"></fieldset>
 
 
-<fieldset class="register_fieldset"><legend>EMail</legend>
+<fieldset class="register_fieldset"><legend>E-Mail</legend>
 <input type="email" name="email"></fieldset>
 
 
-<fieldset class="register_fieldset"><legend>Password</legend>
+<fieldset class="register_fieldset"><legend>Passwort</legend>
 <input type="password" name="password"></fieldset>
 
 
-<fieldset class="register_fieldset"><legend>Birthday</legend>
+<fieldset class="register_fieldset"><legend>Geburtstag</legend>
 <input type="date" name="birthday"></fieldset>
 
 
-<fieldset class="register_fieldset"><legend>Mobile</legend>
+<fieldset class="register_fieldset"><legend>Handy</legend>
 <input type="number" name="mobile"></fieldset>
 
 
-<fieldset class="register_fieldset"><legend>Phone</legend>
+<fieldset class="register_fieldset"><legend>Telefon</legend>
 <input type="number" name="phone"></fieldset>
 
-<input type="submit"  name="sendAccount" value="Regestrieren">
+<input type="submit"  name="sendAccount" value="Registrieren">
 </form>  
 
 </div>
