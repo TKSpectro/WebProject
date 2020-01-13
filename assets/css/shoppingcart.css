@@ -1,8 +1,3 @@
-body {
-    background-image: none;
-    background-color: #EAE8DA;
-}
-
 .navbar {
     border-top: 2px solid rgba(208, 200, 200, 0.63);
     border-bottom: 2px solid rgba(208, 200, 200, 0.63);
@@ -14,7 +9,7 @@ div.shoppingcart {
     padding-top: 1.5em;
     margin: 2% 10%;
     color: rgb(134, 14, 10);
-    background-color: rgba(208, 200, 200, 0.63);
+    background-color: rgba(208, 200, 200, 0.89);
     border-radius: 5px;
 }
 
