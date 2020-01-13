@@ -77,16 +77,6 @@ div.seprator {
     padding-right: 80%;
 }
 
-.entfernbtn {
-    background-color: rgb(73, 73, 73);
-    color: #EAE8DE;
-    border: none;
-    cursor: pointer;
-    width: 60%;
-    font-size: 12px;
-    padding: 4px 0 4px;
-}
-
 .test {
     margin-right: 5em;
 }

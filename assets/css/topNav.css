@@ -7,6 +7,12 @@
         font-size: 23px;
     }
     
+    .width {
+        width: 30%;
+        border-radius: 5px;
+        text-align: center;
+    }
+    
     .paddLeft {
         padding-left: 15%;
     }
@@ -32,28 +38,39 @@
         color: #90B3B6;
     }
     
-    .subnav .subnavbtn img {
+    .subnavbtn img {
         display: block;
         width: 60px;
-        padding-left: 8px;
+        margin: 0;
+        padding-left: 0.8em;
     }
-
-    .activeUnderline{
-        text-decoration-line: underline;
+    
+    .activeBoy {
+        font-size: 25px;
+        box-shadow: 0px 4px 8px 0px rgba(108, 182, 189, 0.7);
     }
-
+    
+    .activeGirl {
+        font-size: 25px;
+        box-shadow: 0px 4px 8px 0px rgba(190, 95, 92, 0.705);
+    }
+    
+    .activeKonsole {
+        font-size: 25px;
+        box-shadow: 0px 4px 8px 0px #ecb349a8;
+    }
     
     .subnav-content {
         display: none;
-        width: 25%;
+        width: 100%;
     }
     
     .subnav-content a {
         float: left;
         font-size: 16px;
-        text-align: center;
+        text-align: left;
         text-decoration: none;
-        padding: 14px 100% 14px 16px;
+        padding: 14px 100% 14px 14px;
     }
     
     .subnav-content a:hover {

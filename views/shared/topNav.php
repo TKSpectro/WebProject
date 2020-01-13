@@ -4,9 +4,10 @@ namespace app\models;
 <nav>
     <ul class="navbar">
         <li class="subnav paddLeft">
+            <div class="width <? if($_GET['type'] == "Jungs-Toys"){?>activeBoy<?}?>">
             <a href="index.php?a=products&type=Jungs-Toys" class="subnavbtn"><img src="assets/images/boyIcon.png"
                                                                                   alt="Jungen Bild">
-                <div class="topNavBoy <? if($_GET['type'] == "Jungs-Toys"){?>activeUnderline<?}?>">Jungen</div>
+                <div class="topNavBoy" >Jungen</div>
             </a>
             <ul class="subnav-content">
                 <? foreach (Cat::find('type = "boy" OR type ="both"') as $Cat)
@@ -15,12 +16,13 @@ namespace app\models;
                     <li><a class="topNavBoy" href="index.php?a=products&type=Jungs-Toys&cat=<?= $Cat['catID'] ?>">
                             <?= $Cat['descrip']; ?></a></li>
                 <? } ?>
-            </ul>
+            </ul></div>
         </li>
         <li class="subnav">
+        <div class="width <? if($_GET['type'] == "Konsolespiele"){?>activeKonsole<?}?>">
             <a href="index.php?a=products&type=Konsolespiele" class="subnavbtn"><img
                         src="assets/images/controllerIcon.png" alt="Konsolen Bild">
-                <div class="topNavConsole <? if($_GET['type'] == "Konsolespiele"){?>activeUnderline<?}?>">Konsolen</div>
+                <div class="topNavConsole ">Konsolen</div>
             </a>
             <ul class="subnav-content">
                 <? foreach (Cat::find('type = "console"') as $Cat)
@@ -30,12 +32,13 @@ namespace app\models;
                            href="index.php?a=products&type=Konsolespiele&cat=<?= $Cat['catID'] ?>">
                             <?= $Cat['descrip']; ?></a></li>
                 <? } ?>
-            </ul>
+            </ul></div>
         </li>
         <li class="subnav">
+        <div class="width <? if($_GET['type'] == "Mädchen-Toys"){?>activeGirl<?}?>">
             <a href="index.php?a=products&type=Mädchen-Toys" class="subnavbtn"><img src="assets/images/iconGirl.png"
                                                                                     alt="Mädchen Bild">
-                <div class="topNavGirl <? if($_GET['type'] == "Mädchen-Toys"){?>activeUnderline<?}?>">Mädchen</div>
+                <div class="topNavGirl">Mädchen</div>
             </a>
             <ul class="subnav-content">
                 <? foreach (Cat::find('type = "girl" OR type ="both"') as $Cat)
@@ -44,13 +47,15 @@ namespace app\models;
                     <li><a class="topNavGirl" href="index.php?a=products&type=Mädchen-Toys&cat=<?= $Cat['catID'] ?>">
                             <?= $Cat['descrip']; ?></a></li>
                 <? } ?>
-            </ul>
+            </ul></div>
         </li>
         <li class="subnav">
+        <div class="width">
             <a href="index.php?a=aboutUs" class="subnavbtn"><img src="assets/images/aboutIcon.png" alt="Über uns Bild">
                 <div class="topNavAbout">Über Uns</div>
             </a>
-        </li>
+        </li> </div>
     </ul>
 </nav>
+
    

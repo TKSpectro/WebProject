@@ -1,15 +1,21 @@
 .productList {
     width: 100%;
     float: right;
-    padding-left: 50px;
-    margin-top: 27px;
+    margin: 2% 5% 5% 8%;
 }
 
 .column {
     float: left;
     width: 28%;
-    padding: 1.1%;
+    padding: 1%;
     margin: 1%;
+}
+
+.prodInfo {
+    font-size: 21px;
+    padding: 0;
+    margin-top: 0.3em;
+    color: rgb(134, 14, 10);
 }
 
 @media screen and (max-width: 900px) {
@@ -21,14 +27,13 @@
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 0;
     text-align: center;
 }
 
 .card img {
-    width: 15em;
-    padding: 0;
+    width: 18em;
+    padding-top: 4%;
     margin: 0;
 }
 
@@ -51,4 +56,15 @@
 
 .card button:hover {
     opacity: 0.7;
+}
+
+.btn {
+    background-color: rgb(73, 73, 73);
+    color: #EAE8DE;
+    border: none;
+    cursor: pointer;
+    width: 60%;
+    font-size: 12px;
+    padding: 4px 0px 4px;
+    margin: 1em 0em;
 }
