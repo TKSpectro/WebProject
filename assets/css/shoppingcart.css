@@ -1,11 +1,13 @@
 div.shoppingcart {
-    margin: 0% 10%;
+    margin: 2% 10%;
     color: rgb(134, 14, 10);
+    background-color: rgba(183, 88, 91, 0.25);
+    border-radius: 5px;
 }
 
 h1 {
     text-align: center;
-    margin-bottom: 0.5em;
+    margin-top: 0.5em;
     color: rgb(73, 73, 73);
 }
 
@@ -15,7 +17,7 @@ thead {
 
 table img {
     margin: 0;
-    width: 7em;
+    width: 5em;
     padding-left: 1em;
 }
 
