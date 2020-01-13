@@ -47,14 +47,12 @@ li {
     font-weight: bolder;
 }
 
-
-
 #logo {
     width: 23em;
     height: 3em;
     margin: 0em 2em;
     float: left;
-    padding: 0em;
+    padding-top: 1.5em;
 }
 
 ul.icons img {

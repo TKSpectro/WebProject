@@ -1,2 +1,1 @@
-<?php
-print_r("test");
+<h1>Über Uns</h1>
