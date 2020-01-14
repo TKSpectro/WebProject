@@ -5,7 +5,7 @@
 }
 
 .searchInput {
-    padding: 2px;
+    padding: 3px;
     background-color: rgba(234, 232, 218, 0.1);
     font-size: 23px;
     border: none;
@@ -16,8 +16,8 @@ div.search {
     float: right;
     text-align: left;
     padding: 0px;
-    width: 18%;
-    margin: 0.5em 1.5em;
+    width: 23%;
+    margin: 0.6% 0.5% 2%;
 }
 
 .searchIcon {

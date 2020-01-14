@@ -1,14 +1,14 @@
 .productList {
     width: 100%;
     float: right;
-    margin: 0% 5% 5% 8%;
+    margin: AUTO;
 }
 
 .column {
     float: left;
     width: 28%;
-    padding: 1%;
-    margin: 1%;
+    padding: 0.5%;
+    margin: 0.5%;
 }
 
 .prodInfo {
