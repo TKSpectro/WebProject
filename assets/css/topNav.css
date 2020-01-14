@@ -5,6 +5,7 @@
     .subnav {
         width: 25%;
         font-size: 25px;
+        margin-bottom: 0.5em;
     }
     
     .width {
@@ -47,7 +48,7 @@
     }
     
     #girlImage {
-        width: 90px;
+        width: 95px;
         padding-left: 0.5em;
     }
     
