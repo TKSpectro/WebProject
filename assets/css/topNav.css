@@ -4,11 +4,11 @@
     
     .subnav {
         width: 25%;
-        font-size: 23px;
+        font-size: 25px;
     }
     
     .width {
-        width: 30%;
+        width: 40%;
         border-radius: 5px;
         text-align: center;
     }
@@ -40,13 +40,19 @@
     
     .subnavbtn img {
         display: block;
-        width: 60px;
+        width: 70px;
         margin: 0;
-        padding-left: 0.8em;
+        padding-left: 1em;
+        padding-bottom: 0.3em;
+    }
+    
+    #girlImage {
+        width: 90px;
+        padding-left: 0.5em;
     }
     
     .activeBoy {
-        font-size: 25px;
+        font-size: 27px;
         box-shadow: 0px 4px 8px 0px rgba(108, 182, 189, 0.7);
     }
     
@@ -67,10 +73,9 @@
     
     .subnav-content a {
         float: left;
-        font-size: 16px;
-        text-align: left;
+        font-size: 18px;
         text-decoration: none;
-        padding: 14px 100% 14px 14px;
+        padding: 1em 1em 1em 1.8em;
     }
     
     .subnav-content a:hover {

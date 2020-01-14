@@ -36,7 +36,7 @@ namespace app\models;
         </li>
         <li class="subnav">
         <div class="width <? if($_GET['type'] == "Mädchen-Toys"){?>activeGirl<?}?>">
-            <a href="index.php?a=products&type=Mädchen-Toys" class="subnavbtn"><img src="assets/images/iconGirl.png"
+            <a href="index.php?a=products&type=Mädchen-Toys" class="subnavbtn"><img id="girlImage" src="assets/images/iconGirl.png"
                                                                                     alt="Mädchen Bild">
                 <div class="topNavGirl">Mädchen</div>
             </a>
