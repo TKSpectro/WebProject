@@ -1,0 +1,18 @@
+.footerMenu{
+    height: 84px;
+}
+
+.footerTable{
+    display: table;
+    margin: 0 auto;
+}
+
+.footerTable ul{
+    list-style: none;
+    padding-top: 20px;
+}
+
+.footerTable ul li{
+    display: inline;
+    padding: 30px;
+}

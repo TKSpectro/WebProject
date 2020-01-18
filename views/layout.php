@@ -3,13 +3,28 @@
 <head>
     <link rel="stylesheet" type="text/css" href="assets/css/Toyplanet_style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/search.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/productList.css">
     <link rel="stylesheet" type="text/css" href="assets/css/sideNav.css">
     <link rel="stylesheet" type="text/css" href="assets/css/topNav.css">
-    <?php if(!empty($_GET))
-    {if($_GET['a']=='shoppingCart'):?>
-    <link rel="stylesheet" type="text/css" href="assets/css/shoppingcart.css">
-    <?endif;}?>
+    <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+
+    <?php if (!empty($_GET))
+    {
+        if ($_GET['a'] == 'shoppingCart'):?>
+            <link rel="stylesheet" type="text/css" href="assets/css/shoppingcart.css">
+        <? endif;
+
+        if ($_GET['a'] == 'contact'):?>
+            <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
+        <? endif;
+
+        if ($_GET['a'] == 'products'):?>
+            <link rel="stylesheet" type="text/css" href="assets/css/productList.css">
+        <? endif;
+
+        if ($_GET['a'] == 'imprint' || $_GET['a'] == 'documentation'):?>
+            <link rel="stylesheet" type="text/css" href="assets/css/imprintDocumentation.css">
+        <? endif;
+    } ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -24,7 +39,7 @@ if (isset($_GET['a']))
 include __DIR__ . '/shared/topNav.php';
 ?>
 <div class="contentCon">
-    <?php if (isset($_GET['type'])|| isset($_GET['search']))
+    <?php if (isset($_GET['type']) || isset($_GET['search']))
     {
         include __DIR__ . '/shared/sideNav.php';
     } ?>
@@ -42,7 +57,9 @@ include __DIR__ . '/shared/topNav.php';
 
 
 </div>
-<footer></footer>
+<footer>
+    <? include __DIR__ . '/shared/footer.php'; ?>
+</footer>
 </body>
 </html>
 	
