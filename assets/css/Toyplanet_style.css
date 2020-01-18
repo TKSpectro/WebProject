@@ -1,3 +1,21 @@
+/* INDEX */
+.center {
+    text-align: center;
+}
+
+.startseite img {
+    width: 25em;
+    height: 35em;
+    border: 10px solid;
+    margin: 2.5em 1.5em;
+}
+
+.indexTextCaption{
+
+}
+
+/* INDEX */
+
 body {
     background-image: url("../images/background.png");
     background-size: auto;
@@ -64,16 +82,9 @@ ul.icons img {
     margin-right: 4em;
 }
 
-.center {
-    text-align: center;
-}
 
-.startseite img {
-    width: 25em;
-    height: 35em;
-    border: 10px solid;
-    margin: 2.5em 1.5em;
-}
+
+
 
 #jung {
     border-color: #90B3B6;
@@ -132,7 +143,7 @@ fieldset {
     margin: 2.5% 10%;
 }
 
-.iamform input {
+.iamform input,textarea {
     border-radius: 5px;
     width: 100%;
     background-color: #EAE8DE;
