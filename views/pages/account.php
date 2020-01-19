@@ -24,7 +24,7 @@ value="<?=htmlspecialchars ($accounts['0']['email'])?>"></fieldset>
 
 
 <fieldset class="register_fieldset"><legend>Passwort</legend>
-<input type="password" name="password" placeholder="your Password">
+<input type="password" name="password" placeholder="Dein Password">
 </fieldset>
 
 
