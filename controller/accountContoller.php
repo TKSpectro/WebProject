@@ -88,7 +88,8 @@ if(isset($_POST['accountÄndern']))
     if(!empty($_POST['firstName'])
      &&!empty($_POST['lastName'])
      &&!empty($_POST['email'])
-     &&!empty($_POST['password'])
+        //password field can be empty
+     //&&!empty($_POST['password'])
      &&!empty($_POST['birthday'])
      &&!empty($_POST['mobile'])
      &&!empty($_POST['phone'])
@@ -98,26 +99,32 @@ if(isset($_POST['accountÄndern']))
         $firstName = $_POST['firstName'];
         $lastName  = $_POST['lastName'];
         $email     = $_POST['email'];
-        $password  = $_POST['password'];
+        //check if password is set else set it up
+        if(isset($_POST['password'])){
+            $password  = $_POST['password'];
+        }else{
+            $password = '';
+        }
         $birthday  = $_POST['birthday'];
         $mobile    = $_POST['mobile'];
         $phone     = $_POST['phone'];
-
 
         $check = [',','>','<'];
         if(Account::validateInput($firstName,$check)
         && Account::validateInput($lastName, $check)
         && Account::validateInput($email, $check)
-        && Account::validateInput($password, $check)
+        //&& Account::validateInput($password, $check)
         && Account::validateInput($birthday, $check)   
         && Account::validateInput($mobile, $check)
         && Account::validateInput($phone, $check))
         {
             //if input password is same as before dont hash and sent it again
             $oldPassword=\app\models\Account::find('email = "'.$email. '"')['passwordHash'];
-            if($password == $oldPassword){
+            if($password != ''){
                 //hash password for further usage in database
                 $password = password_hash($password, PASSWORD_DEFAULT);
+            }else{
+                $password = $oldPassword;
             }
           
             $params = [
@@ -137,7 +144,7 @@ if(isset($_POST['accountÄndern']))
             $where=\app\models\Account::find('email = "'.$email. '"');
             $_SESSION['accountID']=$where['0']['accountID'];
 
-           header('Location: index.php');
+           header('Location: index.php?a=account');
           
           
         }

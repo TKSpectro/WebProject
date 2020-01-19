@@ -1,18 +1,30 @@
+@font-face{
+    font-family: 'robotico-regular';
+    src: url('//assets/fonts/Roboto-Regular.tff');
+}
+
 .footerMenu{
     height: 84px;
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .footerTable{
     display: table;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .footerTable ul{
     list-style: none;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .footerTable ul li{
     display: inline;
     padding: 30px;
+    font-family: "robotico regular", sans-serif;
+}
+
+.footerTable ul li a{
+    text-decoration: none;
+    color: black;
 }
