@@ -16,12 +16,14 @@ require_once 'models/shoppingcart.class.php';
 require_once 'models/address.class.php';
 require_once 'models/product.class.php';
 require_once 'models/prodCat.class.php';
+require_once 'models/contact.class.php';
 
 
-
+// controller
 require_once 'controller/addressController.php';
 require_once 'controller/accountContoller.php';
 require_once 'controller/shoppingcartController.php';
+require_once 'controller/contactController.php';
 #require_once 'views/printAddress.php';
 
 
