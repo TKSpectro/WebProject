@@ -2,7 +2,7 @@
     <div class="footerTable">
         <ul>
             <li>
-                <a href="index.php?a=imprint">impressum</a>
+                <a href="index.php?a=imprint">Impressum</a>
             </li>
             <li>
                 <a href="index.php?a=contact">Kontakt</a>

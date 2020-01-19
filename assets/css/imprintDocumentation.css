@@ -1,4 +1,5 @@
-.documentation{
+.imprint, .documentation{
+    background: #EAE7E0;
     display: unset;
     box-sizing: unset;
     position: unset;
