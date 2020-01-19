@@ -83,14 +83,29 @@ else
 } 
 
 if(isset($_POST['delete']))
-{
+{  
     $prodID = $_POST['prodID'];
-    $params = [
-        'prodID'     => $prodID
+    if(!empty($_POST['quantity']))
+    {
+        $quantity=$_POST['quantity'];
+        $params = [
+            'prodID'     => $prodID,
+            'quantity'   => $quantity
+            ];
+            $warenkorb = new Shoppingcart($params);
+            $error;
+            $warenkorb->update($error,'prodID = "' . $prodID. '"');
+    }
+   else
+    {$params = [
+        'prodID'     => $prodID,
+        'quantity'   => $_POST['quantity']
         ];
-    $warenkorb = new Shoppingcart($params);
-    $error;
-    $warenkorb->delete($error,'prodID = "' . $prodID. '"');
+        $warenkorb = new Shoppingcart($params);
+        $error;
+        $warenkorb->delete($error,'prodID = "' . $prodID. '"');
+    }
+   
 }
 
 

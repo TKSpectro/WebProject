@@ -33,8 +33,12 @@ li {
     display: inline;
 }
 
-::placeholder {
+.search ::placeholder {
     color: #E9BA65;
+}
+
+.register_fieldset ::placeholder {
+    color: #90B3B6;
 }
 
 .iamlogo {
