@@ -17,7 +17,7 @@ if(isset($_POST['sendContact']))
         if(Contact::validateInput($eMail,$check))
         {
             $params = [
-                'eMail'     => $eMail,
+                'email'     => $eMail,
                 'subject'   => $subject,
                 'message'   => $message
             ];

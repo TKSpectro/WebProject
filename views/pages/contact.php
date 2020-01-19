@@ -1,5 +1,5 @@
 <div class="formular">
-    <form class="iamform" action="<?= $_SERVER['PHP_SELF'] . '?a=contact'; ?>" method="Post">
+    <form class="iamform"  method="Post">
 
         <figure>
             <!--//TODO Change Picture-->

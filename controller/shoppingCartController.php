@@ -28,8 +28,6 @@ if(isset($_POST['addToShoppingCart']))
             
         }
     }
-
-   
             $params = [
             'prodID'     => $prodID,
             'quantity'   => $quantity,

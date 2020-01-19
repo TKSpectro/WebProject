@@ -54,7 +54,7 @@ if(isset($_POST['sendAccount']))
             $error;
             $account->insert($error);
             $_SESSION['loggedIn'] = true;
-            // test
+           // um die RandomNr als * zu machen
             $where=\app\models\Account::find('email = "'.$email. '"');
             $_SESSION['accountID']=$where['0']['accountID'];
             include __DIR__ . '/../controller/shared/shoppingcartHelfer.php';
