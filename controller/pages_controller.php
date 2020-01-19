@@ -56,6 +56,18 @@ class PagesController extends \app\core\Controller
 
     }
 
+    public function actionDocumentation()
+    {
+        $this->_params['title'] = 'Dokumentation';
+        $this->_params['Header'] = true;
+    }
+
+    public function actionContact()
+    {
+        $this->_params['title'] = 'Kontakt';
+        $this->_params['Header'] = true;
+    }
+
     public function actionImprint()
     {
         $this->_params['title'] = 'Impressum';
