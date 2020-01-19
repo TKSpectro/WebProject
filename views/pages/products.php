@@ -2,6 +2,16 @@
 namespace app\models;
 $productCounter = 0;
 ?>
+<div class="dropdown">
+    <button class="dropbtn">Sortierung</button>
+    <div class="dropdown-content">
+        <a href="index.php?a=products&type=<?=$_GET['type']?>&cat=<?= $_GET['cat']?>&sortBy=priceDesc">Preis: absteigend</a>
+        <a href="#">Preis: aufsteigend</a>
+        <a href="#">Name : absteigend</a>
+        <a href="#">Name : aufsteigend</a>
+    </div>
+</div>
+
 <div class="productList">
     <ul>
         <?php
@@ -49,16 +59,20 @@ $productCounter = 0;
                 //filter if a sort is given
                 if (isset($_GET['sortBy']))
                 {
-                    if($_GET['sortBy'] == 'priceDesc'){
+                    if ($_GET['sortBy'] == 'priceDesc')
+                    {
                         $sql .= ' ORDER BY stdPrice DESC';
                     }
-                    if($_GET['sortBy'] == 'priceAsc'){
+                    if ($_GET['sortBy'] == 'priceAsc')
+                    {
                         $sql .= ' ORDER BY stdPrice ASC';
                     }
-                    if($_GET['sortBy'] == 'nameDesc'){
+                    if ($_GET['sortBy'] == 'nameDesc')
+                    {
                         $sql .= ' ORDER BY descrip DESC';
                     }
-                    if($_GET['sortBy'] == 'nameAsc'){
+                    if ($_GET['sortBy'] == 'nameAsc')
+                    {
                         $sql .= ' ORDER BY descrip ASC';
                     }
                 }
