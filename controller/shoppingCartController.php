@@ -24,7 +24,7 @@ if(isset($_POST['addToShoppingCart']))
                 $warenkorb = new Shoppingcart($params);
                 $error;
                 $warenkorb->update($error,'prodID = "' . $prodID. '"');
-                exit;
+                exit(0);
             
         }
     }
@@ -65,7 +65,7 @@ else
                 $warenkorb = new Shoppingcart($params);
                 $error;
                 $warenkorb->update($error,'prodID = "' . $prodID. '"');
-                exit;
+                exit(0);
             
         }
     } 
@@ -85,7 +85,7 @@ else
 if(isset($_POST['delete']))
 {  
     $prodID = $_POST['prodID'];
-    if(!empty($_POST['quantity']))
+   if(!empty($_POST['quantity']))
     {
         $quantity=$_POST['quantity'];
         $params = [
