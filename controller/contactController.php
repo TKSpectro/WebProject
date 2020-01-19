@@ -25,7 +25,8 @@ if(isset($_POST['sendContact']))
             $contact = new Contact($params);
             $error = null;
             $contact->insert($error);
-            header('Location: index.php');
+            header('Location: index.php?a=contact');
+            //TODO give user feedback
         }
         else
         {
