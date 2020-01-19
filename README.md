@@ -4,10 +4,10 @@
 
 ### Installtion
 
-You need a mysql DB install the dump from:
+You need a mysql DB install:
 
 ```
-src/database/dump/empty-db-dump_v1.sql
+src/database/database.mwb
 ```
 
 ### Configuration / Settings
@@ -17,11 +17,7 @@ src/database/dump/empty-db-dump_v1.sql
 
 ### Folders
 
-```core``` - Classes (can be use by other project)
-
-```config``` - Settings for the project 
-
-```helper``` - Functions and classes only for the project
+```src``` - DB (can be use by other project)
 
 ...
 
