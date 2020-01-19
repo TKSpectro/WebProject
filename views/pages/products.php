@@ -15,7 +15,7 @@ $productCounter = 0;
 <div class="productList">
     <ul>
         <?php
-
+ 
         $db = $GLOBALS['db'];
         $result = null;
 

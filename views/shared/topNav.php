@@ -6,7 +6,7 @@ namespace app\models;
         <li class="subnav paddLeft">
             <div class="width <? if($_GET['type'] == "Jungs-Toys"){?>activeBoy<?}?>">
             <a href="index.php?a=products&type=Jungs-Toys" class="subnavbtn"><img src="assets/images/boyIcon.png"
-                                                                                  alt="Jungen Bild">
+                                                                                 alt="Jungen Bild">
                 <div class="topNavBoy" >Jungen</div>
             </a>
             <ul class="subnav-content">

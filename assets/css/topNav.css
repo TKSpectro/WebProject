@@ -24,11 +24,11 @@
     }
     
     .topNavBoy {
-        color: #6cb6bd;
+        color: #3bc6d3;
     }
     
     .topNavConsole {
-        color: #e9ba65;
+        color: #f1ac2c;
     }
     
     .topNavGirl {
@@ -55,21 +55,25 @@
     .activeBoy {
         font-size: 27px;
         box-shadow: 0px 4px 8px 0px rgba(108, 182, 189, 0.7);
+        border-radius: 20px;
     }
     
     .activeGirl {
         font-size: 25px;
         box-shadow: 0px 4px 8px 0px rgba(190, 95, 92, 0.705);
+        border-radius: 20px;
     }
     
     .activeKonsole {
         font-size: 25px;
         box-shadow: 0px 4px 8px 0px #ecb349a8;
+        border-radius: 20px;
     }
     
     .subnav-content {
         display: none;
         width: 100%;
+        background: #E9E8D9;
     }
     
     .subnav-content a {
