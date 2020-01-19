@@ -96,7 +96,7 @@ ul.icons img {
 div.formular {
     width: 45%;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 3%;
     margin-bottom: 3%;
 }
 
@@ -107,14 +107,14 @@ div img {
 
 .iamform {
     border-radius: 5px;
-    color: rgb(108, 182, 189);
+    color: rgb(105, 221, 231);
     font-size: 21px;
-    background-color: rgba(183, 88, 91, 0.25);
+    background-color: rgb(224, 87, 87);
 }
 
 #kontoErstellenlink {
-    color: #96C1C5;
-    font-size: 20px;
+    color: rgb(105, 221, 231);
+    font-size: 22px;
     font-weight: bold;
     text-decoration: none;
     float: right;
@@ -122,7 +122,7 @@ div img {
 }
 
 a#kontoErstellenlink:hover {
-    font-size: 22px;
+    font-size: 25px;
 }
 
 fieldset {
@@ -158,7 +158,7 @@ div figcaption {
 
 .iamform input[type="submit"] {
     background-color: #96C1C5;
-    color: #EAE8DE;
+    color: rgb(224, 87, 87);
     font-size: 21px;
     border: none;
     cursor: pointer;

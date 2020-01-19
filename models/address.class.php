@@ -60,35 +60,6 @@ class Address extends BaseModel
         return false;
     }*/
 
-   /* static function findAll()
-    {
-        $db = $GLOBALS['database'];
-
-        $result = [];
-
-        try
-        {
-            $dbResult = $db->query('SELECT * FROM account WHERE 1')->fetchAll();
-
-            foreach ($dbResult as $index => $dbAccountObj)
-            {
-                $accountObj = new Account($dbAccountObj);
-                $result[] = $accountObj;
-            }
-        }
-        catch (\PDOException $e)
-        {
-            // TODO: Handle Error!!
-        }
-
-        return $result;
-    }
-
-
-    public function fullname()
-    {
-        return ($this->firstname ?? '') . ' ' . ($this->lastname ?? '');
-    }*/
 }
 
 

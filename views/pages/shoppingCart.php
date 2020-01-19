@@ -18,28 +18,26 @@ $anzahl=0;?>
 </tr>
 </thead>
 <tbody> 
-    <?php foreach ($ShoppingCartProduct as $prodID)
-{ $produkt= Product::find('prodID = "' . $prodID['prodID'] . '"');   
-  $prod=$produkt['0'];?>
+    <?php 
+foreach ($ShoppingCartProduct as $prodID)
+if(!empty($_SESSION['accountID']))
+{
+    if($_SESSION['accountID']==$prodID['accountID'])  
+    {   
+    $produkt= Product::find('prodID = "' . $prodID['prodID'] . '"');   
+    include __DIR__ . '/../shared/shoppingcartProdukte.php';
+    }
+}
+else
+{
+    if($prodID['randomNr']==$_COOKIE['randomNr'])
+    {
+        $produkt= Product::find('prodID = "' . $prodID['prodID'] . '"');   
+    include __DIR__ . '/../shared/shoppingcartProdukte.php';
+    }
+} 
 
-<tr>
-    <td class="prod"><img src="<?= $prod['photo'] ?>" alt="produckt"></td>
-    <td class="prodName"><?= $prod['descrip'] ?></td>
-    
-    <td><?= $prod['stdPrice'] ?>€</td>
-    <td><? echo $prodID['quantity'];
-         $anzahl+=$prodID['quantity'];?></td>
-    <td> <form method="post" action="" >
-    <input type="hidden"    name="prodID" value="<?= $prod['prodID'] ?>">
-    <input class="btn" type="submit"    name="delete" value="ENTFERNEN"></form></td>
-        
-    <td><?php echo $prod['stdPrice']* $prodID['quantity']; 
-    $summe+=$prod['stdPrice']* $prodID['quantity'];?>€</td>
-    </tr>
-<tr>
-    <td  colspan="6"><div class="seprator"></div></td>
-</tr>
-<?}?>        
+?>        
 </tbody>
 </table>
     <div class="summe">

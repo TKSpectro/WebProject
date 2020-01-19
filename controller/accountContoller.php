@@ -56,7 +56,7 @@ if(isset($_POST['sendAccount']))
             $_SESSION['loggedIn'] = true;
             $where=\app\models\Account::find('email = "'.$email. '"');
             $_SESSION['accountID']=$where['0']['accountID'];
-
+            include __DIR__ . '/../controller/shared/shoppingcartHelfer.php';
             header('Location: index.php');
           
           

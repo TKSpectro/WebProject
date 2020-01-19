@@ -1,7 +1,7 @@
-<? 
+<?
 
 
- function logIn()
+function checkIfRemembered()
 {
     
       $email   = $_COOKIE['email'];
@@ -14,12 +14,12 @@
          {
             if(password_verify($password, $where['0']['passwordHash']))
             {
-              $_SESSION['loggedIn'] = true;
-            
+              $_SESSION['loggedIn'] = true; 
               
-           }  
-          }
-      }      
+              include __DIR__ . '/../controller/shared/shoppingcartHelfer.php';
+            }      
+         }
+      }
 }
 
 function rememberMe($email, $password)

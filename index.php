@@ -37,7 +37,7 @@ if(file_exists($controllerPath))
 			$controllerInstance->$actionMethodName();
 			if (isset($_COOKIE['email']))
 			{
-			 logIn();
+				checkIfRemembered();
 			}
 			$controllerInstance->renderHTML();
 			
