@@ -29,6 +29,7 @@ if(!empty($_SESSION['accountID']))
     }
 }
 else
+{if(!empty($_COOKIE['randomNr']))
 {
     if($prodID['randomNr']==$_COOKIE['randomNr'])
     {
@@ -36,6 +37,7 @@ else
     include __DIR__ . '/../shared/shoppingcartProdukte.php';
     }
 } 
+}
 
 ?>        
 </tbody>
