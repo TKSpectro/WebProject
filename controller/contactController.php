@@ -5,6 +5,14 @@ namespace app\controller;
 
 use app\models\Contact;
 
+class ContactController extends \app\core\Controller
+{
+public function actionContact()
+{
+    $this->_params['title'] = 'Kontakt';
+    $this->_params['Header'] = true;
+
+
 if(isset($_POST['sendContact']))
 {
     if(!empty($_POST['eMail']) && !empty($_POST['subject']) && !empty($_POST['message']))
@@ -25,7 +33,7 @@ if(isset($_POST['sendContact']))
             $contact = new Contact($params);
             $error = null;
             $contact->insert($error);
-            header('Location: index.php?a=contact');
+            header('Location: index.php?c=contact&a=contact');
             //TODO give user feedback
         }
         else
@@ -42,4 +50,6 @@ if(isset($_POST['sendContact']))
         $error = 'Alle Felder müssen ausgefüllt sein';
     }
 
+}
+}
 }

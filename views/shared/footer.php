@@ -5,7 +5,7 @@
                 <a href="index.php?a=imprint">Impressum</a>
             </li>
             <li>
-                <a href="index.php?a=contact">Kontakt</a>
+                <a href="index.php?c=contact&a=contact">Kontakt</a>
             </li>
             <li>
                 <a href="index.php?a=aboutUs">Über uns</a>

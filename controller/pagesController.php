@@ -38,11 +38,7 @@ class PagesController extends \app\core\Controller
         $this->_params['Header'] = true;
     }
 
-    public function actionContact()
-    {
-        $this->_params['title'] = 'Kontakt';
-        $this->_params['Header'] = true;
-    }
+  
 
     public function actionImprint()
     {
