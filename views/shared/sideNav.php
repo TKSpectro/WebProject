@@ -1,8 +1,8 @@
 <?php
 namespace app\models;
-if($_GET['type']=='Jungs-Toys') 
+if($_GET['type']=='Jungs-Toys' || isset($_GET['search'])) 
         $color='#2dc2cf'; 
-        elseif($_GET['type']=='Konsolespiele')
+        elseif($_GET['type']=='Konsolespiele' || isset($_GET['search']))
         $color='#f1ac2c';
         else
         $color='rgb(134, 14, 10)';

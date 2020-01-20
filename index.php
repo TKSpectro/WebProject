@@ -16,7 +16,7 @@ $actionName = $_GET['a'] ?? 'index';
 
 
 
-$controllerPath = __DIR__.'/controller/'.$controllerName.'_controller.php';
+$controllerPath = __DIR__.'/controller/'.$controllerName.'Controller.php';
 
 if(file_exists($controllerPath))
 {
@@ -31,7 +31,7 @@ if(file_exists($controllerPath))
 		$controllerInstance = new $controllerClassName($actionName, $controllerName);
 
 		$actionMethodName = 'action'.ucfirst($actionName);
-
+		#die("$controllerClassName  ++++ $actionMethodName");
 		if(method_exists($controllerInstance, $actionMethodName))
 		{
 			$controllerInstance->$actionMethodName();
@@ -44,13 +44,13 @@ if(file_exists($controllerPath))
 		}
 		else
 		{
-			header('Location: index.php?c=page&a=error404');
+			header('Location: index.php?c=page&a=error402');
 		}
 	}
 	else
 	{
 		
-		header('Location: index.php?c=pages&a=error404');
+		header('Location: index.php?c=pages&a=error403');
 	}
 
 }

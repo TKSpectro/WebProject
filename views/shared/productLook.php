@@ -1,8 +1,8 @@
-<?if($_GET['type']=='Jungs-Toys') 
+<?if($_GET['type']=='Jungs-Toys' || !empty($_GET['search'])) 
         $color='#2dc2cf'; 
-        elseif($_GET['type']=='Konsolespiele')
+        elseif($_GET['type']=='Konsolespiele' || isset($_GET['search']))
         $color='#f1ac2c';
-        else
+        else 
         $color='rgb(134, 14, 10)';?>
 <div class="column">
 <li>
@@ -12,7 +12,7 @@
         ><?= $prod['descrip'] ?></div>
         <div class="prodInfo" style="color:<?=$color;?>"><?= $prod['stdPrice'] ?>€</div>
         <iframe name="hiddenFrame" class="hide"></iframe>
-        <form method="post" action="?a=shoppingCart" target="hiddenFrame">
+        <form method="post" action="?c=shoppingcart&a=shoppingCart" target="hiddenFrame">
             <input type="hidden"    name="prodID" value="<?= $prod['prodID'] ?>">
             <input type="hidden"    name="quantity"  value="1">
             <input class="btn" type="submit"    name="addToShoppingCart" value="In den Warenkorb">

@@ -21,9 +21,11 @@ require_once 'models/contact.class.php';
 
 // controller
 require_once 'controller/addressController.php';
-require_once 'controller/accountContoller.php';
+require_once 'controller/accountController.php';
+require_once 'controller/formularController.php';
 require_once 'controller/shoppingcartController.php';
 require_once 'controller/contactController.php';
+require_once 'controller/loginController.php';
 #require_once 'views/printAddress.php';
 
 

@@ -3,6 +3,28 @@ namespace app\controller;
 
 use app\models\Shoppingcart;
 
+
+class ShoppingcartController extends \app\core\Controller
+{
+public function actionShoppingCart()
+{
+    $this->_params['title'] = 'Warenkorb';
+    $this->_params['Header'] = true;    
+    if(!empty($_SESSION['accountID']))
+        { 
+        $accountID=$_SESSION['accountID'];
+        $this->_params['ShoppingCartProduct'] =Shoppingcart::find('accountID = "'.$accountID. '"');
+        }
+    else
+        {
+        if(!empty($_COOKIE['randomNr']))
+        {
+            $randomNr = $_COOKIE['randomNr'];
+            $this->_params['ShoppingCartProduct'] =Shoppingcart::find('randomNr = "'.$randomNr. '"');
+
+        }
+    }
+
 if(isset($_POST['addToShoppingCart']))
 {   
     $prodID = $_POST['prodID'];
@@ -10,9 +32,8 @@ if(isset($_POST['addToShoppingCart']))
     
     if(!empty($_SESSION['accountID']))
     {
-    $accountID=$_SESSION['accountID'];
-    $ShoppingCartProduct=\app\models\Shoppingcart::find('accountID = "'.$accountID. '"');
-    foreach ($ShoppingCartProduct as $prod)
+    
+    foreach ($this->_params['ShoppingCartProduct'] as $prod)
  {
     if($prod['prodID'] == $prodID)
      {        
@@ -24,10 +45,10 @@ if(isset($_POST['addToShoppingCart']))
                 $warenkorb = new Shoppingcart($params);
                 $error;
                 $warenkorb->update($error,'prodID = "' . $prodID. '"');
-                exit(0);
-            
-        }
+                exit(0);        
     }
+        
+}
             $params = [
             'prodID'     => $prodID,
             'quantity'   => $quantity,
@@ -45,13 +66,7 @@ else
         $randomNr=mt_rand();
     setcookie('randomNr',$randomNr,time() + 3600 * 24 * 30);
     }
-    else
-    {
-        $randomNr=$_COOKIE['randomNr'];
-    }
-    $ShoppingCartProduct=Shoppingcart::find('randomNr = "'.$randomNr. '"');
-
-    foreach ($ShoppingCartProduct as $prod)
+    foreach ($this->_params['ShoppingCartProduct'] as $prod)
  {
     if($prod['prodID'] == $prodID)
      { 
@@ -95,6 +110,8 @@ if(isset($_POST['delete']))
             $warenkorb = new Shoppingcart($params);
             $error;
             $warenkorb->update($error,'prodID = "' . $prodID. '"');
+            $this->_params['ShoppingCartProduct'] =Shoppingcart::find('accountID = "'.$accountID. '"');
+
     }
    else
     {$params = [
@@ -108,6 +125,12 @@ if(isset($_POST['delete']))
    
 }
 
+/*if(isset($_GET['ajax']))
+{
+   
+    exit(0); // Valid EXIT with JSON OUTPUT
+}*/
 
-
+}
+}
 ?>

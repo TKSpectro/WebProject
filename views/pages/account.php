@@ -1,6 +1,6 @@
 
 <div class="formular">
-<form class="iamform" action="<?=$_SERVER['PHP_SELF'].'?a=account';?>"  method="Post">
+<form class="iamform"   method="Post">
 
     
 <figure>

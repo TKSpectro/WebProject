@@ -49,7 +49,7 @@ class Controller
 	protected function viewPath($actionName = null, $controllerName = null)
 	{
 		
-		return __DIR__.'/../views/'.$controllerName.'/'.$actionName.'.php';
+		return __DIR__.'/../views/pages/'.$actionName.'.php';
 		
 	}
 }

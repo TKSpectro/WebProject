@@ -35,7 +35,7 @@
 </form> !-->
 
 <div class="formular">
-<form class="iamform" action="<?=$_SERVER['PHP_SELF'].'?a=formular';?>"  method="Post"> 
+<form class="iamform"   method="Post"> 
 
     
 <figure>
