@@ -2,20 +2,48 @@
 namespace app\models;
 $productCounter = 0;
 ?>
-<div class="dropdown">
-    <button class="dropbtn">Sortierung</button>
-    <div class="dropdown-content">
-        <a href="index.php?a=products&type=<?=$_GET['type']?>&cat=<?= $_GET['cat']?>&sortBy=priceDesc">Preis: absteigend</a>
-        <a href="#">Preis: aufsteigend</a>
-        <a href="#">Name : absteigend</a>
-        <a href="#">Name : aufsteigend</a>
-    </div>
-</div>
 
 <div class="productList">
+
+
+    <div class="dropdown">
+        <button class="dropbtn">Sortierung</button>
+        <div class="dropdown-content">
+            <a href="index.php?a=products<? if (isset($_GET['type']))
+            {
+                ?>&type=<?= $_GET['type'] ?><? } ?><? if (isset($_GET['cat']))
+            {
+                ?>&cat=<?= $_GET['cat'] ?><? } ?><? if (isset($_GET['prodCat']))
+            {
+                ?>&prodCat=<?= $_GET['prodCat'] ?><? } ?>&sortBy=priceDesc">Preis: absteigend</a>
+            <a href="index.php?a=products<? if (isset($_GET['type']))
+            {
+                ?>&type=<?= $_GET['type'] ?><? } ?><? if (isset($_GET['cat']))
+            {
+                ?>&cat=<?= $_GET['cat'] ?><? } ?><? if (isset($_GET['prodCat']))
+            {
+                ?>&prodCat=<?= $_GET['prodCat'] ?><? } ?>&sortBy=priceAsc"">Preis: aufsteigend</a>
+            <a href="index.php?a=products<? if (isset($_GET['type']))
+            {
+                ?>&type=<?= $_GET['type'] ?><? } ?><? if (isset($_GET['cat']))
+            {
+                ?>&cat=<?= $_GET['cat'] ?><? } ?><? if (isset($_GET['prodCat']))
+            {
+                ?>&prodCat=<?= $_GET['prodCat'] ?><? } ?>&sortBy=nameDesc"">Name : absteigend</a>
+            <a href="index.php?a=products<? if (isset($_GET['type']))
+            {
+                ?>&type=<?= $_GET['type'] ?><? } ?><? if (isset($_GET['cat']))
+            {
+                ?>&cat=<?= $_GET['cat'] ?><? } ?><? if (isset($_GET['prodCat']))
+            {
+                ?>&prodCat=<?= $_GET['prodCat'] ?><? } ?>&sortBy=nameAsc"">Name : aufsteigend</a>
+        </div>
+    </div>
+
+
     <ul>
         <?php
- 
+
         $db = $GLOBALS['db'];
         $result = null;
 
