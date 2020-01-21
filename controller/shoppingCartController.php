@@ -100,9 +100,10 @@ else
 if(isset($_POST['delete']))
 {  
     $prodID = $_POST['prodID'];
-   if(!empty($_POST['quantity']))
+    $quantity=$_POST['quantity'];
+   $Shoppingcart =Shoppingcart::find('prodID = "'.$prodID. '"');
+   if($_POST['quantity']!= $Shoppingcart['0']['quantity'] )
     {
-        $quantity=$_POST['quantity'];
         $params = [
             'prodID'     => $prodID,
             'quantity'   => $quantity
@@ -110,27 +111,25 @@ if(isset($_POST['delete']))
             $warenkorb = new Shoppingcart($params);
             $error;
             $warenkorb->update($error,'prodID = "' . $prodID. '"');
-            $this->_params['ShoppingCartProduct'] =Shoppingcart::find('accountID = "'.$accountID. '"');
+            $this->_params['ShoppingCartProduct'] =Shoppingcart::find();
 
     }
    else
-    {$params = [
+    {
+        $params = [
         'prodID'     => $prodID,
-        'quantity'   => $_POST['quantity']
+        'quantity'   => $quantity
         ];
         $warenkorb = new Shoppingcart($params);
         $error;
         $warenkorb->delete($error,'prodID = "' . $prodID. '"');
     }
    
-}
-
-/*if(isset($_GET['ajax']))
+}   
+if(isset($_GET['ajax']))
 {
-   
     exit(0); // Valid EXIT with JSON OUTPUT
-}*/
-
+}
 }
 }
 ?>
