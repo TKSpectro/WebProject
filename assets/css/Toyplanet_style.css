@@ -19,7 +19,10 @@ body {
     background-size: auto;
     margin: 0;
     padding: 0;
+    padding-bottom: 84px;
+    position: relative;
     box-sizing: border-box;
+    min-height: 100vh;
 }
 
 ul {
