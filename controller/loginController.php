@@ -27,6 +27,8 @@ class LoginController extends \app\core\Controller
                         {
                             $_SESSION['loggedIn'] = true;
                             $_SESSION['accountID'] = $where['0']['accountID'];
+                            include __DIR__ . '/../controller/shared/shoppingcartHelfer.php';
+
                             if (isset($_POST['rememberMe']))
                             {
                                 rememberMe($where['0']['email'], $password);

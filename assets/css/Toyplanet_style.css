@@ -36,7 +36,7 @@ li {
 }
 
 .search ::placeholder {
-    color: #E9BA65;
+    color: rgb(73, 73, 73);
 }
 
 .register_fieldset ::placeholder {
@@ -120,7 +120,7 @@ div img {
     border-radius: 5px;
     color: rgb(105, 221, 231);
     font-size: 21px;
-    background-color: rgb(224, 87, 87);
+    background-color: #be4945;
 }
 
 #kontoErstellenlink {
@@ -185,4 +185,3 @@ div figcaption {
     width: 1px;
     height: 1px;
 }
-

@@ -1,37 +1,23 @@
 <h1>Über Uns</h1>
 <?php    
 use app\models\Shoppingcart;
-
-#$test=aray();
-$ShoppingCartProduct=app\models\Shoppingcart::find();
-#var_dump($ShoppingCartProduct);
-#echo '<hr>';
-echo (count($ShoppingCartProduct).'<br>');
+$ShoppingCartProduct=[1,2,3,4,5,6,7,8,9,10];
 
 foreach ($ShoppingCartProduct as $accountID)
 {
-#for ($counter =1; $counter<sizeof($ShoppingCartProduct);$counter++)
- var_dump($accountID['ID']);
+   echo 'AccountID ='.($accountID).'<br>';
+      #die('test');
+for ($counter =1; $counter<sizeof($ShoppingCartProduct);++$counter)
+{          echo 'counter='.($counter).'<br>';
 
-   
-    /*$params = [
-        'prodID'     => '1',
-        'quantity'   => '1'
-        ];
-    $warenkorb = new Shoppingcart($params);
-    $error;
-    $warenkorb->delete($error,'ID = "' . $test. '"');
-    var_dump(app\models\Shoppingcart::find());
-    echo '<br>';
+      if($accountID == $ShoppingCartProduct[$counter])
+      { 
+         unset($ShoppingCartProduct,$ShoppingCartProduct[$counter]);
+      }
 
-
-   /*if($accountID == $ShoppingCartProduct[$counter])
-   {  
-      $error;
-      $$ShoppingCartProduct[$counter]->delete($error);*/
-
-      
-   }
+}
+echo 'the size ='.(sizeof($ShoppingCartProduct));
+}
 
 
 

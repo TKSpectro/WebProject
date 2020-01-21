@@ -20,6 +20,12 @@ function checkIfRemembered()
             }      
          }
       }
+      elseif(isset($_SESSION['accountID']))
+      {
+            $_SESSION['loggedIn'] = true; 
+              
+            include __DIR__ . '/../controller/shared/shoppingcartHelfer.php';
+      }
 }
 
 function rememberMe($email, $password)

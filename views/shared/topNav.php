@@ -51,7 +51,7 @@ namespace app\models;
         </li>
         <li class="subnav">
         <div class="width">
-            <a href="index.php?a=aboutUs" class="subnavbtn"><img src="assets/images/aboutIcon.png" alt="Über uns Bild">
+            <a href="index.php?a=aboutUs" class="subnavbtn"><img src="assets/images/aboutIcon2.png" alt="Über uns Bild">
                 <div class="topNavAbout">Über Uns</div>
             </a>
         </li> </div>
