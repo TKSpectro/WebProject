@@ -102,7 +102,9 @@ if(isset($_POST['delete']))
     $prodID = $_POST['prodID'];
     $quantity=$_POST['quantity'];
    $Shoppingcart =Shoppingcart::find('prodID = "'.$prodID. '"');
-   if($_POST['quantity']!= $Shoppingcart['0']['quantity'] )
+   
+  
+      if( isset($Shoppingcart['0'])  &&  $_POST['quantity']!=$Shoppingcart['0']['quantity'] )
     {
         $params = [
             'prodID'     => $prodID,
@@ -112,8 +114,8 @@ if(isset($_POST['delete']))
             $error;
             $warenkorb->update($error,'prodID = "' . $prodID. '"');
             $this->_params['ShoppingCartProduct'] =Shoppingcart::find();
-
     }
+
    else
     {
         $params = [

@@ -1,11 +1,15 @@
 <?php
 namespace app\models;
-if($_GET['type']=='Jungs-Toys' || isset($_GET['search'])) 
+if( !isset($_GET['search'])) 
+ {
+     if(  $_GET['type']=='Jungs-Toys' )
         $color='#2dc2cf'; 
         elseif($_GET['type']=='Konsolespiele' || isset($_GET['search']))
         $color='#f1ac2c';
         else
         $color='rgb(134, 14, 10)';
+}
+else $color='#f1ac2c';
 ?>
 
 <div class="sidenav">
