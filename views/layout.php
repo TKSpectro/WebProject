@@ -6,6 +6,17 @@
     <link rel="stylesheet" type="text/css" href="assets/css/sideNav.css">
     <link rel="stylesheet" type="text/css" href="assets/css/topNav.css">
     <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+    
+    <style>
+        @font-face{
+            font-family: "Bangers";
+            src: url("assets/fonts/Bangers-Regular.ttf");
+        }
+        @font-face{
+            font-family: "KGILikeToMoveIt";
+            src: url("assets/fonts/KGILikeToMoveIt.ttf");
+        }
+    </style>
 
     <?php if (!empty($_GET))
     {
@@ -19,6 +30,10 @@
 
         if ($_GET['a'] == 'products'):?>
             <link rel="stylesheet" type="text/css" href="assets/css/productList.css">
+        <? endif;
+
+        if ($_GET['a'] == 'singleProduct'):?>
+            <link rel="stylesheet" type="text/css" href="assets/css/singleProduct.css">
         <? endif;
 
         if ($_GET['a'] == 'imprint' || $_GET['a'] == 'documentation'):?>

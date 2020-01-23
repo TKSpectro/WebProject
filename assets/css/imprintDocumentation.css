@@ -1,6 +1,9 @@
+
 .imprint, .documentation{
     background: #EAE7E0;
     display: unset;
     box-sizing: unset;
     position: unset;
+    padding-left: 50px;
+    font-family: "KGILikeToMoveIt";
 }
