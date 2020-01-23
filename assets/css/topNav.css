@@ -2,7 +2,6 @@
         overflow: visible;
         font-family: "KGILikeToMoveIt";
         margin: auto;
-        border-radius: 5px;
     }
     
     .subnav {
@@ -18,24 +17,39 @@
         text-decoration: none;
     }
     
+    .selected {
+        box-shadow: lawngreen;
+    }
+    
     .topNavBoy {
+        padding-top: 2px;
+        padding-bottom: 12px;
         color: #3bc6d3;
         text-align: center;
+        background-color: #be4945;
     }
     
     .topNavConsole {
+        padding-top: 5px;
+        padding-bottom: 0.5em;
         color: #f1ac2c;
         text-align: center;
+        background-color: #3bc6d3;
     }
     
     .topNavGirl {
+        padding-top: 5px;
+        padding-bottom: 0.5em;
         color: #be4945;
         text-align: center;
+        background-color: #f1ac2c;
     }
     
     .topNavAbout {
         color: rgb(73, 73, 73);
         text-align: center;
+        background-color: #B3B3B3;
+        padding: 10px;
     }
     
     .subnavbtn img {
@@ -46,24 +60,23 @@
     
     #girlImage {
         width: 95px;
+        padding-top: 11px;
+    }
+    
+    #konsoleImage {
+        padding-top: 6px;
     }
     
     .activeBoy {
         font-size: 27px;
-        background-color: #be4945;
-        border-radius: 20px;
     }
     
     .activeGirl {
         font-size: 25px;
-        background-color: #f1ac2c;
-        border-radius: 20px;
     }
     
     .activeKonsole {
         font-size: 25px;
-        background-color: #3bc6d3;
-        border-radius: 5px;
     }
     
     .topNavList {
@@ -71,8 +84,8 @@
     }
     
     .subnav-content {
+        padding: 0.5em;
         display: none;
-        background-color: tomato;
         padding: 0;
         width: 100%;
         padding-bottom: 2%;
