@@ -1,7 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
-
-    var form = document.getElementById('form-date');
-    var submit = document.getElementById('senddate');
+    if ((document.getElementById('form-date') != null) && (document.getElementById('senddate') != null)) {
+        var form = document.getElementById('form-date');
+        var submit = document.getElementById('senddate');
+    }
+    /*else {
+           var form = document.getElementById('formContactUs');
+           var submit = document.getElementById('submitContactUs');
+       }*/
     //var errorBox = document.getElementById('error-box');
 
     submit.addEventListener('click', function(event) {
@@ -30,4 +35,5 @@ document.addEventListener('DOMContentLoaded', function() {
         request.send(formData);
 
     });
+
 });

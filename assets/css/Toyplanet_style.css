@@ -19,18 +19,13 @@ body {
     background-size: auto;
     margin: 0;
     padding: 0 0 84px;
-    position: relative;
-    box-sizing: border-box;
-    min-height: 100vh;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
     overflow: hidden;
 }
 
-li {
+.startList {
     list-style: none;
     display: inline;
 }
@@ -99,8 +94,6 @@ ul.icons img {
 }
 
 .contentCon {
-    position: relative;
-    box-sizing: border-box;
     display: flex;
 }
 
@@ -111,13 +104,13 @@ div.formular {
     margin-bottom: 3%;
 }
 
-div img {
+.formular img {
     width: 15%;
     margin: -8% 42.5% 2%;
 }
 
 .iamform {
-    border-radius: 5px;
+    border-radius: 15px;
     color: rgb(105, 221, 231);
     font-size: 21px;
     background-color: #be4945;

@@ -51,5 +51,9 @@ if(isset($_POST['sendContact']))
     }
 
 }
+/*if(isset($_GET['ajax']))
+{
+    exit(0); // Valid EXIT with JSON OUTPUT
+}*/
 }
 }

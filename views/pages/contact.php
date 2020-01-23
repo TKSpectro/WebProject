@@ -1,5 +1,5 @@
 <div class="formular">
-    <form class="iamform"  method="Post">
+    <form class="iamform"  id="formContactUs" method="Post">
 
         <figure>
             <!--//TODO Change Picture-->
@@ -24,6 +24,7 @@
             <textarea id="message" name="message" placeholder="" style="height: 200px;"></textarea>
         </fieldset>
 
-        <input type="submit" name="sendContact" value="Abschicken">
+        <input type="submit" id="submitContactUs" name="sendContact" value="Abschicken">
     </form>
 </div>
+<!--<script type="text/javascript" src="assets/js/script.js"></script>

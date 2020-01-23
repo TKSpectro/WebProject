@@ -1,21 +1,16 @@
     .navbar {
-        display: flex;
+        overflow: visible;
+        font-family: "KGILikeToMoveIt";
+        margin: auto;
+        border-radius: 5px;
     }
     
     .subnav {
-        width: 25%;
+        position: relative;
+        display: inline-block;
+        width: 24.5%;
         font-size: 25px;
-        margin-bottom: 0.5em;
-    }
-    
-    .width {
-        width: 40%;
-        border-radius: 5px;
-        text-align: center;
-    }
-    
-    .paddLeft {
-        padding-left: 15%;
+        list-style: none;
     }
     
     .subnav .subnavbtn {
@@ -25,66 +20,75 @@
     
     .topNavBoy {
         color: #3bc6d3;
+        text-align: center;
     }
     
     .topNavConsole {
         color: #f1ac2c;
+        text-align: center;
     }
     
     .topNavGirl {
         color: #be4945;
+        text-align: center;
     }
     
     .topNavAbout {
         color: rgb(73, 73, 73);
+        text-align: center;
     }
     
     .subnavbtn img {
         display: block;
         width: 70px;
-        margin: 0;
-        padding-left: 1em;
-        padding-bottom: 0.3em;
+        margin: auto;
     }
     
     #girlImage {
         width: 95px;
-        padding-left: 0.5em;
     }
     
     .activeBoy {
         font-size: 27px;
-        box-shadow: 0px 4px 8px 0px rgba(108, 182, 189, 0.7);
+        background-color: #be4945;
         border-radius: 20px;
     }
     
     .activeGirl {
         font-size: 25px;
-        box-shadow: 0px 4px 8px 0px rgba(190, 95, 92, 0.705);
+        background-color: #f1ac2c;
         border-radius: 20px;
     }
     
     .activeKonsole {
         font-size: 25px;
-        box-shadow: 0px 4px 8px 0px #ecb349a8;
-        border-radius: 20px;
+        background-color: #3bc6d3;
+        border-radius: 5px;
+    }
+    
+    .topNavList {
+        list-style: none;
     }
     
     .subnav-content {
         display: none;
+        background-color: tomato;
+        padding: 0;
         width: 100%;
-        background: #E9E8D9;
+        padding-bottom: 2%;
+        position: absolute;
     }
     
     .subnav-content a {
-        float: left;
-        font-size: 18px;
+        font-size: 21px;
         text-decoration: none;
-        padding: 1em 1em 1em 1.8em;
+        display: block;
+        padding-bottom: 1em;
     }
     
     .subnav-content a:hover {
         font-size: 23px;
+        display: block;
     }
     
     .subnav:hover .subnav-content {
