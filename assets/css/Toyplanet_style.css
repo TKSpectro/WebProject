@@ -20,7 +20,7 @@ body {
     background-image: url("../images/background.png");
     background-size: auto;
     margin: 0;
-    padding: 0 0 84px;
+    padding: 0;
 }
 
 ul {
@@ -73,6 +73,11 @@ ul {
     margin: 0em 2em;
     float: left;
     padding-top: 1.5em;
+}
+
+ul.icons {
+    padding: 0;
+    margin: 0;
 }
 
 ul.icons img {

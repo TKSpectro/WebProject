@@ -1,3 +1,9 @@
+.searchUl {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1%;
+}
+
 .searchButton {
     background: none;
     padding: 0px;
@@ -5,24 +11,30 @@
 }
 
 .searchInput {
-    padding: 3px;
     background-color: rgba(234, 232, 218, 0.1);
     font-size: 23px;
     border: none;
-    border-bottom: 2px #C38D8A solid;
+    text-align: left;
+    width: 80%;
 }
 
 div.search {
     float: right;
     text-align: left;
     padding: 0px;
-    width: 23%;
-    margin: 0.6% 0.5% 2%;
+    width: 17%;
+    height: 2em;
+    border-bottom: 2px #C38D8A solid;
+    margin-right: 2em;
 }
 
 .searchIcon {
     padding: 0;
     width: 30px;
     height: 30px;
+    float: left;
+}
+
+div.search img {
     float: right;
 }

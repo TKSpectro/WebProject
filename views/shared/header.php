@@ -23,7 +23,7 @@
             </li>
         <?php endif; ?>
     </ul>
-    <ul>
+    <ul class="searchUl">
         <li class="startList">
             <div class="search">
                 <form action="javascript:searchByWord();">

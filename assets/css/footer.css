@@ -1,27 +1,24 @@
-.footerMenu{
-    height: 84px;
+.footerMenu {
+    height: 5%;
     background: rgba(0, 0, 0, 0.1);
-    position: absolute;
-    bottom: 0;
     width: 100%;
+    display: flex
 }
 
-.footerTable{
-    display: table;
+.footerTable {
     margin: auto;
 }
 
-.footerTable ul{
+.footerTable ul {
     list-style: none;
-    padding-top: 30px;
 }
 
-.footerTable ul li{
+.footerTable ul li {
     display: inline;
     padding: 30px;
 }
 
-.footerTable ul li a{
+.footerTable ul li a {
     text-decoration: none;
     color: black;
 }

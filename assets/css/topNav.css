@@ -18,7 +18,7 @@
     }
     
     .topNavBoy {
-        padding-top: 2px;
+        padding-top: 5px;
         padding-bottom: 12px;
         color: #3bc6d3;
         text-align: center;
@@ -28,7 +28,7 @@
     .topNavConsole {
         padding-top: 5px;
         padding-bottom: 0.5em;
-        color: #F6BC50;
+        color: rgb(255, 203, 107);
         text-align: center;
         background-color: #3bc6d3;
     }
@@ -45,17 +45,17 @@
         color: rgb(73, 73, 73);
         text-align: center;
         background-color: #B3B3B3;
-        padding: 10px;
+        padding: 14px;
     }
     
     .subnavbtn img {
         display: block;
-        width: 70px;
+        width: 18%;
         margin: auto;
     }
     
     #girlImage {
-        width: 95px;
+        width: 24%;
         padding-top: 11px;
     }
     
@@ -64,23 +64,23 @@
     }
     
     .activeBoy {
-        box-shadow: 0px 0px 15px 12px #3bc6d3;
+        box-shadow: 0px 0px 15px 7px #3bc6d3;
         font-size: 27px;
     }
     
     .activeGirl {
         font-size: 25px;
-        box-shadow: 0px 0px 15px 12px #be4945;
+        box-shadow: 0px 0px 15px 7px #be4945;
     }
     
     .activeKonsole {
         font-size: 25px;
-        box-shadow: 0px 0px 15px 12px #f1ac2c;
+        box-shadow: 0px 0px 15px 7px #f1ac2c;
     }
     
     .activeAboutUs {
         font-size: 25px;
-        box-shadow: 0px 0px 15px 12px gray;
+        box-shadow: 0px 0px 15px 7px gray;
     }
     
     .topNavList {
