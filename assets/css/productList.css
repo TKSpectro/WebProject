@@ -141,3 +141,15 @@
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
+
+.jungeColor {
+    color: rgb(134, 14, 10);
+}
+
+.mädchenColor {
+    color: #f1ac2c;
+}
+
+.konsoleColor {
+    color: #2dc2cf;
+}

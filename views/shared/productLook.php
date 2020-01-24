@@ -1,22 +1,36 @@
-<? if (!isset($_GET['search']))
+<? /* if (!isset($_GET['search']))
 {
-    if ($_GET['type'] == 'Jungs-Toys')
-        $color = 'rgb(134, 14, 10)';
-    elseif ($_GET['type'] == 'Konsolespiele' || isset($_GET['search']))
-        $color = '#2dc2cf';
+  
+   elseif ($_GET['type'] == 'Konsolespiele' || isset($_GET['search']))
+        {?>konsoleColor<?};
     else
-        $color = '#f1ac2c';
+        {?>mädchenColor<?}
 }
 else
-    $color = '#f1ac2c'; ?>
-<div class="column">
-    <li class="prodlist">
+   {?>mädchenColor<?} */?>
+<div class="column ">
+
+    <li class="prodlist ">
         <div class="card">
             <a href="index.php?a=singleProduct&prodID=<?=$prod['prodID']?>">
                 <img src="<?= $prod['photo'] ?>" alt="produckt">
-                <div class="prodInfo" style="color:<?= $color; ?>" ;
+                <div class="prodInfo <? if (!isset($_GET['search']))
+                    {if ($_GET['type'] == 'Jungs-Toys'){?>jungeColor<?}
+                    elseif ($_GET['type'] == 'Konsolespiele' || isset($_GET['search']))
+                    {?>konsoleColor<?}
+                    else
+                    {?>mädchenColor<?}
+                }else
+                   {?>mädchenColor<?}?>" ;
                 ><?= $prod['descrip'] ?></div>
-                <div class="prodInfo" style="color:<?= $color; ?>"><?= $prod['stdPrice'] ?>€</div>
+                <div class="prodInfo <? if (!isset($_GET['search']))
+                    {if ($_GET['type'] == 'Jungs-Toys'){?>jungeColor<?}
+                    elseif ($_GET['type'] == 'Konsolespiele' || isset($_GET['search']))
+                    {?>konsoleColor<?}
+                    else
+                    {?>mädchenColor<?}
+                }else
+                   {?>mädchenColor<?}?>"><?= $prod['stdPrice'] ?>€</div>
             </a>
             <iframe name="hiddenFrame" class="hide"></iframe>
             <form method="post" action="?c=shoppingcart&a=shoppingCart" target="hiddenFrame">

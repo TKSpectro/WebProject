@@ -39,3 +39,15 @@
 .overCat a:hover {
     color: rgb(108, 182, 189);
 }
+
+.jungeColor a {
+    color: rgb(134, 14, 10);
+}
+
+.mädchenColor a {
+    color: #f1ac2c;
+}
+
+.konsoleColor a {
+    color: #2dc2cf;
+}
