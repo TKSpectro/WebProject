@@ -9,7 +9,8 @@ class ShoppingcartController extends \app\core\Controller
 public function actionShoppingCart()
 {
     $this->_params['title'] = 'Warenkorb';
-    $this->_params['Header'] = true;    
+    $this->_params['Header'] = true;  
+    $this->_params['ShoppingCartProduct'] = Array();
     if(!empty($_SESSION['accountID']))
         { 
         $accountID=$_SESSION['accountID'];

@@ -27,6 +27,11 @@ ul {
     overflow: hidden;
 }
 
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
 .startList {
     list-style: none;
     display: inline;

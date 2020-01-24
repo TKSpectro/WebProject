@@ -2,11 +2,13 @@
     height: 5%;
     background: rgba(0, 0, 0, 0.1);
     width: 100%;
-    display: flex
+    position: absolute;
+    bottom: 0;
 }
 
 .footerTable {
     margin: auto;
+    text-align: center;
 }
 
 .footerTable ul {

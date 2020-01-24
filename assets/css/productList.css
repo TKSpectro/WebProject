@@ -9,6 +9,7 @@
 
 .prodlist {
     list-style: none;
+    text-decoration: none;
 }
 
 .column {
@@ -35,6 +36,8 @@
 .card {
     padding: 0;
     text-align: center;
+    list-style: none;
+    text-decoration: none;
 }
 
 .card img {
