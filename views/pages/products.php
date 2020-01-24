@@ -5,10 +5,10 @@ $productCounter = 0;
 
 <div class="productList">
 
-
-    <div class="dropdown">
+<ul >
+    <li class="dropdownLi"> <div class="dropdown">
         <button class="dropbtn">Sortierung</button>
-        <div class="dropdown-content">
+        <div class="dropdown-content ">
             <a href="index.php?a=products<? if (isset($_GET['type']))
             {
                 ?>&type=<?= $_GET['type'] ?><? } ?><? if (isset($_GET['cat']))
@@ -38,10 +38,8 @@ $productCounter = 0;
             {
                 ?>&prodCat=<?= $_GET['prodCat'] ?><? } ?>&sortBy=nameAsc"">Name : aufsteigend</a>
         </div>
-    </div>
+    </div></li>
 
-
-    <ul>
         <?php
 
         $db = $GLOBALS['db'];

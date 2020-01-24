@@ -5,6 +5,7 @@
 
 .productList ul {
     overflow: unset;
+    margin-bottom: 0;
 }
 
 .prodlist {
@@ -17,6 +18,8 @@
     width: 28%;
     padding: 0.5%;
     margin: 0.5%;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .prodInfo {
@@ -53,7 +56,6 @@
 
 .card button {
     border: none;
-    outline: 0;
     padding: 12px;
     color: white;
     background-color: #000;
@@ -80,10 +82,11 @@
 }
 
 .dropbtn {
+    font-family: "KGILikeToMoveIt";
     background-color: rgb(73, 73, 73);
     color: white;
     padding: 16px;
-    font-size: 16px;
+    font-size: 18px;
     border: none;
     cursor: pointer;
     width: 100%;
@@ -93,9 +96,9 @@
 /* The container <div> - needed to position the dropdown content */
 
 .dropdown {
-    float: right;
+    margin: 0% 13% 0% 75%;
+    width: 9em;
     position: relative;
-    display: inline-block;
 }
 
 
@@ -104,8 +107,7 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
+    background-color: #B3B3B3;
     right: 0;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -139,7 +141,8 @@
 /* Change the background color of the dropdown button when the dropdown content is shown */
 
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color: #be4945;
+    ;
 }
 
 .jungeColor {
@@ -152,4 +155,9 @@
 
 .konsoleColor {
     color: #2dc2cf;
+}
+
+.dropdownLi {
+    text-decoration: none;
+    list-style: none;
 }

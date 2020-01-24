@@ -14,23 +14,9 @@ else
         <div class="card">
             <a href="index.php?a=singleProduct&prodID=<?=$prod['prodID']?>">
                 <img src="<?= $prod['photo'] ?>" alt="produckt">
-                <div class="prodInfo <? if (!isset($_GET['search']))
-                    {if ($_GET['type'] == 'Jungs-Toys'){?>jungeColor<?}
-                    elseif ($_GET['type'] == 'Konsolespiele' || isset($_GET['search']))
-                    {?>konsoleColor<?}
-                    else
-                    {?>mädchenColor<?}
-                }else
-                   {?>mädchenColor<?}?>" ;
+                <div class="prodInfo <?php include 'fontColor.php';?>" ;
                 ><?= $prod['descrip'] ?></div>
-                <div class="prodInfo <? if (!isset($_GET['search']))
-                    {if ($_GET['type'] == 'Jungs-Toys'){?>jungeColor<?}
-                    elseif ($_GET['type'] == 'Konsolespiele' || isset($_GET['search']))
-                    {?>konsoleColor<?}
-                    else
-                    {?>mädchenColor<?}
-                }else
-                   {?>mädchenColor<?}?>"><?= $prod['stdPrice'] ?>€</div>
+                <div class="prodInfo <?php include 'fontColor.php';?>"><?= $prod['stdPrice'] ?>€</div>
             </a>
             <iframe name="hiddenFrame" class="hide"></iframe>
             <form method="post" action="?c=shoppingcart&a=shoppingCart" target="hiddenFrame">
