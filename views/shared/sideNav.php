@@ -1,16 +1,16 @@
 <?php
 namespace app\models;
-if( !isset($_GET['search'])) 
- {
-     if(  $_GET['type']=='Jungs-Toys' )
-        $color='#2dc2cf'; 
-        elseif($_GET['type']=='Konsolespiele' || isset($_GET['search']))
-        $color='#f1ac2c';
-        else
-        $color='rgb(134, 14, 10)';
+if (!isset($_GET['search']))
+{
+    if ($_GET['type'] == 'Jungs-Toys')
+        $color = 'rgb(134, 14, 10)';
+    elseif ($_GET['type'] == 'Konsolespiele' || isset($_GET['search']))
+        $color = '#2dc2cf';
+    else
+        $color = '#f1ac2c';
 }
-else $color='#f1ac2c';
-?>
+else
+    $color = '#f1ac2c'; ?>
 
 <div class="sidenav">
     <?php foreach (Cat::find() as $overCat): ?>

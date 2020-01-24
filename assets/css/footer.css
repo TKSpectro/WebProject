@@ -1,9 +1,13 @@
 .footerMenu {
-    height: 84px;
+    height: 2%;
     background: rgba(0, 0, 0, 0.1);
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
+}
+
+.shoppingcartEmpty {
+    margin-top: 10em;
 }
 
 .footerTable {
@@ -13,7 +17,6 @@
 
 .footerTable ul {
     list-style: none;
-    padding-top: 30px;
 }
 
 .footerTable ul li {
