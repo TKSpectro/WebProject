@@ -110,6 +110,7 @@ ul.icons img {
 
 .contentCon {
     display: flex;
+    margin-bottom: 1em;
 }
 
 div.formular {

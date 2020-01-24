@@ -1,18 +1,19 @@
 .footerMenu {
-    height: 5%;
+    height: 84px;
     background: rgba(0, 0, 0, 0.1);
-    width: 100%;
     position: absolute;
     bottom: 0;
+    width: 100%;
 }
 
 .footerTable {
+    display: table;
     margin: auto;
-    text-align: center;
 }
 
 .footerTable ul {
     list-style: none;
+    padding-top: 30px;
 }
 
 .footerTable ul li {

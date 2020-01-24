@@ -2,6 +2,9 @@
         overflow: visible;
         font-family: "KGILikeToMoveIt";
         margin: auto;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0;
     }
     
     .subnav {
@@ -10,6 +13,7 @@
         width: 24.5%;
         font-size: 25px;
         list-style: none;
+        padding: 0;
     }
     
     .subnav .subnavbtn {
@@ -45,7 +49,7 @@
         color: rgb(73, 73, 73);
         text-align: center;
         background-color: #B3B3B3;
-        padding: 14px;
+        padding: 14px 0 14px;
     }
     
     .subnavbtn img {
