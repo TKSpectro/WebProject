@@ -9,6 +9,8 @@
     height: 35em;
     border: 10px solid;
     margin: 2.5em 1.5em;
+    position: relative;
+    box-sizing: border-box;
 }
 
 
@@ -28,10 +30,13 @@ ul {
 .startList {
     list-style: none;
     display: inline;
+    position: relative;
+    box-sizing: border-box;
 }
 
 .search ::placeholder {
     color: rgb(73, 73, 73);
+    font-family: "KGILikeToMoveIt";
 }
 
 .register_fieldset ::placeholder {

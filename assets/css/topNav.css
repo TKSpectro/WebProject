@@ -17,10 +17,6 @@
         text-decoration: none;
     }
     
-    .selected {
-        box-shadow: lawngreen;
-    }
-    
     .topNavBoy {
         padding-top: 2px;
         padding-bottom: 12px;
@@ -32,7 +28,7 @@
     .topNavConsole {
         padding-top: 5px;
         padding-bottom: 0.5em;
-        color: #f1ac2c;
+        color: #F6BC50;
         text-align: center;
         background-color: #3bc6d3;
     }
@@ -68,15 +64,23 @@
     }
     
     .activeBoy {
+        box-shadow: 0px 0px 15px 12px #3bc6d3;
         font-size: 27px;
     }
     
     .activeGirl {
         font-size: 25px;
+        box-shadow: 0px 0px 15px 12px #be4945;
     }
     
     .activeKonsole {
         font-size: 25px;
+        box-shadow: 0px 0px 15px 12px #f1ac2c;
+    }
+    
+    .activeAboutUs {
+        font-size: 25px;
+        box-shadow: 0px 0px 15px 12px gray;
     }
     
     .topNavList {

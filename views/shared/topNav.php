@@ -46,7 +46,7 @@ namespace app\models;
             </ul></div>
         </li>
         <li class="subnav">
-        <div >
+        <div class=" <? if($_GET['a'] == "aboutUs"){?>activeAboutUs<?}?>">
             <a href="index.php?a=aboutUs" class="subnavbtn">
             <div class="topNavAbout"><img src="assets/images/aboutIcon2.png" alt="Über uns Bild">Über Uns</div>
             </a>
