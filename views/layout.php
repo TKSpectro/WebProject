@@ -9,12 +9,12 @@
     
     <style>
         @font-face{
-            font-family: "Bangers";
-            src: url("assets/fonts/Bangers-Regular.ttf");
-        }
-        @font-face{
             font-family: "KGILikeToMoveIt";
             src: url("assets/fonts/KGILikeToMoveIt.ttf");
+        }
+        @font-face{
+            font-family: "Roboto";
+            src: url("assets/fonts/Roboto-Regular.ttf");
         }
     </style>
 
