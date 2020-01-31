@@ -1,10 +1,9 @@
 <?php 
 namespace app\models;
-$summe=0;
-$anzahl=0;?>
+?>
 <div class="shoppingcart">
-<div class="Titl">MEIN WARENKORB</div>
-<table class="test">
+    <div class="Titl">MEIN WARENKORB</div>
+<table class="shoppingcartTable">
 <thead>
     <tr>
         <td class="prodTitl" colspan="2">PRODUKT</td>
@@ -13,43 +12,45 @@ $anzahl=0;?>
         <td></td>
         <td>GESAMT</td>
     </tr>
-<tr>
-    <td  colspan="6"><div class="seprator"></div></td>
-</tr>
+    <tr>
+        <td  colspan="6"><div class="seprator"></div></td>
+    </tr>
 </thead>
 <tbody> 
-<?php   foreach ($ShoppingCartProduct as $prodID)
-        {
-            $produkt= Product::find('prodID = "' . $prodID['prodID'] . '"');  
-            $prod=$produkt['0'];
-            ?>
-<tr>
-    <td class="prod"><img src="<?= $prod['photo'] ?>" alt="produckt"></td>
-    <td class="prodName"><?= $prod['descrip'] ?></td>
-    
-    <td><?= $prod['stdPrice'] ?>€</td>
-
-    <td><form method="post" id='form-date'>
-        <input type="number" name="quantity" value="<?=$prodID['quantity'];?>"
-         <?$anzahl+=$prodID['quantity'];?> ></td>
-    <td><input type="hidden"    name="prodID" value="<?= $prod['prodID'] ?>">
-    <input class="btn" type="submit"    name="delete" value="ENTFERNEN" id="senddate">
-    </form></td>
+<?php   foreach ($produkte as $prodID){;  ?>
+    <tr>
+        <td class="prod"><img src="<?= $prodID['0'] ?>" alt="produckt"></td>
+        <td class="prodName"><?= $prodID['1'] ?></td>
         
-    <td><?php echo $prod['stdPrice']* $prodID['quantity']; 
-    $summe+=$prod['stdPrice']* $prodID['quantity'];?>€</td>
+        <td><?= $prodID['2'] ?>€</td>
+
+        <td>    
+            <form method="post" class="formClass" id='form-input<?= $prodID['5'] ?>'>
+                <input type="hidden"    name="prodID"   value="<?= $prodID['5'] ?>">
+                <input type="number"    name="quantity" value="<?=$prodID['3'];?>" >
+                <input type="submit"    name="editting"    value="test" id="edit<?= $prodID['5']?>">
+            </form>
+        </td>
+        <td>
+            <form method="post" id='form-date'>
+                <input type="hidden"    name="prodID"       value="<?= $prodID['5'] ?>">
+                <input type="hidden"    name="quantity"     value="<?=$prodID['3'];?>" >
+                <input type="submit"   name="delete"       value="ENTFERNEN"               id="senddate">
+            </form>
+        </td>
+            
+        <td><?=$prodID['4']; ?>€</td>
+        </tr>
+    <tr>
+        <td  colspan="6"><div class="seprator"></div></td>
     </tr>
-<tr>
-    <td  colspan="6"><div class="seprator"></div></td>
-</tr>
-    
-<?}?>        
+    <?}?>        
 </tbody>
 </table>
     <div class="summe">
-    <div class="anzahl"><?=$anzahl;?> Artikel</div>
+    <div class="anzahl"><?=count($produkte);?> Artikel</div>
     <ul class="gesamt">
-    <li class="test">GESAMTSUMME</li> 
+    <li class="shoppingcartTable">GESAMTSUMME</li> 
     <li><?= $summe?>€</li>
     </div>
 </div>

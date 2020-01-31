@@ -25,6 +25,7 @@ body {
 
 ul {
     overflow: hidden;
+    list-style: none;
 }
 
 a {

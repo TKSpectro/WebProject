@@ -6,11 +6,19 @@ use app\models\Shoppingcart;
 
 class ShoppingcartController extends \app\core\Controller
 {
+
 public function actionShoppingCart()
 {
+   
+   
     $this->_params['title'] = 'Warenkorb';
     $this->_params['Header'] = true;  
     $this->_params['ShoppingCartProduct'] = Array();
+    $this->_params['produkte'] = Array();
+    $this->_params['summe']=0;
+
+
+   
     if(!empty($_SESSION['accountID']))
         { 
         $accountID=$_SESSION['accountID'];
@@ -19,12 +27,26 @@ public function actionShoppingCart()
     else
         {
         if(!empty($_COOKIE['randomNr']))
-        {
-            $randomNr = $_COOKIE['randomNr'];
-            $this->_params['ShoppingCartProduct'] =Shoppingcart::find('randomNr = "'.$randomNr. '"');
+            {
+              $randomNr = $_COOKIE['randomNr'];
+               $this->_params['ShoppingCartProduct'] =Shoppingcart::find('randomNr = "'.$randomNr. '"');
 
+            }
         }
-    }
+        foreach($this->_params['ShoppingCartProduct'] as $gekaufteWare)
+        {   $warenkorb=Array();
+            $produkt= \app\models\Product::find('prodID = "' . $gekaufteWare['prodID'] . '"');  
+            $prod=$produkt['0'];
+            $gesamt=$prod['stdPrice']*$gekaufteWare['quantity'];
+            array_push($warenkorb,$prod['photo']);
+            array_push($warenkorb,$prod['descrip']);
+            array_push($warenkorb,$prod['stdPrice']);
+            array_push($warenkorb,$gekaufteWare['quantity']);
+            array_push($warenkorb,$gesamt);
+            array_push($warenkorb,$prod['prodID']);
+            array_push( $this->_params['produkte'], $warenkorb);
+            $this->_params['summe']+=$gesamt;
+        }
 
 if(isset($_POST['addToShoppingCart']))
 {   
@@ -98,12 +120,14 @@ else
 }
 } 
 
-if(isset($_POST['delete']))
+
+if(isset($_POST['editting'])|| isset($_GET['ajax']))
 {  
     $prodID = $_POST['prodID'];
     $quantity=$_POST['quantity'];
    $Shoppingcart =Shoppingcart::find('prodID = "'.$prodID. '"');
-   
+    
+   print_r($_POST);
   
       if( isset($Shoppingcart['0'])  &&  $_POST['quantity']!=$Shoppingcart['0']['quantity'] )
     {
@@ -114,11 +138,21 @@ if(isset($_POST['delete']))
             $warenkorb = new Shoppingcart($params);
             $error;
             $warenkorb->update($error,'prodID = "' . $prodID. '"');
-            $this->_params['ShoppingCartProduct'] =Shoppingcart::find();
+           
     }
+    
+ 
+}
 
-   else
-    {
+
+if(isset($_POST['delete']))
+{  
+   die('es hat nicht funktioniert');
+    $prodID = $_POST['prodID'];
+    $quantity=$_POST['quantity'];
+   $Shoppingcart = Shoppingcart::find('prodID = "'.$prodID. '"');
+
+   
         $params = [
         'prodID'     => $prodID,
         'quantity'   => $quantity
@@ -126,7 +160,7 @@ if(isset($_POST['delete']))
         $warenkorb = new Shoppingcart($params);
         $error;
         $warenkorb->delete($error,'prodID = "' . $prodID. '"');
-    }
+    
    
 }   
 if(isset($_GET['ajax']))
@@ -135,4 +169,7 @@ if(isset($_GET['ajax']))
 }
 }
 }
-?>
+
+
+
+
