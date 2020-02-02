@@ -11,18 +11,20 @@ public function actionFormular()
         $this->_params['title'] = 'Account Erstellen';
         $this->_params['Header'] = true;
     
-        if(isset($_POST['sendAccount']))
+        if(isset($_POST['sendAccount'])|| isset($_GET['ajax']))
         {
+
+          
         if(!empty($_POST['firstName'])
             &&!empty($_POST['lastName'])
             &&!empty($_POST['email'])
             &&!empty($_POST['password'])
             &&!empty($_POST['birthday'])
             &&!empty($_POST['mobile'])
-            &&!empty($_POST['phone'])
             )
         {
-            
+            if(!empty($_POST['phone']))
+            {
             $firstName = $_POST['firstName'];
             $lastName  = $_POST['lastName'];
             $email     = $_POST['email'];
@@ -30,6 +32,16 @@ public function actionFormular()
             $birthday  = $_POST['birthday'];
             $mobile    = $_POST['mobile'];
             $phone     = $_POST['phone'];
+            }
+            else
+            {
+            $firstName = $_POST['firstName'];
+            $lastName  = $_POST['lastName'];
+            $email     = $_POST['email'];
+            $password  = $_POST['password'];
+            $birthday  = $_POST['birthday'];
+            $mobile    = $_POST['mobile'];
+            }
     
     
             $check = [',','>','<'];
@@ -79,11 +91,17 @@ public function actionFormular()
         else
             {
                 $error = 'Alle Felder müssen ausgefüllt sein';
-    
+                echo($error);
+                
             }
            
      } 
+     if(isset($_GET['ajax']))
+{
+    exit(0); // Valid EXIT with JSON OUTPUT
+}
 
     }
 
 }
+

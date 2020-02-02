@@ -123,11 +123,15 @@ else
 
 if(isset($_POST['editting'])|| isset($_GET['ajax']))
 {  
+    $check = ['-','>','<'];
     $prodID = $_POST['prodID'];
     $quantity=$_POST['quantity'];
-   $Shoppingcart =Shoppingcart::find('prodID = "'.$prodID. '"');
+    if(Shoppingcart::validateInput($quantity,$check))
+    {
+        $Shoppingcart =Shoppingcart::find('prodID = "'.$prodID. '"');
     
-   print_r($_POST);
+        print_r($_POST);
+        //echo('hey');
   
       if( isset($Shoppingcart['0'])  &&  $_POST['quantity']!=$Shoppingcart['0']['quantity'] )
     {
@@ -140,14 +144,22 @@ if(isset($_POST['editting'])|| isset($_GET['ajax']))
             $warenkorb->update($error,'prodID = "' . $prodID. '"');
            
     }
-    
- 
+    }
+    else
+    {
+        $error = 'Ihre Eingabe dürfen keine der folgenden Sonderzeichen beinhalten :<br>';
+        foreach($check as $checkValue)
+        {
+            $error .= ' '. $checkValue . ' ';
+        } 
+        echo($error);
+    }
 }
 
 
 if(isset($_POST['delete']))
 {  
-   die('es hat nicht funktioniert');
+  
     $prodID = $_POST['prodID'];
     $quantity=$_POST['quantity'];
    $Shoppingcart = Shoppingcart::find('prodID = "'.$prodID. '"');

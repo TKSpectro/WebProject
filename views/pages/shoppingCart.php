@@ -27,15 +27,15 @@ namespace app\models;
         <td>    
             <form method="post" class="formClass" id='form-input<?= $prodID['5'] ?>'>
                 <input type="hidden"    name="prodID"   value="<?= $prodID['5'] ?>">
-                <input type="number"    name="quantity" value="<?=$prodID['3'];?>" >
-                <input type="submit"    name="editting"    value="test" id="edit<?= $prodID['5']?>">
+                <input type="number"    name="quantity" value="<?=htmlspecialchars($prodID['3'])?>" >
+                <input type="submit"    name="editting"    style="display:none" id="edit<?= $prodID['5']?>">
             </form>
         </td>
         <td>
             <form method="post" id='form-date'>
                 <input type="hidden"    name="prodID"       value="<?= $prodID['5'] ?>">
                 <input type="hidden"    name="quantity"     value="<?=$prodID['3'];?>" >
-                <input type="submit"   name="delete"       value="ENTFERNEN"               id="senddate">
+                <input type="submit"    name="delete"       value="ENTFERNEN"    class="btn"   id="senddate">
             </form>
         </td>
             
@@ -54,4 +54,4 @@ namespace app\models;
     <li><?= $summe?>€</li>
     </div>
 </div>
-<script type="text/javascript" src="assets/js/script.js"></script>
+<script type="text/javascript" src="assets/js/ShoppingcartScript.js"></script>

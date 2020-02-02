@@ -79,3 +79,15 @@ div.seprator {
 .shoppingcartTable {
     margin-right: 6em;
 }
+
+.btn {
+    background-color: rgb(73, 73, 73);
+    color: #EAE8DE;
+    border: none;
+    cursor: pointer;
+    width: 60%;
+    font-size: 14px;
+    padding: 4px 0px 4px;
+    margin: 1em 0em;
+    font-family: "KGILikeToMoveIt";
+}

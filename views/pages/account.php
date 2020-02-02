@@ -42,7 +42,7 @@ value="<?=htmlspecialchars ($accounts['0']['mobile'])?>"></fieldset>
 <input type="number" name="phone"
 value="<?= htmlspecialchars ($accounts['0']['phone'])?>"></fieldset>
 
-<input type="submit"  name="accountÄndern" value="ÄNDERUNGEN BESTÄTIGEN">
+<input type="submit"  name="accountÄndern" value="ÄNDERUNGEN BESTÄTIGEN" >
 </form>  
 
 </div>

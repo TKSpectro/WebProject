@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/sideNav.css">
     <link rel="stylesheet" type="text/css" href="assets/css/topNav.css">
     <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/formular.css">
     
     <style>
         @font-face{
@@ -22,6 +23,7 @@
     {
         if ($_GET['a'] == 'shoppingCart'):?>
             <link rel="stylesheet" type="text/css" href="assets/css/shoppingcart.css">
+
         <? endif;
 
         if ($_GET['a'] == 'contact'):?>
@@ -38,6 +40,10 @@
 
         if ($_GET['a'] == 'imprint' || $_GET['a'] == 'documentation'):?>
             <link rel="stylesheet" type="text/css" href="assets/css/imprintDocumentation.css">
+        <? endif;
+
+        if ($_GET['a'] == 'formular'):?>
+            <script type="text/javascript" src="assets/js/formularScript.js"></script>
         <? endif;
     } ?>
     <meta charset="UTF-8">
