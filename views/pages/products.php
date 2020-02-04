@@ -5,10 +5,11 @@ namespace app\models;
 $query = $_GET;
 ?>
 
-<div class="productList">
+<div class="productList" >
     <ul>
-        <li>
-            <form method="get" action="index.php">
+   
+        <li class="dropdownLi">
+        <form method="get" class="priceFilter" >
                 <div>
                     <input type="hidden" value="product" name="c">
                     <input type="hidden" value="products" name="a">
@@ -17,18 +18,20 @@ $query = $_GET;
                     <? if (isset($_GET['cat'])) { ?><input type="hidden" value="<?= $_GET['cat'] ?>"name="cat"><? } ?>
                     <? if (isset($_GET['prodCat'])) { ?><input type="hidden" value="<?= $_GET['prodCat'] ?>"
                                                                name="prodcat"><? } ?>
-                    <span>Preis von</span>
-                    <input type="text" name="min" placeholder="min">
+                    <table class="priceFilterTable">
+                    <tr>
+                       
+                            <th><label for="min">Preis von</th>
+                            <td><input type="text" name="min" placeholder="min"></td>
+                      
+                            <th><label for="max">Bis</th>
+                            <td><input type="text" name="max" placeholder="max"></li></td>
+                        
+                    </tr>
+                    </table>
                 </div>
-                <div>
-                    <span>Bis</span>
-                    <input type="text" name="max" placeholder="max">
-                </div>
-                <button type="submit">Bestätigen</button>
+                <input type="submit" style="display:none;" value="Bestätigen">
             </form>
-        </li>
-
-        <li class="dropdownLi">
             <div class="dropdown">
                 <button class="dropbtn">Sortierung</button>
                 <div class="dropdown-content ">
