@@ -8,7 +8,7 @@ $query = $_GET;
 <div class="productList">
     <ul>
         <li>
-            <form method="get" action="index.php">
+            <form method="get">
                 <div>
                     <input type="hidden" value="product" name="c">
                     <input type="hidden" value="products" name="a">
