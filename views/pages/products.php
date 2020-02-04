@@ -7,10 +7,9 @@ $query = $_GET;
 
 <div class="productList" >
     <ul>
-   
         <li class="dropdownLi">
         <form method="get" class="priceFilter" >
-                <div>
+            <div>
                     <input type="hidden" value="product" name="c">
                     <input type="hidden" value="products" name="a">
                     <? if (isset($_GET['type'])) { ?><input type="hidden" value="<?= $_GET['type'] ?>"

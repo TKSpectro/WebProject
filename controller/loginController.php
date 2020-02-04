@@ -39,20 +39,19 @@ class LoginController extends \app\core\Controller
                         }
                         else
                         {
-                            echo 'Ihre Email oder Password ist nicht korrekt';
+                            $_POST['errorList'] = 'Ihre Email oder Password ist nicht korrekt';
                             $_SESSION['loggedIn'] = false;
                         }
                     }
                     else
                     {
-                        echo 'Ihre Email oder Password ist nicht korrekt';
+                        $_POST['errorList'] = 'Ihre Email oder Password ist nicht korrekt';
                         $_SESSION['loggedIn'] = false;
                     }
                 }
                 else
                 {
-                    echo 'Sie müssen ihre Email und Password eingeben';
-                    exit(0);
+                    $_POST['errorList'] = 'Sie müssen ihre Email und Password eingeben';
                 }
             }
         }

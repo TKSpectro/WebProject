@@ -63,4 +63,16 @@ class PagesController extends \app\core\Controller
         header('Location:index.php');
         exit();
     }
+
+    public function actionPaypal()
+    {
+        $this->_params['title'] = 'Paypal';
+        $this->_params['Header'] = false;
+    }
+
+    public function actionCheckoutSucceed()
+    {
+        $this->_params['title'] = 'Bestellt';
+        $this->_params['Header'] = false;
+    }
 }
