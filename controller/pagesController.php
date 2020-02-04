@@ -17,21 +17,6 @@ class PagesController extends \app\core\Controller
         $this->_params['Header'] = true;
     }
 
-    public function actionProducts()
-    {
-        if (!isset($_GET['search']))
-        {
-            $this->_params['title'] = $_GET['type'];
-        }
-        else
-        {
-            $this->_params['title'] = "Gefundene Produkte";
-        }
-        $this->_params['Header'] = true;
-        $this->_params['product'] = \app\models\Product::find();
-
-    }
-
     public function actionSingleProduct()
     {
         $this->_params['title'] = 'Produktansicht';

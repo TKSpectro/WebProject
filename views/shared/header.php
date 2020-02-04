@@ -6,11 +6,12 @@
         </li>
         <li class="startList">
             <a href="index.php?c=shoppingcart&a=shoppingCart"><img id="Warenkorb" src="assets/images/shopping-cart.png"
-                                                    alt="Warenkorb"></a>
+                                                                   alt="Warenkorb"></a>
         </li>
         <?php if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) : ?>
             <li class="startList">
-                <a href="index.php?c=account&a=account"><img src="assets/images/Account_verwaltung.png" alt="Account"></a>
+                <a href="index.php?c=account&a=account"><img src="assets/images/Account_verwaltung.png"
+                                                             alt="Account"></a>
             </li>
             <form id="logoutButton" action="<?= $_SERVER['PHP_SELF'] . '?a=logout'; ?>" method="Post">
                 <li class="startList">
@@ -25,14 +26,31 @@
     </ul>
     <ul class="searchUl">
         <li class="startList">
-            <div class="search">
-                <form action="javascript:searchByWord();">
+            <noscript>
+                <div class="search">
+                    <form action="index.php" method="get">
+                        <input type="hidden" value="product" name="c">
+                        <input type="hidden" value="products" name="a">
+                        <? if (isset($_GET['type'])) { ?><input type="hidden" value="<?= $_GET['type'] ?>"
+                                                                name="type"><? } ?>
+                        <input class="searchInput" id="searchWord" type="search" placeholder="Suchen">
+                        <button type="submit" class="searchButton">
+                            <img class="searchIcon" src="assets/images/search_icon.png" alt="searchButton">
+                        </button>
+                    </form>
+                </div>
+            </noscript>
+            <div id="jssearch" class="search" style="display:none">
+                <form action="javascript:searchByWord('<?php echo $_GET['type'] ?>');">
                     <input class="searchInput" id="searchWord" type="search" placeholder="Suchen">
                     <button type="submit" class="searchButton">
                         <img class="searchIcon" src="assets/images/search_icon.png" alt="searchButton">
                     </button>
                 </form>
             </div>
+            <script>
+                document.getElementById("jssearch").style.display = 'block';
+            </script>
         </li>
     </ul>
 </header>
