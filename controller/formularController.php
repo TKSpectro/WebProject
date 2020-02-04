@@ -23,26 +23,17 @@ public function actionFormular()
             &&!empty($_POST['mobile'])
             )
         {
+            $firstName = $_POST['firstName'];
+            $lastName  = $_POST['lastName'];
+            $email     = $_POST['email'];
+            $password  = $_POST['password'];
+            $birthday  = $_POST['birthday'];
+            $mobile    = $_POST['mobile'];
+            $phone     =    null;
             if(!empty($_POST['phone']))
             {
-            $firstName = $_POST['firstName'];
-            $lastName  = $_POST['lastName'];
-            $email     = $_POST['email'];
-            $password  = $_POST['password'];
-            $birthday  = $_POST['birthday'];
-            $mobile    = $_POST['mobile'];
             $phone     = $_POST['phone'];
             }
-            else
-            {
-            $firstName = $_POST['firstName'];
-            $lastName  = $_POST['lastName'];
-            $email     = $_POST['email'];
-            $password  = $_POST['password'];
-            $birthday  = $_POST['birthday'];
-            $mobile    = $_POST['mobile'];
-            }
-    
     
             $check = [',','>','<'];
             if(Account::validateInput($firstName,$check)
