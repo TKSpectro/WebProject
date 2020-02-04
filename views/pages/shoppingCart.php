@@ -54,4 +54,6 @@ namespace app\models;
     <li><?= $summe?>€</li>
     </div>
 </div>
+
+<a href="index.php?a=paypal">Paypal</a>
 <script type="text/javascript" src="assets/js/ShoppingcartScript.js"></script>
