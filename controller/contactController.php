@@ -34,7 +34,7 @@ if(isset($_POST['sendContact']))
             $error = null;
             $contact->insert($error);
             header('Location: index.php?c=contact&a=contact');
-            //TODO give user feedback
+            $_POST['errorList'] = $error;
         }
         else
         {
@@ -43,11 +43,13 @@ if(isset($_POST['sendContact']))
             {
                 $error .= ' '. $checkValue . ' ';
             }
+            $_POST['errorList'] = $error;
         }
     }
     else
     {
         $error = 'Alle Felder müssen ausgefüllt sein';
+        $_POST['errorList'] = $error;
     }
 
 }
