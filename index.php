@@ -44,13 +44,13 @@ if(file_exists($controllerPath))
 		}
 		else
 		{
-			header('Location: index.php?c=page&a=error402');
+			header('Location: index.php?c=page&a=error404');
 		}
 	}
 	else
 	{
 		
-		header('Location: index.php?c=pages&a=error403');
+		header('Location: index.php?c=pages&a=error404');
 	}
 
 }

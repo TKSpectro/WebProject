@@ -10,6 +10,12 @@ class PagesController extends \app\core\Controller
         $this->_params['Header'] = true;
         $this->_params['accounts'] = \app\models\Account::find();
     }
+    public function actionError404()
+    {
+        $this->_params['title'] = 'Error404';
+        $this->_params['Header'] = true;
+        //$this->_params['accounts'] = \app\models\Account::find();
+    }
 
     public function actionAboutUs()
     {

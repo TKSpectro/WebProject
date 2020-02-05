@@ -166,6 +166,7 @@
     width: 20%;
 }
 
-.priceFilterTableDiv {
-    margin-right: 10%;
+.priceFilterTable {
+    border-collapse: separate;
+    border-spacing: 2px;
 }

@@ -7,8 +7,7 @@ $query = $_GET;
 
 <div class="productList" >
     <ul>
-        <li class="dropdownLi">
-        <form method="get" class="priceFilter" >
+    <form method="get" class="priceFilter" >
             <div>
                     <input type="hidden" value="product" name="c">
                     <input type="hidden" value="products" name="a">
@@ -20,10 +19,10 @@ $query = $_GET;
                     <table class="priceFilterTable">
                     <tr>
                        
-                            <th><label for="min">Preis von</th>
-                            <td><input type="text" name="min" placeholder="min"></td>
+                         <th><label for="min">Preis von</label></th>
+                            <td ><input type="text" name="min" placeholder="min"></td></div>
                       
-                            <th><label for="max">Bis</th>
+                            <th><label for="max">Bis</label></th>
                             <td><input type="text" name="max" placeholder="max"></li></td>
                         
                     </tr>
@@ -31,6 +30,7 @@ $query = $_GET;
                 </div>
                 <input type="submit" style="display:none;" value="Bestätigen">
             </form>
+        <li class="dropdownLi">
             <div class="dropdown">
                 <button class="dropbtn">Sortierung</button>
                 <div class="dropdown-content ">
