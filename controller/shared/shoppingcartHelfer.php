@@ -1,7 +1,7 @@
 <?php 
 if(isset($_COOKIE['randomNr']))
 { 
-      # die('huhu');
+     
       $accountID=$_SESSION['accountID'];
       $randomNr=$_COOKIE['randomNr'];
       $ShoppingCartProduct=app\models\Shoppingcart::find('randomNr = "'.$randomNr. '"');
@@ -24,7 +24,7 @@ if(isset($_COOKIE['randomNr']))
       foreach ($ShoppingCartProduct as $accountID)
       {
             ++$i;
-            #die('test');
+           
       for ($counter =$i; $counter<sizeof($ShoppingCartProduct);++$counter)
       {       
             if($accountID['prodID'] == $ShoppingCartProduct[$counter]['prodID'])

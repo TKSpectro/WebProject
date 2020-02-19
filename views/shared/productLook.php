@@ -1,13 +1,4 @@
-<? /* if (!isset($_GET['search']))
-{
-  
-   elseif ($_GET['type'] == 'Konsolespiele' || isset($_GET['search']))
-        {?>konsoleColor<?};
-    else
-        {?>mädchenColor<?}
-}
-else
-   {?>mädchenColor<?} */?>
+
 <div class="column ">
 
     <li class="prodlist ">

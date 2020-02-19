@@ -17,7 +17,7 @@ namespace app\models;
     </tr>
 </thead>
 <tbody> 
-<?php   foreach ($produkte as $prodID){;  ?>
+<?php   foreach ($produkte as $prodID):?>
     <tr>
         <td class="prod"><img src="<?= $prodID['0'] ?>" alt="produckt"></td>
         <td class="prodName"><?= $prodID['1'] ?></td>
@@ -44,7 +44,7 @@ namespace app\models;
     <tr>
         <td  colspan="6"><div class="seprator"></div></td>
     </tr>
-    <?}?>        
+<? endforeach;?>        
 </tbody>
 </table>
     <div class="summe">

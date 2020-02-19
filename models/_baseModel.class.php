@@ -48,17 +48,7 @@ abstract class BaseModel
         throw new \Exception('You can not write to property "' . $key . '"" fpr the class "' . get_called_class());
     }
 
-    public function save(&$errors = null)
-    {
-        if ($this->id === null)
-        {
-            $this->insert($errors);
-        }
-        else
-        {
-            $this->update($errors);
-        }
-    }
+
 
     public function insert(&$errors)
     {

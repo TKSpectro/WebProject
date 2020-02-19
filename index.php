@@ -59,7 +59,6 @@ else
 	header('Location: index.php?c=pages&a=error404');
 }
 
-?>
 
 
 
