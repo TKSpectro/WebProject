@@ -10,17 +10,16 @@
 
 <fieldset class="register_fieldset"><legend>Vorname</legend>
 <input type="text" name="firstName"
-value="<?= htmlspecialchars ($accounts['0']['firstname'])?>"></fieldset>
-
+value="<?= isset($accounts['0']['firstname']) ? htmlspecialchars($accounts['0']['firstname']) : null ?>"></fieldset>
 
 <fieldset class="register_fieldset"><legend>Nachname</legend>
 <input type="text" name="lastName"
-value="<?=htmlspecialchars ($accounts['0']['lastname'])?>"></fieldset>
+value="<?=isset($accounts['0']['lastname']) ? htmlspecialchars($accounts['0']['lastname']) : null ?>"></fieldset>
 
 
 <fieldset class="register_fieldset"><legend>E-Mail</legend>
 <input type="email" name="email"
-value="<?=htmlspecialchars ($accounts['0']['email'])?>"></fieldset>
+value="<?=isset($accounts['0']['email']) ? htmlspecialchars($accounts['0']['email']) : null ?>"></fieldset>
 
 
 <fieldset class="register_fieldset"><legend>Passwort</legend>

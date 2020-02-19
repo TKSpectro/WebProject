@@ -1,3 +1,26 @@
 .errorList {
     width:100%;
 }
+
+.alert {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    margin-top: 1rem;
+    font-family: Roboto, serif;
+    background-color: black;
+    color: white;
+}
+
+.alertSuccess {
+    color: #a7caaf;
+    background-color: #0b4705;
+    border-color: #a7caaf;
+}
+
+.alertError{
+    color: #f8f4dc;
+    background-color: #c4b000;
+    border-color: #7a7200;
+}
