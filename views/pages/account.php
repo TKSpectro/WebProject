@@ -35,6 +35,6 @@
             <legend>Telefon</legend>
             <input type="number" name="phone"
                    value="<?= htmlspecialchars($accounts['0']['phone']) ?>"></fieldset>
-        <input type="submit" name="accountÄndern" value="ÄNDERUNGEN BESTÄTIGEN">
+        <input type="submit" name="accountÄndern" value="Änderungen bestätigen">
     </form>
 </div>
