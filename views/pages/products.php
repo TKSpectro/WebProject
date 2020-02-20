@@ -8,28 +8,26 @@ $query = $_GET;
 <div class="productList" >
     <ul>
     <form method="get" class="priceFilter" >
-            <div>
-                    <input type="hidden" value="product" name="c">
-                    <input type="hidden" value="products" name="a">
-                    <? if (isset($_GET['type'])) { ?><input type="hidden" value="<?= $_GET['type'] ?>"
-                                                            name="type"><? } ?>
-                    <? if (isset($_GET['cat'])) { ?><input type="hidden" value="<?= $_GET['cat'] ?>"name="cat"><? } ?>
-                    <? if (isset($_GET['prodCat'])) { ?><input type="hidden" value="<?= $_GET['prodCat'] ?>"
-                                                               name="prodcat"><? } ?>
-                    <table class="priceFilterTable">
-                    <tr>
-                       
-                         <th><label for="min">Preis von</label></th>
-                            <td ><input type="text" name="min" placeholder="min"></td></div>
-                      
-                            <th><label for="max">Bis</label></th>
-                            <td><input type="text" name="max" placeholder="max"></li></td>
-                        
-                    </tr>
-                    </table>
-                </div>
-                <input type="submit" style="display:none;" value="Bestätigen">
-            </form>
+            
+        <input type="hidden" value="product" name="c">
+        <input type="hidden" value="products" name="a">
+        <? if (isset($_GET['type'])) { ?><input type="hidden" value="<?= $_GET['type'] ?>"
+                                                name="type"><? } ?>
+        <? if (isset($_GET['cat'])) { ?><input type="hidden" value="<?= $_GET['cat'] ?>"name="cat"><? } ?>
+        <? if (isset($_GET['prodCat'])) { ?><input type="hidden" value="<?= $_GET['prodCat'] ?>"
+                                                    name="prodcat"><? } ?>
+        
+            
+            <span class="priceOrder"> <label class="<?php include __DIR__ . '/../shared/fontColor.php';?>" for="min" >Preis von</label>
+            <input type="number" name="min" placeholder="min"></span>
+            
+            <span class="priceOrder"> <label class="<?php include __DIR__ . '/../shared/fontColor.php';?>" for="max">Bis</label>
+            <input type="number" name="max" placeholder="max"></span>
+            <input type="submit" style="display:none;" value="Bestätigen">
+    </form>
+            
+                
+            
         <li class="dropdownLi">
             <div class="dropdown">
                 <button class="dropbtn">Sortierung</button>

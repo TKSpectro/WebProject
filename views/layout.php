@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/topNav.css">
     <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
     <link rel="stylesheet" type="text/css" href="assets/css/formular.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/errorOutput">
+    <link rel="stylesheet" type="text/css" href="assets/css/errorOutput.css">
 
     <style>
         @font-face{
