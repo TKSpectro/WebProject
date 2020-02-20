@@ -15,7 +15,7 @@
             </li>
             <form id="logoutButton" action="<?= $_SERVER['PHP_SELF'] . '?a=logout'; ?>" method="Post">
                 <li class="startListIcon">
-                    <input type="submit" id="logout" name="logout" value="abmelden">
+                    <input type="submit" id="logout" name="logout" value="Abmelden">
                 </li>
             </form>
         <?php else : ?>

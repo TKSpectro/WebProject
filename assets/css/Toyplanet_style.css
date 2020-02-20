@@ -43,6 +43,10 @@
 
 /* INDEX */
 
+.roboto{
+    font-family: "Roboto", serif;
+}
+
 body {
     background-image: url("../images/background.png");
     background-size: auto;

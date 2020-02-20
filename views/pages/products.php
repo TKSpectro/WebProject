@@ -5,7 +5,7 @@ namespace app\models;
 $query = $_GET;
 ?>
 
-<div class="productList" >
+<div class="productList">
     <ul>
     <form method="get" class="priceFilter" >
             
@@ -42,17 +42,44 @@ $query = $_GET;
                     <a href="index.php?<?= http_build_query($query) ?>&sortBy=nameAsc">Name: aufsteigend</a>
                 </div>
             </div>
-        </li>
 
-        <?php
+            <th><label for="max">Bis</label></th>
+            <td><input type="text" name="max" placeholder="max"></li></td>
 
-        if (isset($product))
-        {
-            foreach ($product as $prod)
+            </tr>
+            </table>
+</div>
+<input type="submit" style="display:none;" value="Bestätigen">
+</form>
+<li class="dropdownLi">
+    <div class="dropdown">
+        <button class="dropbtn">Sortierung</button>
+        <div class="dropdown-content ">
+            <? if (isset($query['sortBy']))
             {
-                include __DIR__ . '/../shared/productLook.php';
-            }
-        }
-        ?>
-    </ul>
+                unset($query['sortBy']);
+            } ?>
+            <a href="index.php?<?= http_build_query($query) ?>&sortBy=priceDesc">Preis: absteigend</a>
+            <a href="index.php?<?= http_build_query($query) ?>&sortBy=priceAsc">Preis: aufsteigend</a>
+            <a href="index.php?<?= http_build_query($query) ?>&sortBy=nameDesc">Name: absteigend</a>
+            <a href="index.php?<?= http_build_query($query) ?>&sortBy=nameAsc">Name: aufsteigend</a>
+        </div>
+    </div>
+</li>
+<? if (isset($product))
+{
+    foreach ($product as $prod)
+    {
+        include __DIR__ . '/../shared/productLook.php';
+    }
+} ?>
+</ul>
+<?php
+if (empty($product))
+{
+    ?>
+    <div class="alert alertError">
+        Keine Produkt mit diesen Filtern gefunden
+    </div>
+<? } ?>
 </div>

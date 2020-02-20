@@ -7,3 +7,7 @@
     padding-left: 50px;
     font-family: "Roboto", serif;
 }
+
+.documentation ul{
+    list-style-type: circle;
+}
