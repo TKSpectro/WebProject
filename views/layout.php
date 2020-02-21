@@ -29,11 +29,11 @@
     {
     if ($_GET['a'] == 'shoppingCart'): ?>
     <link rel="stylesheet" type="text/css" href="assets/css/shoppingcart.css">
-
     <? endif;
 
     if ($_GET['a'] == 'contact'): ?>
     <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
+        <script type="text/javascript" src="assets/js/contactScript.js"></script>
     <? endif;
 
     if ($_GET['a'] == 'products'): ?>

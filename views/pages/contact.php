@@ -1,30 +1,25 @@
 <div class="formular">
-    <form class="iamform"  id="formContactUs" method="Post">
-
+    <form class="iamform" method="Post" id="formContact">
         <figure>
-            <!--//TODO Change Picture-->
             <img src="assets/images/Account_verwaltung2.png" alt="Account_verwaltung Bild">
             <figcaption>Kontakt Formular</figcaption>
         </figure>
 
         <fieldset>
             <legend>E-Mail *</legend>
-            <input type="email" name="eMail">
+            <input type="email" name="email" id="emailID">
         </fieldset>
-
 
         <fieldset>
             <legend>Betreff *</legend>
-            <input type="text" name="subject">
+            <input type="text" name="subject" id="subjectID">
         </fieldset>
-
 
         <fieldset>
             <legend>Nachricht *</legend>
-            <textarea id="message" name="message" placeholder="" style="height: 200px;"></textarea>
+            <textarea name="message" id="messageID" placeholder="" style="height: 200px;"></textarea>
         </fieldset>
 
-        <input type="submit" id="submitContactUs" name="sendContact" value="Abschicken">
+        <input type="submit" id="submitContact" name="sendContact" value="Abschicken">
     </form>
 </div>
-<!--<script type="text/javascript" src="assets/js/script.js"></script> -->
