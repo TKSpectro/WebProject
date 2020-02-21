@@ -3,11 +3,11 @@
 }
 
 .alert {
-    position: relative;
+    position: absolute;
     width: 50%;
     padding: 0.5em 1.25em;
-    margin-bottom: 2em;
-    margin-top: 2em;
+    margin-bottom: 1em;
+    margin-top: 4em;
     margin-left: 24%;
     border: 5px solid;
     font-family: Roboto, serif;
