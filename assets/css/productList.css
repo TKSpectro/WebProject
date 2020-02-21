@@ -28,14 +28,6 @@
     margin-top: 0.3em;
 }
 
-@media screen and (max-width: 900px) {
-    .column {
-        width: 90%;
-        display: block;
-        margin-bottom: 20px;
-    }
-}
-
 .card {
     padding: 0;
     text-align: center;
@@ -183,12 +175,68 @@
     background-color: #EAE7E0;
     border: 2px solid rgb(73, 73, 73);
     padding-left: 5px;
-    font-size: 12px;
-    color: white;
+    font-size: 13px;
+    color: rgb(73, 73, 73);
 }
 
 .priceOrder ::placeholder {
     font-family: "KGILikeToMoveIt";
     font-size: 16px;
     color: rgb(73, 73, 73);
+}
+
+@media only screen and (max-width: 1288px) {
+    .column {
+        width: 31%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .card img {
+        width: 12em;
+        padding-top: 4%;
+        margin: 0;
+    }
+    .prodInfo {
+        font-size: 16px;
+        padding: 0;
+        margin-top: 0.2em;
+    }
+    .btn {
+        width: 70%;
+        font-size: 12px;
+        padding: 2px 1px 2px;
+        margin: 1em 0em;
+    }
+    .priceFilter {
+        width: 45%;
+        float: left;
+        margin-top: 1%;
+        /* background-color: yellow;*/
+    }
+    .priceFilter .priceOrder {
+        /*background-color: green;*/
+        font-size: 14px;
+        padding-right: 5%;
+    }
+    .priceOrder input {
+        width: 20%;
+        height: 2em;
+        background-color: #EAE7E0;
+        border: 2px solid rgb(73, 73, 73);
+        padding-left: 5px;
+        font-size: 12px;
+        color: rgb(73, 73, 73);
+    }
+    .priceOrder ::placeholder {
+        font-size: 12px;
+    }
+    .dropbtn {
+        padding: 11px;
+        font-size: 15px;
+        width: 100%;
+    }
+    .dropdown-content a {
+        padding: 9px 14px;
+        font-size: 12px;
+    }
 }

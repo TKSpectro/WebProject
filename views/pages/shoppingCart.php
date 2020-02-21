@@ -50,8 +50,8 @@ namespace app\models;
     <div class="summe">
     <div class="anzahl"><?=count($produkte);?> Artikel</div>
     <ul class="gesamt">
-    <li class="shoppingcartTable">GESAMTSUMME</li> 
-    <li><?= $summe?>€</li>
+    <li class="shoppingcartTable">GESAMTSUMME <span class="leerZeichen"><?= $summe?>€</span></li> 
+   
     </div>
 </div>
 

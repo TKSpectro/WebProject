@@ -41,7 +41,7 @@
                 </div>
             </noscript>
             <div id="jssearch" class="search" style="display:none">
-                <form action="javascript:searchByWord('<?php echo $_GET['type'] ?>');">
+                <form action="javascript:searchByWord ('<?=$_GET['type'] ?>');">
                     <input class="searchInput" id="searchWord" type="search" placeholder="Suchen">
                     <button type="submit" class="searchButton">
                         <img class="searchIcon" src="assets/images/search_icon.png" alt="searchButton">

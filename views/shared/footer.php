@@ -1,4 +1,8 @@
-<div class="footerMenu  <? if($ShoppingCartProduct == null && ($_GET['a']=='shoppingCart')){?>shoppingcartEmpty<?}?>">
+<?php 
+namespace app\models;
+
+?>
+<div class="footerMenu  <? if(($_GET['a']=='shoppingCart')){?>shoppingcartEmpty<?}?>">
     <div class="footerTable">
         <ul>
             <li>

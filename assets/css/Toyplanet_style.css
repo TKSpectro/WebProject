@@ -15,10 +15,23 @@
 }
 
 .startseite img {
-    width: 25em;
+    max-width: 25em;
     height: 35em;
     border: 10px solid;
     margin: 2.5em 1.5em;
+}
+
+
+/* For width 400px and larger: */
+
+@media only screen and (max-width: 1025px) {
+    .startseite img {
+        max-width: 30em;
+        height: 25em;
+        border: 7px solid;
+        margin: 0;
+        margin-top: 5em;
+    }
 }
 
 .overlay {
@@ -43,7 +56,7 @@
 
 /* INDEX */
 
-.roboto{
+.roboto {
     font-family: "Roboto", serif;
 }
 
@@ -126,7 +139,7 @@ ul.icons img {
 }
 
 #vater {
-    border-color: #E9BA65;
+    border-color: #f1ac2c;
 }
 
 #girls {

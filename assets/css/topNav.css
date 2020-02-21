@@ -116,3 +116,12 @@
     .subnav:hover .subnav-content {
         display: block;
     }
+    
+    @media only screen and (max-width: 1288px) {
+        .subnav {
+            font-size: 20px;
+        }
+        .subnav-content a {
+            font-size: 20px;
+        }
+    }
