@@ -39,7 +39,7 @@
     }
     
     .topNavGirl {
-        padding-top: 5px;
+        padding-top: 7px;
         padding-bottom: 0.5em;
         color: #be4945;
         text-align: center;
@@ -123,5 +123,11 @@
         }
         .subnav-content a {
             font-size: 20px;
+        }
+        .topNavBoy {
+            padding-top: 6px;
+        }
+        .topNavGirl {
+            padding-top: 5px;
         }
     }

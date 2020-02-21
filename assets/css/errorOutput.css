@@ -32,3 +32,9 @@
     background-color: #f1ac2c;
     border-color: #be4945;
 }
+
+@media screen and (max-width: 1288px) {
+    .alert {
+        margin-left: 20%;
+    }
+}

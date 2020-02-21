@@ -1,13 +1,25 @@
 <?PHP 
 
 namespace app\controller;
-
 use app\models\Address;
 
-if(isset($_POST['sendForm']))
+class AddressController extends \app\core\Controller
+{
+    
+public function actionAddress()
+{
+    $this->_params['title'] = 'Adresse Eingeben';
+    $this->_params['Header'] = true;
+    
+    if( !$_SESSION['loggedIn'] )
+    {
+        header('Location: index.php?c=pages&a=checkout');
+       
+    }
+  
+    if(isset($_POST['sendAddress']))
 {
 
-    
     if(!empty($_POST['land'])
      &&!empty($_POST['city'])
      &&!empty($_POST['street'])
@@ -40,8 +52,8 @@ if(isset($_POST['sendForm']))
 
             $address = new Address($params);
             $error;
-            #$address->insert($error);
-       
+            $address->insert($error);
+            header('Location: index.php?c=paypal&a=paypal');
           
         }
     
@@ -63,6 +75,7 @@ if(isset($_POST['sendForm']))
         
 
 } 
+}
 
-
+}
 

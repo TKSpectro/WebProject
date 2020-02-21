@@ -23,6 +23,12 @@ class PagesController extends \app\core\Controller
         $this->_params['Header'] = true;
     }
 
+    public function actionCheckout()
+    {
+        $this->_params['title'] = 'Überprüfung';
+        $this->_params['Header'] = true;
+    }
+
     public function actionSingleProduct()
     {
         $this->_params['title'] = 'Produktansicht';

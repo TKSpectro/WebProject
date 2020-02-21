@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
     <link rel="stylesheet" type="text/css" href="assets/css/formular.css">
     <link rel="stylesheet" type="text/css" href="assets/css/errorOutput.css">
-
+    <title><?= $title ?></title>
     <style>
         @font-face{
             font-family: "KGILikeToMoveIt";
@@ -44,6 +44,10 @@
     <link rel="stylesheet" type="text/css" href="assets/css/singleProduct.css">
     <? endif;
 
+     if ($_GET['a'] == 'checkout' || $_GET['a'] == 'paypal' ): ?>
+        <link rel="stylesheet" type="text/css" href="assets/css/checkout.css">
+        <? endif;
+
     if ($_GET['a'] == 'imprint' || $_GET['a'] == 'documentation'): ?>
     <link rel="stylesheet" type="text/css" href="assets/css/imprintDocumentation.css">
     <? endif;
@@ -52,10 +56,9 @@
         <script type="text/javascript" src="assets/js/formularScript.js"></script>
     <? endif;
     } ?>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><?= $title ?></title>
+  
+
+    
 </head>
 
 <body>

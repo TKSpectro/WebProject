@@ -48,12 +48,15 @@ namespace app\models;
 </tbody>
 </table>
     <div class="summe">
-    <div class="anzahl"><?=count($produkte);?> Artikel</div>
-    <ul class="gesamt">
-    <li class="shoppingcartTable">GESAMTSUMME <span class="leerZeichen"><?= $summe?>€</span></li> 
-   
+        <div class="anzahl"><?=count($produkte);?> Artikel</div>
+                <div class="gesamt">
+                <span class="shoppingcartTable">GESAMTSUMME <span class="leerZeichen"><?= $summe?>€</span></span> 
+                </div>
+        </div>
+
     </div>
 </div>
-
-<a href="index.php?a=paypal">Paypal</a>
+<div class="kasse">
+<a href="index.php?c=address&a=address">zur Kasse</a>
+</div>
 <script type="text/javascript" src="assets/js/ShoppingcartScript.js"></script>

@@ -1,0 +1,114 @@
+    .contentCon {
+        display: block;
+    }
+    
+    .paypal {
+        width: 40%;
+        margin: auto;
+        margin-top: 15%;
+        padding: 5em;
+        background-color: #be4945;
+    }
+    
+    .options {
+        width: 40%;
+        margin: auto;
+        margin-bottom: 8em;
+        padding: 1em;
+    }
+    
+    .alertSuccess {
+        width: 50%;
+        margin: auto;
+        font-size: 38px;
+        color: white;
+        margin-top: 3em;
+        margin-bottom: 1em;
+        background-color: #be4945;
+        padding: 1em;
+        border: 5px solid #f1ac2c;
+        text-align: center;
+    }
+    
+    .btn {
+        width: 20%;
+        margin: auto;
+        background-color: rgb(73, 73, 73);
+        cursor: pointer;
+        padding: 2em 1em;
+        font-family: "KGILikeToMoveIt";
+        text-align: center;
+    }
+    
+    .btn a {
+        text-decoration: none;
+        color: #EAE8DE;
+        font-size: 28px;
+    }
+    
+    .paypal img {
+        width: 60%;
+        display: block;
+        margin: auto;
+        margin-bottom: 1em;
+    }
+    
+    .butttons {
+        margin-top: 2em;
+        padding-bottom: 2em;
+    }
+    
+    .right {
+        float: right;
+        background-color: rgb(73, 73, 73);
+        cursor: pointer;
+        padding: 1em 1.5em;
+        font-family: "KGILikeToMoveIt";
+        text-align: center;
+    }
+    
+    .left {
+        float: left;
+        background-color: rgb(73, 73, 73);
+        cursor: pointer;
+        padding: 1em 1.5em;
+        font-family: "KGILikeToMoveIt";
+        text-align: center;
+    }
+    
+    .right a {
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+    }
+    
+    .left a {
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+    }
+    
+    .price {
+        text-align: center;
+        font-family: "Roboto", serif;
+        color: white;
+        font-size: 36px;
+    }
+    
+    @media screen and (max-width: 1288px) {
+        .right {
+            padding: 1em 1.5em;
+        }
+        .left {
+            padding: 1em 1.5em;
+        }
+        .right a {
+            font-size: 18px;
+        }
+        .left a {
+            font-size: 18px;
+        }
+        .price {
+            font-size: 26px;
+        }
+    }
