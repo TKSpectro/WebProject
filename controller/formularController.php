@@ -26,41 +26,57 @@ class FormularController extends \app\core\Controller
                 $birthday = $_POST['birthday'];
                 $mobile = $_POST['mobile'];
                 $phone = null;
-                if (!empty($_POST['phone']))
+
+                //check if email already exists
+                if (!empty(\app\models\Account::find('email = "' . $email . '"')))
                 {
-                    $phone = $_POST['phone'];
+                    //email is already in db
+                    $error = 'EMail ist bereits registiert';
+                    $_POST['errorList'] = "$error";
                 }
-
-                $check = [',', '>', '<'];
-                if (
-                    Account::validateInput($firstName, $check) && Account::validateInput($lastName, $check) && Account::validateInput($email, $check) && Account::validateInput($password, $check) && Account::validateInput($birthday, $check) && Account::validateInput($mobile, $check) && Account::validateInput($phone, $check))
-                {
-                    //hash password for further usage in database
-                    $password = password_hash($password, PASSWORD_DEFAULT);
-
-                    $params = ['firstname' => $firstName, 'lastname' => $lastName, 'email' => $email, 'passwordHash' => $password, 'birthday' => $birthday, 'mobile' => $mobile, 'phone' => $phone];
-
-                    $account = new Account($params);
-                    $error;
-                    $account->insert($error);
-                    $_SESSION['loggedIn'] = true;
-                    // um die RandomNr als * zu machen
-                    $where = \app\models\Account::find('email = "' . $email . '"');
-                    $_SESSION['accountID'] = $where['0']['accountID'];
-                    include __DIR__ . '/../controller/shared/shoppingcartHelfer.php';
-                    header('Location: index.php');
-
-
-                }
-
                 else
                 {
-                    $error = 'Ihre Eingabe dürfen keine der folgenden Sonderzeichen beinhalten :<br>';
-                    foreach ($check as $checkValue)
+                    //email was not found
+
+
+                    if (!empty($_POST['phone']))
                     {
-                        $error .= ' ' . $checkValue . ' ';
+                        $phone = $_POST['phone'];
                     }
-                    $_POST['errorList'] = "$error";
+
+                    $check = [',', '>', '<'];
+
+
+                    if (
+                        Account::validateInput($firstName, $check) && Account::validateInput($lastName, $check) && Account::validateInput($email, $check) && Account::validateInput($password, $check) && Account::validateInput($birthday, $check) && Account::validateInput($mobile, $check) && Account::validateInput($phone, $check))
+                    {
+                        //hash password for further usage in database
+                        $password = password_hash($password, PASSWORD_DEFAULT);
+
+                        $params = ['firstname' => $firstName, 'lastname' => $lastName, 'email' => $email, 'passwordHash' => $password, 'birthday' => $birthday, 'mobile' => $mobile, 'phone' => $phone];
+
+                        $account = new Account($params);
+                        $error;
+                        $account->insert($error);
+                        $_SESSION['loggedIn'] = true;
+                        // um die RandomNr als * zu machen
+                        $where = \app\models\Account::find('email = "' . $email . '"');
+                        $_SESSION['accountID'] = $where['0']['accountID'];
+                        include __DIR__ . '/../controller/shared/shoppingcartHelfer.php';
+                        header('Location: index.php');
+
+
+                    }
+
+                    else
+                    {
+                        $error = 'Ihre Eingabe dürfen keine der folgenden Sonderzeichen beinhalten :<br>';
+                        foreach ($check as $checkValue)
+                        {
+                            $error .= ' ' . $checkValue . ' ';
+                        }
+                        $_POST['errorList'] = "$error";
+                    }
                 }
             }
             else
