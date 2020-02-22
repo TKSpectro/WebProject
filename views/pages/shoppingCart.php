@@ -56,7 +56,11 @@ namespace app\models;
 
     </div>
 </div>
-<div class="kasse">
+
+    <? if(!empty($summe)):?>
+        <div class="kasse">
 <a href="index.php?c=address&a=address">zur Kasse</a>
-</div>
+</div>    
+<?endif;?>
+
 <script type="text/javascript" src="assets/js/ShoppingcartScript.js"></script>

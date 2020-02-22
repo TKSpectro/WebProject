@@ -2,7 +2,7 @@
 namespace app\models;
 
 ?>
-<div class="footerMenu  <? if(($_GET['a']=='shoppingCart')){?>shoppingcartEmpty<?}?>">
+<div class="footerMenu  <? if(($_GET['a']=='shoppingCart') || ($_GET['a']=='aboutUs')){?>shoppingcartEmpty<?}?>">
     <div class="footerTable">
         <ul>
             <li>
