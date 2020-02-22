@@ -19,12 +19,13 @@
 
 .alertSuccess {
     margin: auto;
-    font-size: 38px;
+    font-size: 32px;
     color: white;
     margin-top: 3em;
     background-color: #be4945;
     padding: 1em;
     border: 5px solid #f1ac2c;
+    font-family: "Roboto", serif;
 }
 
 .alertError {

@@ -1,3 +1,3 @@
 <div class="alertSuccess">
-    Vielen Dank für ihre Bestellung
+    Vielen Dank für Ihre Bestellung
 </div>

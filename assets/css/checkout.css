@@ -17,10 +17,10 @@
         padding: 1em;
     }
     
-    .alertSuccess {
+    .Attention {
         width: 50%;
         margin: auto;
-        font-size: 38px;
+        font-size: 32px;
         color: white;
         margin-top: 3em;
         margin-bottom: 1em;
@@ -28,6 +28,7 @@
         padding: 1em;
         border: 5px solid #f1ac2c;
         text-align: center;
+        font-family: "Roboto", serif;
     }
     
     .btn {
@@ -36,7 +37,6 @@
         background-color: rgb(73, 73, 73);
         cursor: pointer;
         padding: 2em 1em;
-        font-family: "KGILikeToMoveIt";
         text-align: center;
     }
     
@@ -63,7 +63,7 @@
         background-color: rgb(73, 73, 73);
         cursor: pointer;
         padding: 1em 1.5em;
-        font-family: "KGILikeToMoveIt";
+        font-family: "Roboto", serif;
         text-align: center;
     }
     
@@ -72,7 +72,7 @@
         background-color: rgb(73, 73, 73);
         cursor: pointer;
         padding: 1em 1.5em;
-        font-family: "KGILikeToMoveIt";
+        font-family: "Roboto", serif;
         text-align: center;
     }
     

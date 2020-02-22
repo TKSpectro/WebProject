@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     {
                         // HTTP-Status-Code is OK?
                         if (this.status == 200) {
-                            location.reload();
+
                         } else {
                             alert(this.statusText);
                         }

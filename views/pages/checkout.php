@@ -1,5 +1,5 @@
-<div class="alertSuccess">
-  Sie sollen erst angemeldet sein, um bezahlen zu können
+<div class="Attention">
+  Melden Sie sich bitte an, um bezahlen zu können.
 </div>
 <div class="options">
 <div class="buttons">

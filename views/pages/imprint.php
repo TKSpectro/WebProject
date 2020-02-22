@@ -4,6 +4,7 @@
     <p >Informationspflicht laut § 5 TMG.</p>
     <p >
     <p>Tom Käppler</p>
+    <p>Bilal Alnaani</p>
     <p >Fh Erfurt, <br/>99084 Efurt, <br/>Deutschland</p>
     <p >
         <strong>E-Mail:</strong> <a href="mailto:toyplanet@gmail.com">toyplanet@gmail.com</a>
