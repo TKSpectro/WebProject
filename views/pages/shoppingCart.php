@@ -26,6 +26,7 @@ namespace app\models;
 
         <td>    
             <form method="post" class="formClass" id='form-input<?= $prodID['5'] ?>'>
+                <input type="hidden"    name="Price"       value="<?= $prodID['2'] ?>">
                 <input type="hidden"    name="prodID"   value="<?= $prodID['5'] ?>">
                 <input type="number"    name="quantity" value="<?=htmlspecialchars($prodID['3'])?>" >
                 <input type="submit"    name="editting"    style="display:none" id="edit<?= $prodID['5']?>">
@@ -33,13 +34,14 @@ namespace app\models;
         </td>
         <td>
             <form method="post" id='form-date'>
+               
                 <input type="hidden"    name="prodID"       value="<?= $prodID['5'] ?>">
                 <input type="hidden"    name="quantity"     value="<?=$prodID['3'];?>" >
                 <input type="submit"    name="delete"       value="ENTFERNEN"    class="btn"   id="senddate">
             </form>
         </td>
             
-        <td><?=$prodID['4']; ?>€</td>
+        <td> <span class="GesamtBerechung"><?=$prodID['4']; ?></span> €</td>
         </tr>
     <tr>
         <td  colspan="6"><div class="seprator"></div></td>
