@@ -41,7 +41,7 @@ namespace app\models;
             </form>
         </td>
             
-        <td> <span class="GesamtBerechung"><?=$prodID['4']; ?></span> €</td>
+        <td><span class="GesamtBerechung"><?=$prodID['4']; ?></span> €</td>
         </tr>
     <tr>
         <td  colspan="6"><div class="seprator"></div></td>

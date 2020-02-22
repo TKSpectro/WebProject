@@ -55,6 +55,5 @@ document.addEventListener('DOMContentLoaded', function() {
         format[1].innerHTML = result;
 
 
-
     }
 });
