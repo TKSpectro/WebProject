@@ -130,8 +130,7 @@ if(isset($_POST['editting'])|| isset($_GET['ajax']))
     {
         $Shoppingcart =Shoppingcart::find('prodID = "'.$prodID. '"');
     
-        print_r($_POST);
-        //echo('hey');
+      
   
       if( isset($Shoppingcart['0'])  &&  $_POST['quantity']!=$Shoppingcart['0']['quantity'] )
     {
