@@ -11,14 +11,14 @@ class FormularController extends \app\core\Controller
     {
         $this->_params['title'] = 'Account Erstellen';
         $this->_params['Header'] = true;
-
+        
         if (isset($_POST['sendAccount']) || isset($_GET['ajax']))
         {
-
-
+            
             if (
                 !empty($_POST['firstName']) && !empty($_POST['lastName']) && !empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['birthday']) && !empty($_POST['mobile']))
             {
+                die();
                 $firstName = $_POST['firstName'];
                 $lastName = $_POST['lastName'];
                 $email = $_POST['email'];
@@ -35,6 +35,7 @@ class FormularController extends \app\core\Controller
                 if (
                     Account::validateInput($firstName, $check) && Account::validateInput($lastName, $check) && Account::validateInput($email, $check) && Account::validateInput($password, $check) && Account::validateInput($birthday, $check) && Account::validateInput($mobile, $check) && Account::validateInput($phone, $check))
                 {
+                    
                     //hash password for further usage in database
                     $password = password_hash($password, PASSWORD_DEFAULT);
 
