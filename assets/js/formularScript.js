@@ -29,6 +29,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     function validate() {
+        /*
+        * We should check if an email is already existing in db
+        * but for that feature we would have to check in the db with js
+        * if js is disabled you get an error for duplicate email via php
+        * */
+
 
         var firstName = document.getElementById('firstNameID');
         var lastName = document.getElementById('lastNameID');
