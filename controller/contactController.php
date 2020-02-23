@@ -13,7 +13,7 @@ class ContactController extends \app\core\Controller
         $this->_params['Header'] = true;
 
 
-        if (isset($_POST['sendContact']))
+        if (isset($_POST['sendContact']) || isset($_GET['ajax']))
         {
             if (!empty($_POST['email']) && !empty($_POST['subject']) && !empty($_POST['message']))
             {
