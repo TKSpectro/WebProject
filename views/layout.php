@@ -76,7 +76,7 @@ include __DIR__ . '/shared/topNav.php';
 include __DIR__ . '/shared/errorOutput.php';
 ?>
 <div class="contentCon">
-    <?php if (isset($_GET['type']) || isset($_GET['search']))
+    <?php if (isset($_GET['type']) || isset($_GET['search']) || $_GET['a'] == 'products')
     {
         include __DIR__ . '/shared/sideNav.php';
     } ?>

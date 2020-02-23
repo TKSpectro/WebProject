@@ -6,7 +6,7 @@ class ProductController extends \app\core\Controller
 {
     public function actionProducts()
     {
-        if (!isset($_GET['search']))
+        if (isset($_GET['type']))
         {
             $this->_params['title'] = $_GET['type'];
         }
@@ -15,7 +15,6 @@ class ProductController extends \app\core\Controller
             $this->_params['title'] = "Gefundene Produkte";
         }
         $this->_params['Header'] = true;
-
 
         $db = $GLOBALS['db'];
         $result = null;
@@ -28,23 +27,25 @@ class ProductController extends \app\core\Controller
             {
                 $sql .= ' WHERE descrip LIKE "%' . $_GET['search'] . '%"';
             }
-            elseif (isset($_GET['type']))
+            else
             {
                 $sql .= ' INNER JOIN prodcat ON prodcat.prodCatID = product.prodCatID INNER JOIN cat ON prodcat.catID = cat.catID';
-                //TODO 3 following ifs could get removed if we change type in get to boy/girl etc. instead of Jungs-Toys
-                if ($_GET['type'] == 'Jungs-Toys')
+                if (isset($_GET['type']))
                 {
-                    $sql .= ' WHERE ((cat.type = "boy") OR (cat.type = "both"))';
+                    //TODO 3 following ifs could get removed if we change type in get to boy/girl etc. instead of Jungs-Toys
+                    if ($_GET['type'] == 'Jungs-Toys')
+                    {
+                        $sql .= ' WHERE ((cat.type = "boy") OR (cat.type = "both"))';
+                    }
+                    if ($_GET['type'] == 'Mädchen-Toys')
+                    {
+                        $sql .= ' WHERE ((cat.type = "girl") OR (cat.type = "both"))';
+                    }
+                    if ($_GET['type'] == 'Konsolespiele')
+                    {
+                        $sql .= ' WHERE (cat.type = "console")';
+                    }
                 }
-                if ($_GET['type'] == 'Mädchen-Toys')
-                {
-                    $sql .= ' WHERE ((cat.type = "girl") OR (cat.type = "both"))';
-                }
-                if ($_GET['type'] == 'Konsolespiele')
-                {
-                    $sql .= ' WHERE (cat.type = "console")';
-                }
-
                 //filter if cat is given
                 if (isset($_GET['cat']))
                 {
