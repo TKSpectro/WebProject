@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         temporaryArray.push(form, price);
         pergrafWithForm.push(temporaryArray);
-        productprice(pergrafWithForm[i]);
+        productPrice(pergrafWithForm[i]);
 
         var submit = form.querySelector('input[type="submit"]');
         submit.addEventListener('click', function(event) {
@@ -20,10 +20,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
             for (var i = 0; i < pergrafWithForm.length; ++i) {
                 if (this.form == pergrafWithForm[i][0]) {
-                    productprice(pergrafWithForm[i]);
+                    productPrice(pergrafWithForm[i]);
                 }
             }
-            TotalPrice();
+            totalPrice();
             var request = new XMLHttpRequest();
             request.open(this.form.getAttribute('method'), 'index.php?c=shoppingcart&a=shoppingCart&ajax=1', true);
 
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    function productprice(format) {
+    function productPrice(format) {
         let errorAusgabe = document.getElementById("errorMessage");
         errorAusgabe.style.display = "none";
         format[1].style.display = "inline";
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     }
 
-    function TotalPrice() {
+    function totalPrice() {
         let htmlSpan = document.getElementById("gesamteSumme");
         let totalSumme = document.getElementsByClassName("GesamtBerechung");
         let gesamteSumme = 0;
