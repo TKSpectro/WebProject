@@ -37,7 +37,7 @@
 
 .card img {
     width: 18em;
-    height: 18em;
+    height: 22em;
     padding-top: 4%;
     margin: 0;
 }
@@ -194,6 +194,7 @@
     }
     .card img {
         width: 12em;
+        height: 14.5em;
         padding-top: 4%;
         margin: 0;
     }
