@@ -42,6 +42,7 @@ namespace app\models;
         </td>
             
         <td><span class="GesamtBerechung"><?=$prodID['4']; ?></span> €</td>
+        <span id="errorMessage">Der Inputwert soll größer als 1 sein.</span>
         </tr>
     <tr>
         <td  colspan="6"><div class="seprator"></div></td>
@@ -52,7 +53,7 @@ namespace app\models;
     <div class="summe">
         <div class="anzahl"><?=count($produkte);?> Artikel</div>
                 <div class="gesamt">
-                <span class="shoppingcartTable">GESAMTSUMME <span class="leerZeichen"><?= $summe?>€</span></span> 
+                <span class="shoppingcartTable">GESAMTSUMME <span class="leerZeichen"><span id="gesamteSumme"><?=$summe?></span>€</span></span> 
                 </div>
         </div>
 
