@@ -31,15 +31,15 @@
     color: rgb(108, 182, 189);
 }
 
-.jungeColor a {
+.colorBoy a {
     color: rgb(134, 14, 10);
 }
 
-.mädchenColor a {
+.colorGirl a {
     color: #f1ac2c;
 }
 
-.konsoleColor a {
+.colorConsole a {
     color: #2dc2cf;
 }
 

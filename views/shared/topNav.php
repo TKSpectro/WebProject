@@ -20,7 +20,7 @@ namespace app\models;
         <li class="subnav">
         <div class=" <? if($_GET['type'] == "Konsolespiele"){?>activeKonsole<?}?>">
             <a href="index.php?c=product&a=products&type=Konsolespiele" class="subnavbtn">
-            <div class="topNavConsole "><img id="konsoleImage" src="assets/images/controllerIcon.png" alt="Konsolen Bild"> Konsolen</div>
+            <div class="topNavConsole "><img id="consoleImage" src="assets/images/controllerIcon.png" alt="Konsolen Bild"> Konsolen</div>
                
             </a>
             <ul class="subnav-content">

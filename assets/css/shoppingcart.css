@@ -18,7 +18,7 @@ div.shoppingcart {
     font-family: "Roboto", serif;
 }
 
-.Titl {
+.shoppingCartTitel {
     font-size: 23px;
     text-align: left;
     margin: 0.5em 0em 1em;
@@ -37,7 +37,7 @@ td {
     font-size: 18px;
 }
 
-.prodTitl {
+.prodTitel {
     padding-left: 1em;
     text-align: left;
 }
@@ -56,12 +56,12 @@ td {
     padding-left: 0.5em;
 }
 
-div.seprator {
+div.seperator {
     border-bottom: 2px solid gray;
     margin: 0.5em 1em;
 }
 
-.summe {
+.shoppingCartSum {
     margin-left: 60%;
     margin-right: 3%;
     padding: 1.5em 0em 3em;
@@ -70,14 +70,14 @@ div.seprator {
     padding-right: 3.5em;
 }
 
-.gesamt {
+.sum {
     border-top: 3px solid gray;
     padding-top: 0.7em;
     font-size: 23px;
     text-align: left;
 }
 
-.anzahl {
+.amount {
     padding-bottom: 0.7em;
     padding-right: 70%;
 }
@@ -98,7 +98,7 @@ div.seprator {
     font-family: "KGILikeToMoveIt";
 }
 
-.kasse {
+.checkout {
     background-color: rgb(73, 73, 73);
     font-size: 21px;
     padding: 1em 0em;
@@ -108,12 +108,12 @@ div.seprator {
     text-align: center;
 }
 
-.kasse a {
+.checkout a {
     text-decoration: none;
     color: #EAE8DE;
 }
 
-.leerZeichen {
+.freeSpace {
     float: right;
 }
 
@@ -140,10 +140,10 @@ div.seprator {
     .shoppingcartTable {
         margin-right: 3em;
     }
-    .summe {
+    .shoppingCartSum {
         font-size: 18px;
     }
-    .gesamt {
+    .sum {
         padding-left: 10px;
         font-size: 18px;
     }

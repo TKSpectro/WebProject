@@ -2,18 +2,18 @@
 namespace app\models;
 ?>
 <div class="shoppingcart">
-    <div class="Titl">MEIN WARENKORB</div>
+    <div class="shoppingCartTitel">MEIN WARENKORB</div>
 <table class="shoppingcartTable">
 <thead>
     <tr>
-        <td class="prodTitl" colspan="2">PRODUKT</td>
+        <td class="prodTitel" colspan="2">PRODUKT</td>
         <td>PREIS</td>
         <td>ANZAHL</td>
         <td></td>
         <td>GESAMT</td>
     </tr>
     <tr>
-        <td  colspan="6"><div class="seprator"></div></td>
+        <td  colspan="6"><div class="seperator"></div></td>
     </tr>
 </thead>
 <tbody> 
@@ -45,15 +45,15 @@ namespace app\models;
         <span id="errorMessage">Der Inputwert soll größer als 1 sein.</span>
         </tr>
     <tr>
-        <td  colspan="6"><div class="seprator"></div></td>
+        <td  colspan="6"><div class="seperator"></div></td>
     </tr>
 <? endforeach;?>        
 </tbody>
 </table>
-    <div class="summe">
-        <div class="anzahl"><?=count($produkte);?> Artikel</div>
-                <div class="gesamt">
-                <span class="shoppingcartTable">GESAMTSUMME <span class="leerZeichen"><span id="gesamteSumme"><?=$summe?></span>€</span></span> 
+    <div class="shoppingCartSum">
+        <div class="amount"><?=count($produkte);?> Artikel</div>
+                <div class="sum">
+                <span class="shoppingcartTable">GESAMTSUMME <span class="freeSpace"><span id="gesamteSumme"><?=$summe?></span>€</span></span>
                 </div>
         </div>
 
@@ -61,7 +61,7 @@ namespace app\models;
 </div>
 
     <? if(!empty($summe)):?>
-        <div class="kasse">
+        <div class="checkout">
 <a href="index.php?c=address&a=address">zur Kasse</a>
 </div>    
 <?endif;?>

@@ -4,7 +4,7 @@
     text-align: center;
 }
 
-.startseite {
+.homepage {
     margin: 0em 2em;
 }
 
@@ -14,18 +14,15 @@
     display: inline-block;
 }
 
-.startseite img {
+.homepage img {
     max-width: 25em;
     height: 35em;
     border: 10px solid;
     margin: 2.5em 1.5em;
 }
 
-
-/* For width 400px and larger: */
-
 @media only screen and (max-width: 1288px) {
-    .startseite img {
+    .homepage img {
         max-width: 30em;
         height: 25em;
         border: 7px solid;
@@ -52,9 +49,6 @@
 .startList:hover .overlay {
     opacity: 1;
 }
-
-
-/* INDEX */
 
 .roboto {
     font-family: "Roboto", serif;
@@ -130,19 +124,19 @@ ul.icons img {
     margin: 1em 0.8em 0em 0.5em;
 }
 
-#Warenkorb {
+#shoppingCart {
     margin-right: 4em;
 }
 
-#jung {
+#boy {
     border-color: #90B3B6;
 }
 
-#vater {
+#console {
     border-color: #f1ac2c;
 }
 
-#girls {
+#girl {
     border-color: #C38D8B;
 }
 
@@ -159,7 +153,7 @@ ul.icons img {
     height: 1px;
 }
 
-.ÜberUnsText {
+.aboutUsText {
     width: 90%;
     margin: auto;
     margin-top: 4em;
