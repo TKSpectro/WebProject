@@ -44,9 +44,9 @@
     <link rel="stylesheet" type="text/css" href="assets/css/singleProduct.css">
     <? endif;
 
-     if ($_GET['a'] == 'checkout' || $_GET['a'] == 'paypal' ): ?>
-        <link rel="stylesheet" type="text/css" href="assets/css/checkout.css">
-        <? endif;
+    if ($_GET['a'] == 'checkout' || $_GET['a'] == 'paypal'): ?>
+    <link rel="stylesheet" type="text/css" href="assets/css/checkout.css">
+    <? endif;
 
     if ($_GET['a'] == 'imprint' || $_GET['a'] == 'documentation'): ?>
     <link rel="stylesheet" type="text/css" href="assets/css/imprintDocumentation.css">
@@ -56,11 +56,7 @@
         <script type="text/javascript" src="assets/js/registerScript.js"></script>
     <? endif;
     } ?>
-  
-
-    
 </head>
-
 <body>
 <?php
 
@@ -91,8 +87,6 @@ include __DIR__ . '/shared/errorOutput.php';
         <?= $body;
     }
     ?>
-
-
 </div>
 <footer>
     <? include __DIR__ . '/shared/footer.php'; ?>
