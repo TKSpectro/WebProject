@@ -31,13 +31,20 @@
     </ul>
     <a name="design"><h2>4. Design</h2></a>
     <ul>
-        <li>Layout:</li>
-        <li>Farben:</li>
-        <li>Schrift:</li>
-        <li>(Bilder?)</li>
+        <li>Layout: Möglichst einfach gehalten, aber trotzdem leicht verspielt.</li>
+        <li>Farben: Cremefarbe für den Hintergrund und für die jeweiligen Kategorien jeweils eine zugewiesene Farbe für eine schnelle Unterscheidung</li>
+        <li>Schrift: Unsere Standard Schriftart ist "" . Für Login, Registrierung oder Lange Fließtexte wird "" verwendet um ein einfachereres lesen zu ermöglichen</li>
+        <li>Bilder: Möglichst farbenfroh und passend zum Thema</li>
     </ul>
     <a name="function"><h2>5. Funktionalitäten</h2></a>
     <ul>
+        Funktionalitäten, welche umgesetzt wurden:
+        <ul>
+            <li>Login, Registrierung, Accountdaten ändern</li>
+            <li>Produktseite, Einzelproduktansicht, Produktfilterung, Produktsuche</li>
+            <li>Warenkorb, Angedeutete Bezahlung</li>
+            <li>Kontakt-Formular</li>
+        </ul>
         <li>Screenshots für jede Seite mit Beschriftung</li>
     </ul>
     <a name="ermodell"><h2>6. ER-Modell</h2></a>
