@@ -48,7 +48,9 @@
 
         <fieldset class="register_fieldset">
             <legend>Telefon</legend>
-            <input type="number" id="phoneID" name="phone"></fieldset>
+            <input type="number" id="phoneID" name="phone">
+        </fieldset>
+
         <input type="submit" id="registerSubmitID" name="sendAccount" value="Registrieren">
     </form>
 </div>

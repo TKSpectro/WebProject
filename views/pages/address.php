@@ -7,7 +7,7 @@
 
         <fieldset class="register_fieldset">
             <legend>Land</legend>
-            <div class="registerInput"><input type="text"  name="land"></div>
+            <div class="registerInput"><input type="text" name="land"></div>
         </fieldset>
 
         <fieldset class="register_fieldset">
@@ -17,22 +17,20 @@
 
         <fieldset class="register_fieldset">
             <legend>Straße</legend>
-            <div class="registerInput"><input type="text"  name="street"></div>
+            <div class="registerInput"><input type="text" name="street"></div>
         </fieldset>
-        
 
         <fieldset class="register_fieldset">
             <legend>Hausnummer</legend>
             <div class="registerInput"><input type="number" name="houseNumber"></div>
         </fieldset>
 
-
         <fieldset class="register_fieldset">
             <legend>Postleitzahl</legend>
-            
-            <div class="registerInput"><input type="number"  name="zip"></div>
+            <div class="registerInput"><input type="number" name="zip"></div>
         </fieldset>
-        <input type="submit"  name="sendAddress" value="Bestätigen">
+
+        <input type="submit" name="sendAddress" value="Bestätigen">
     </form>
 </div>
 

@@ -1,15 +1,13 @@
 <div class="Attention">
-  Melden Sie sich bitte an, um bezahlen zu können.
+    Melden Sie sich bitte an, um bezahlen zu können.
 </div>
 <div class="options">
-<div class="buttons">
+    <div class="buttons">
     <span class="left">
-        <a  href="index.php?c=register&a=register" >Registrieren</a>
+        <a href="index.php?c=register&a=register">Registrieren</a>
     </span>
-
-    <span class="right">
-        <a  href="index.php?c=login&a=login" >Anmelden</a>
+        <span class="right">
+        <a href="index.php?c=login&a=login">Anmelden</a>
     </span>
-
-</div>
+    </div>
 </div>
