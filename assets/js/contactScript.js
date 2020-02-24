@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                 }
             };
-
             request.send(new FormData(form));
             //window.location.assign("index.php");
         }
@@ -58,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
             message.parentNode.className = message.parentNode.className.replace('errorinput', '');
         }
 
-        if(valid == false)
+        if (valid == false)
             console.log('Failed');
 
         return valid;
@@ -76,21 +75,21 @@ function validateEmail(email) {
     }
 }
 
-function validateSubject(subject){
+function validateSubject(subject) {
     var format = /[#^&\[\]{}'|<>\/]/;
-    if (subject.value.match(format) == null){
+    if (subject.value.match(format) == null) {
         return true;
-    }else{
+    } else {
         console.log("Sie haben einen ungültigen Betreff eingegeben");
         return false;
     }
 }
 
-function validateMessage(message){
+function validateMessage(message) {
     var format = /[#^&\[\]{}'|<>\/]/;
-    if (message.value.match(format) == null){
+    if (message.value.match(format) == null) {
         return true;
-    }else{
+    } else {
         console.log("Sie haben einen ungültige Nachricht eingegeben");
         return false;
     }

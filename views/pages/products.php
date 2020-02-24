@@ -50,7 +50,7 @@ $query = $_GET;
 {
     foreach ($product as $prod)
     {
-        include __DIR__ . '/../shared/productLook.php';
+        include __DIR__ . '/../shared/singleProductView.php';
     }
 } ?>
  </ul>

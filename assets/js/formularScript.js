@@ -35,7 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
         * if js is disabled you get an error for duplicate email via php
         * */
 
-
         var firstName = document.getElementById('firstNameID');
         var lastName = document.getElementById('lastNameID');
         var email = document.getElementById('emailID');
