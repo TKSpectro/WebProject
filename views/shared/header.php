@@ -32,8 +32,6 @@
                     <form action="index.php" method="get">
                         <input type="hidden" value="product" name="c">
                         <input type="hidden" value="products" name="a">
-                        <? if (isset($_GET['type'])) { ?><input type="hidden" value="<?= $_GET['type'] ?>"
-                                                                name="type"><? } ?>
                         <input class="searchInput" id="searchWord" type="search" placeholder="Suchen">
                         <button type="submit" class="searchButton">
                             <img class="searchIcon" src="assets/images/search_icon.png" alt="searchButton">
@@ -42,7 +40,7 @@
                 </div>
             </noscript>
             <div id="jssearch" class="search" style="display:none">
-                <form action="javascript:searchByWord ('<?= $_GET['type'] ?>');">
+                <form action="javascript:searchByWord ();">
                     <input class="searchInput" id="searchWord" type="search" placeholder="Suchen">
                     <button type="submit" class="searchButton">
                         <img class="searchIcon" src="assets/images/search_icon.png" alt="searchButton">
