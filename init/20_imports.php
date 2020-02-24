@@ -30,6 +30,8 @@ require_once 'controller/formularController.php';
 require_once 'controller/shoppingcartController.php';
 require_once 'controller/contactController.php';
 require_once 'controller/loginController.php';
+require_once 'controller/paypalController.php';
+require_once 'controller/productController.php';
 require_once 'controller/checkoutSucceedController.php';
 #require_once 'views/printAddress.php';
 
