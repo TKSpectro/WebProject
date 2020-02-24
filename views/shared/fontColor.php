@@ -2,18 +2,18 @@
 {
     if ($_GET['type'] == 'Jungs-Toys')
     {
-        ?>jungeColor<?
+        ?>colorBoy<?
     }
     elseif ($_GET['type'] == 'Konsolespiele' || isset($_GET['search']))
     {
-        ?>konsoleColor<?
+        ?>colorConsole<?
     }
     else
     {
-        ?>mädchenColor<?
+        ?>colorGirl<?
     }
 }
 else
 {
-    ?>mädchenColor
+    ?>colorGirl
 <? } ?>
