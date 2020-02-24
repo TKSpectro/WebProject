@@ -5,7 +5,8 @@
             <a href="index.php"><img id="logo" src="assets/images/Logo.png" alt="Toyplanet_logo"></a>
         </li>
         <li class="startListIcon">
-            <a href="index.php?c=shoppingcart&a=shoppingCart"><img id="shoppingCart" src="assets/images/shopping-cart.png"
+            <a href="index.php?c=shoppingcart&a=shoppingCart"><img id="shoppingCart"
+                                                                   src="assets/images/shopping-cart.png"
                                                                    alt="Warenkorb"></a>
         </li>
         <?php if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) : ?>
@@ -41,7 +42,7 @@
                 </div>
             </noscript>
             <div id="jssearch" class="search" style="display:none">
-                <form action="javascript:searchByWord ('<?=$_GET['type'] ?>');">
+                <form action="javascript:searchByWord ('<?= $_GET['type'] ?>');">
                     <input class="searchInput" id="searchWord" type="search" placeholder="Suchen">
                     <button type="submit" class="searchButton">
                         <img class="searchIcon" src="assets/images/search_icon.png" alt="searchButton">
