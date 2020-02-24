@@ -1,4 +1,4 @@
-<div class="formular">
+<div class="register">
     <form class="iamform" method="Post">
         <figure>
             <img src="assets/images/Account_verwaltung2.png" alt="Account_verwaltung Bild">

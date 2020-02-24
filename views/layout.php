@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/sideNav.css">
     <link rel="stylesheet" type="text/css" href="assets/css/topNav.css">
     <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/formular.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/register.css">
     <link rel="stylesheet" type="text/css" href="assets/css/errorOutput.css">
     <title><?= $title ?></title>
     <style>
@@ -52,8 +52,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/imprintDocumentation.css">
     <? endif;
 
-    if ($_GET['a'] == 'formular'): ?>
-        <script type="text/javascript" src="assets/js/formularScript.js"></script>
+    if ($_GET['a'] == 'register'): ?>
+        <script type="text/javascript" src="assets/js/registerScript.js"></script>
     <? endif;
     } ?>
   

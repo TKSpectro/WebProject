@@ -4,7 +4,7 @@
 <div class="options">
 <div class="buttons">
     <span class="left">
-        <a  href="index.php?c=formular&a=formular" >Registrieren</a>
+        <a  href="index.php?c=register&a=register" >Registrieren</a>
     </span>
 
     <span class="right">

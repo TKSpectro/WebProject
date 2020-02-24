@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
     var validierung = true;
     var form = document.getElementById('iamform');
-    var submit = document.getElementById('formularSubmitID');
+    var submit = document.getElementById('registerSubmitID');
     submit.addEventListener('click', function(event) {
         event.preventDefault();
         event.stopPropagation();
         validierung = validate();
         if (validierung == true) {
             var request = new XMLHttpRequest();
-            request.open(form.getAttribute('method'), 'index.php?c=formular&a=formular&ajax=1', true);
+            request.open(form.getAttribute('method'), 'index.php?c=register&a=register&ajax=1', true);
             request.onreadystatechange = function() {
                 // request finished?
                 if (this.readyState == 4) // XMLHttpRequest.DONE

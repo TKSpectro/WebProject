@@ -5,9 +5,9 @@ namespace app\controller;
 use \app\models\Account;
 
 
-class FormularController extends \app\core\Controller
+class RegisterController extends \app\core\Controller
 {
-    public function actionFormular()
+    public function actionRegister()
     {
         $this->_params['title'] = 'Account Erstellen';
         $this->_params['Header'] = true;
