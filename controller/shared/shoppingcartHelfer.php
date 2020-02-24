@@ -35,7 +35,7 @@ if(isset($_COOKIE['randomNr']))
                   ];
                   $warenkorb = new app\models\Shoppingcart($params);
                   $error;
-                  $warenkorb->delete($error,'ID = "' . $ShoppingCartProduct[$counter]['ID']. '"');
+                  $warenkorb->delete($error,'ID = "' . $ShoppingCartProduct[$counter]['shoppingCartID']. '"');
                   $ShoppingCartProduct=array_values($ShoppingCartProduct);
             }
       }

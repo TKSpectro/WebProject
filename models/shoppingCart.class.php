@@ -9,14 +9,12 @@ class Shoppingcart extends BaseModel
 
     protected $schema = [
        
-        'ID'              => ['type' => BaseModel::TYPE_INT],
+        'shoppingCartID'  => ['type' => BaseModel::TYPE_INT],
         'createdAt'       => ['type' => BaseModel::TYPE_STRING],
         'updatedAt'       => ['type' => BaseModel::TYPE_STRING],
         'prodID'          => ['type' => BaseModel::TYPE_INT],
         'quantity'        => ['type' => BaseModel::TYPE_INT],
         'randomNr'        => ['type' => BaseModel::TYPE_STRING],
         'accountID'       => ['type' => BaseModel::TYPE_INT]
-
-
     ];
 }
