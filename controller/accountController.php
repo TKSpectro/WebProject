@@ -12,7 +12,7 @@ class AccountController extends \app\core\Controller
         $this->_params['Header'] = true;
         $this->_params['accounts'] = Account::find('accountID = "' . $_SESSION['accountID'] . '"');
 
-        if (isset($_POST['accountÄndern']))
+        if (isset($_POST['changeAccountData']))
         {
             if (
                 !empty($_POST['firstName']) && !empty($_POST['lastName']) && !empty($_POST['email'])
