@@ -33,8 +33,16 @@ public function actionAddress()
         $street       = $_POST['street'];
         $houseNumber  = $_POST['houseNumber'];
         $zip          = $_POST['zip'];
-
         $check = [',','>','<'];
+
+        $find=Address::find('land = "'.$land. '" and city = "'.$city. '"
+        and street = "'.$street. '" and houseNumber = "'.$houseNumber. '" and zip = "'.$zip. '"');
+       header('Location: index.php?c=paypal&a=paypal');
+        if(!empty($find))
+        {
+                exit(0);
+        }
+        
         if(Address::validateInput($land,$check)
         && Address::validateInput($city, $check)
         && Address::validateInput($street, $check)
@@ -53,7 +61,11 @@ public function actionAddress()
             $address = new Address($params);
             $error;
             $address->insert($error);
-            header('Location: index.php?c=paypal&a=paypal');
+                                    
+            $_SESSION['addressID']=Address::find('land = "'.$land. '" and city = "'.$city. '"
+             and street = "'.$street. '" and houseNumber = "'.$houseNumber. '" and zip = "'.$zip. '"');
+           
+             header('Location: index.php?c=paypal&a=paypal');
           
         }
     

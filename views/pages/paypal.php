@@ -10,7 +10,11 @@
         </span>
 
         <span class="right">
-        <a href="index.php?a=checkoutSucceed" >Zahlung bestätigen</a>
+        <form method="post" action="index.php?c=checkoutSucceed&a=checkoutSucceed" >
+            <input type="hidden" name="sum" value="<?=$summe?>">
+            <input  type="submit" name="bestätigen" value="Zahlung bestätigen">
+        </form>
+        
         </span>
 
     </div>

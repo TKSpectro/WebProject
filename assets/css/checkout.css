@@ -76,10 +76,18 @@
         text-align: center;
     }
     
-    .right a {
+    .right form {
+        margin: 0;
+    }
+    
+    .right input[type=submit] {
         text-decoration: none;
         color: white;
         font-size: 22px;
+        background-color: transparent;
+        text-decoration: none;
+        border: none;
+        padding-top: 0;
     }
     
     .left a {

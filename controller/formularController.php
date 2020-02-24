@@ -18,7 +18,7 @@ class FormularController extends \app\core\Controller
             if (
                 !empty($_POST['firstName']) && !empty($_POST['lastName']) && !empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['birthday']) && !empty($_POST['mobile']))
             {
-                die();
+              
                 $firstName = $_POST['firstName'];
                 $lastName = $_POST['lastName'];
                 $email = $_POST['email'];

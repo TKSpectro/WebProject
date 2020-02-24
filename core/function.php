@@ -35,3 +35,10 @@ function rememberMe($email, $password)
       setcookie('password' , $password, $duration,'/');
     
 }
+
+function findMyAdress()
+{
+      app\models\Address::find('land = "'.$land. '" and city = "'.$city. '"
+             and street = "'.$street. '" and houseNumber = "'.$houseNumber. '" and zip = "'.$zip. '"');
+           
+}

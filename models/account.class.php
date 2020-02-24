@@ -20,11 +20,6 @@ class Account extends BaseModel
         'phone'        => ['type' => BaseModel::TYPE_STRING]
     ];
 
- 
-    public function fullname()
-    {
-        return ($this->firstname ?? '') . ' ' . ($this->lastname ?? '');
-    }
 }
 
 

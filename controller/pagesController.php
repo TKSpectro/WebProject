@@ -82,9 +82,5 @@ class PagesController extends \app\core\Controller
         $this->_params['Header'] = false;
     }
 
-    public function actionCheckoutSucceed()
-    {
-        $this->_params['title'] = 'Bestellt';
-        $this->_params['Header'] = false;
-    }
+   
 }

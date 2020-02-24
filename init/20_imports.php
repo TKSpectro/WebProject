@@ -17,6 +17,10 @@ require_once 'models/address.class.php';
 require_once 'models/product.class.php';
 require_once 'models/prodCat.class.php';
 require_once 'models/contact.class.php';
+require_once 'models/order.class.php';
+require_once 'models/orderItem.class.php';
+
+
 
 
 // controller
@@ -26,6 +30,7 @@ require_once 'controller/formularController.php';
 require_once 'controller/shoppingcartController.php';
 require_once 'controller/contactController.php';
 require_once 'controller/loginController.php';
+require_once 'controller/checkoutSucceedController.php';
 #require_once 'views/printAddress.php';
 
 

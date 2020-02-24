@@ -8,7 +8,7 @@ class OrderItem extends BaseModel
     const TABLENAME = '`orderItem`';
 
     protected $schema = [
-        'accountID'   	=> ['type' => BaseModel::TYPE_INT],
+        'itemID'     	=> ['type' => BaseModel::TYPE_INT],
         'createdAt'   	=> ['type' => BaseModel::TYPE_STRING],
         'updatedAt'    	=> ['type' => BaseModel::TYPE_STRING],
         'actPrice'		=> ['type' => BaseModel::TYPE_FLOAT],

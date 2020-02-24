@@ -9,11 +9,13 @@ class Order extends BaseModel
 
     protected $schema = [
         'orderID'    	=> ['type' => BaseModel::TYPE_INT],
-        'createdAt'    	=> ['type' => BaseModel::TYPE_DATE],
-        'updatedAt'    	=> ['type' => BaseModel::TYPE_DATE],
-        'orderDate'  	=> ['type' => BaseModel::TYPE_DATE],
-        'shipDate'  	=> ['type' => BaseModel::TYPE_DATE],
-        'sum'       	=> ['type' => BaseModel::TYPE_FLOAT]
+        'orderDate'    	=> ['type' => BaseModel::TYPE_STRING],
+        'updatedAt'    	=> ['type' => BaseModel::TYPE_STRING],
+        'shipDate'  	=> ['type' => BaseModel::TYPE_STRING],
+        'sum'       	=> ['type' => BaseModel::TYPE_FLOAT],
+        'accountID'     => ['type' => BaseModel::TYPE_INT],
+        'addressID'     => ['type' => BaseModel::TYPE_INT]
+
     ];
 }
 
