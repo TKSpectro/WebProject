@@ -37,10 +37,14 @@ public function actionAddress()
 
         $find=Address::find('land = "'.$land. '" and city = "'.$city. '"
         and street = "'.$street. '" and houseNumber = "'.$houseNumber. '" and zip = "'.$zip. '"');
-       header('Location: index.php?c=paypal&a=paypal');
+     
         if(!empty($find))
         {
+            
+            $_SESSION['addressID']=$find;
+            header('Location: index.php?c=paypal&a=paypal');
                 exit(0);
+                
         }
         
         if(Address::validateInput($land,$check)

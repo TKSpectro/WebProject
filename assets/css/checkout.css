@@ -90,6 +90,12 @@
         padding-top: 0;
     }
     
+    .right a {
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+    }
+    
     .left a {
         text-decoration: none;
         color: white;
