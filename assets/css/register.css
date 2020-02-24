@@ -11,7 +11,7 @@ div.register {
     margin: -8% 42.5% 2%;
 }
 
-.iamform {
+.standardForm {
     border-radius: 2px;
     color: rgb(105, 221, 231);
     font-size: 21px;
@@ -38,7 +38,7 @@ fieldset {
     margin: 2.5% 10%;
 }
 
-.iamform input,
+.standardForm input,
 textarea {
     border-radius: 2px;
     width: 100%;
@@ -63,7 +63,7 @@ div figcaption {
     font-size: 35px;
 }
 
-.iamform input[type="submit"] {
+.standardForm input[type="submit"] {
     background-color: #96C1C5;
     color: rgb(224, 87, 87);
     font-size: 21px;
@@ -120,7 +120,7 @@ div figcaption {
         width: 15%;
         margin: -8% 42.5% 2%;
     }
-    .iamform {
+    .standardForm {
         font-size: 18px;
     }
     #kontoErstellenlink {

@@ -1,5 +1,5 @@
 <div class="register">
-    <form class="iamform" method="Post" id="iamform">
+    <form class="standardForm" method="Post" id="iamform">
         <figure>
             <img src="assets/images/Account_verwaltung2.png" alt="Account_verwaltung Bild">
             <figcaption>Benutzerkonto Erstellen</figcaption>

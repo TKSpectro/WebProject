@@ -1,5 +1,5 @@
 <div class="register">
-    <form class="iamform" method="Post" id="formContact">
+    <form class="standardForm" method="Post" id="formContact">
         <figure>
             <img src="assets/images/Account_verwaltung2.png" alt="Account_verwaltung Bild">
             <figcaption>Kontakt Formular</figcaption>
