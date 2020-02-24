@@ -15,7 +15,7 @@
         </fieldset>
         <input type="checkbox" name="rememberMe"
             <?= isset($_POST['rememberMe']) ? 'checked' : '' ?>> <label for="rememberMe">Meine ID Speichern </label>
-        <a id="kontoErstellenlink" href="index.php?c=register&a=register">Noch kein Konto?</a>
+        <a id="createAccountLink" href="index.php?c=register&a=register">Noch kein Konto?</a>
         <input type="submit" name="login" value="Anmelden">
     </form>
 </div>

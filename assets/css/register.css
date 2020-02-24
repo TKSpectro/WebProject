@@ -18,7 +18,7 @@ div.register {
     background-color: #be4945;
 }
 
-#kontoErstellenlink {
+#createAccountLink {
     color: rgb(105, 221, 231);
     font-size: 22px;
     font-weight: bold;
@@ -27,7 +27,7 @@ div.register {
     margin-right: 10%;
 }
 
-a#kontoErstellenlink:hover {
+a#createAccountLink:hover {
     font-size: 25px;
 }
 
@@ -123,7 +123,7 @@ div figcaption {
     .standardForm {
         font-size: 18px;
     }
-    #kontoErstellenlink {
+    #createAccountLink {
         font-size: 18px;
         margin-right: 10%;
     }
