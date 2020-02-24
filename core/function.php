@@ -16,7 +16,7 @@ function checkIfRemembered()
             {
               $_SESSION['loggedIn'] = true; 
               
-              include __DIR__ . '/../controller/shared/shoppingcartHelfer.php';
+              include __DIR__ . '/../controller/shared/shoppingcartHelper.php';
             }      
          }
       }
@@ -24,7 +24,7 @@ function checkIfRemembered()
       {
             $_SESSION['loggedIn'] = true; 
               
-            include __DIR__ . '/../controller/shared/shoppingcartHelfer.php';
+            include __DIR__ . '/../controller/shared/shoppingcartHelper.php';
       }
 }
 

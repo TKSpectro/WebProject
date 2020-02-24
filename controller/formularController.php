@@ -62,7 +62,7 @@ class FormularController extends \app\core\Controller
                         // um die RandomNr als * zu machen
                         $where = \app\models\Account::find('email = "' . $email . '"');
                         $_SESSION['accountID'] = $where['0']['accountID'];
-                        include __DIR__ . '/../controller/shared/shoppingcartHelfer.php';
+                        include __DIR__ . '/../controller/shared/shoppingcartHelper.php';
                         header('Location: index.php');
 
 
