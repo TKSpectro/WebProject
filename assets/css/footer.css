@@ -30,3 +30,12 @@
     text-decoration: none;
     color: black;
 }
+
+@media only screen and (max-width: 1288px) {
+    .footerMenu {
+        margin-top: 10%;
+    }
+    .shoppingcartEmpty {
+        margin-top: 29%;
+    }
+}

@@ -43,6 +43,10 @@
     color: #2dc2cf;
 }
 
+.colorFilter a {
+    color: rgb(231, 90, 182);
+}
+
 @media screen and (max-width: 1288px) {
     .sidenav {
         width: 8EM;

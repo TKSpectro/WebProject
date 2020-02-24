@@ -8,12 +8,15 @@
     {
         ?>colorConsole<?
     }
-    else
+    elseif($_GET['type'] == 'Mädchen-Toys' || isset($_GET['search']))
     {
         ?>colorGirl<?
+    }
+    else{
+        ?>colorFilter<?
     }
 }
 else
 {
-    ?>colorGirl
+    ?>colorFilter
 <? } ?>
