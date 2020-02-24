@@ -12,7 +12,6 @@ class ContactController extends \app\core\Controller
         $this->_params['title'] = 'Kontakt';
         $this->_params['Header'] = true;
 
-
         if (isset($_POST['sendContact']) || isset($_GET['ajax']))
         {
             if (!empty($_POST['email']) && !empty($_POST['subject']) && !empty($_POST['message']))
@@ -25,7 +24,6 @@ class ContactController extends \app\core\Controller
                 if (Contact::validateInput($email, $check))
                 {
                     $params = ['email' => $email, 'subject' => $subject, 'message' => $message];
-
                     $contact = new Contact($params);
                     $error;
                     $contact->insert($error);
@@ -47,7 +45,6 @@ class ContactController extends \app\core\Controller
                 $error = 'Alle Felder müssen ausgefüllt sein';
                 $_POST['errorList'] = $error;
             }
-
         }
         if (isset($_GET['ajax']))
         {

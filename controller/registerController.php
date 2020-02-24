@@ -11,14 +11,12 @@ class RegisterController extends \app\core\Controller
     {
         $this->_params['title'] = 'Account Erstellen';
         $this->_params['Header'] = true;
-        
+
         if (isset($_POST['sendAccount']) || isset($_GET['ajax']))
         {
-            
             if (
                 !empty($_POST['firstName']) && !empty($_POST['lastName']) && !empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['birthday']) && !empty($_POST['mobile']))
             {
-              
                 $firstName = $_POST['firstName'];
                 $lastName = $_POST['lastName'];
                 $email = $_POST['email'];
@@ -37,15 +35,11 @@ class RegisterController extends \app\core\Controller
                 else
                 {
                     //email was not found
-
-
                     if (!empty($_POST['phone']))
                     {
                         $phone = $_POST['phone'];
                     }
-
                     $check = [',', '>', '<'];
-
 
                     if (
                         Account::validateInput($firstName, $check) && Account::validateInput($lastName, $check) && Account::validateInput($email, $check) && Account::validateInput($password, $check) && Account::validateInput($birthday, $check) && Account::validateInput($mobile, $check) && Account::validateInput($phone, $check))
@@ -64,8 +58,6 @@ class RegisterController extends \app\core\Controller
                         $_SESSION['accountID'] = $where['0']['accountID'];
                         include __DIR__ . '/../controller/shared/shoppingcartHelper.php';
                         header('Location: index.php');
-
-
                     }
 
                     else
@@ -83,17 +75,11 @@ class RegisterController extends \app\core\Controller
             {
                 $error = 'Alle Felder müssen ausgefüllt sein';
                 $_POST['errorList'] = "$error";
-                //echo($error);
-
             }
-
         }
         if (isset($_GET['ajax']))
         {
             exit(0); // Valid EXIT with JSON OUTPUT
         }
-
     }
-
 }
-

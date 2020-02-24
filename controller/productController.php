@@ -95,8 +95,6 @@ class ProductController extends \app\core\Controller
         {
             die('Select statment failed: ' . $e->getMessage());
         }
-
-
         $this->_params['product'] = $result;
     }
 }

@@ -9,14 +9,12 @@ class LoginController extends \app\core\Controller
         $this->_params['title'] = 'Login';
         $this->_params['Header'] = true;
 
-    
         if (!isset($_SESSION['loggedIn']) || $_SESSION['loggedIn'] === false)
         {
             if (isset($_POST['login']))
             {
                 $email = isset($_POST['email']) ? $_POST['email'] : '';
                 $password = isset($_POST['password']) ? $_POST['password'] : '';
-
                 $where = \app\models\Account::find('email = "' . $email . '"');
 
                 if (!empty($email) && !empty($password))
@@ -32,7 +30,6 @@ class LoginController extends \app\core\Controller
                             if (isset($_POST['rememberMe']))
                             {
                                 rememberMe($where['0']['email'], $password);
-
                             }
                             header('Location: index.php');
                             exit(0);
@@ -61,8 +58,4 @@ class LoginController extends \app\core\Controller
             exit(0);
         }
     }
-  
-
-
-
 }

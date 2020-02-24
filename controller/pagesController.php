@@ -10,6 +10,7 @@ class PagesController extends \app\core\Controller
         $this->_params['Header'] = true;
         $this->_params['accounts'] = \app\models\Account::find();
     }
+
     public function actionError404()
     {
         $this->_params['title'] = 'Error404';
@@ -71,7 +72,6 @@ class PagesController extends \app\core\Controller
         }
         session_destroy();
 
-
         header('Location:index.php');
         exit();
     }
@@ -82,5 +82,5 @@ class PagesController extends \app\core\Controller
         $this->_params['Header'] = false;
     }
 
-   
+
 }

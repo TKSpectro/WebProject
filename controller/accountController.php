@@ -64,8 +64,6 @@ class AccountController extends \app\core\Controller
                     $_SESSION['accountID'] = $where['0']['accountID'];
 
                     header('Location: index.php');
-
-
                 }
 
                 else
@@ -83,12 +81,6 @@ class AccountController extends \app\core\Controller
                 $error = 'Alle Felder müssen ausgefüllt sein';
                 $_POST['errorList'] = "$error";
             }
-
         }
     }
 }
-
-
-
-
-
