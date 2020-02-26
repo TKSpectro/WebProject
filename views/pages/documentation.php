@@ -114,7 +114,7 @@
             </tr>
             <tr>
                 <td>Umsetzten und Einbinden von JavaScript und AJAX</td>
-                <td>Erst in einem Test Projekt, welches nich ganz so komplex war, umgesetzt und dann in richtiges
+                <td>Erst in einem Test Projekt, welches nicht ganz so komplex war, umgesetzt und dann in richtiges
                     Projekt übertragen
                 </td>
             </tr>
