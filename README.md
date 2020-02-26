@@ -1,28 +1,34 @@
-# Project: Muster 1
+# Toyplanet - GWP/DWP Projekt
 
 ## Getting Started
+### Vorraussetzung
+
+```
+XAMPP Control Panel v3.2.4
+damit verbunden XAMPP und phpmyadmin
+Chrome/Firefox
+```
 
 ### Installtion
 
-You need a mysql DB install:
+* In XAMPP muss in der php.ini der Tag short_open_tag=on eingestellt sein.
+* Das Projekt sollte nun in den in XAMPP festgelegten Ordner (standard: C:\xampp\htdocs) geschoben werden
 
+* Datenbank-Import: entweder durch SQL-Datei import oder durch Forward Engineering in MySql Workbench:
 ```
-src/database/database.mwb for MySQL Workbench
-src/database/sqlDump04_02_2020.sql for MySQL Dump
+src/database/database.mwb für MySQL Workbench
+src/database/sqlInstall.sql für MySQL Dump
 ```
+* Bei Import über PHPMyAdmin muss bei "Formatspezifische Optionen:" Der Haken bei "AUTO_INCREMENT nicht für Nullwerte verwenden" entfernt werden
 
-username: root
-password: '' (empty)
+* username: root
+* password: '' (empty)
 
-### Configuration / Settings
+### Website Login:
+* Login: Email:"test@mail.com" Passwort:"Passwort123"
+* Registrierung eines eigenen Accounts
 
+## Authors
 
-## Project Structur
-
-### Folders
-
-```src``` - DB (can be use by other project)
-
-...
-
-
+* Bilal Alnaani
+* Tom Käppler
