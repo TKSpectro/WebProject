@@ -7,7 +7,8 @@
     <a href="#function"><h2>5. Funktionalitäten</h2></a>
     <a href="#ermodell"><h2>6. ER-Modell</h2></a>
     <a href="#special"><h2>7. Besonderheiten</h2></a>
-    <a href="#managment"><h2>8. Projektmanagment</h2></a>
+    <a href="#challenges"><h2>8. Herausforderungen und Lösungen</h2></a>
+    <a href="#managment"><h2>9. Projektmanagment</h2></a>
     -------------------------------------------------------------------------------------------------------------------
     <a name="inhalt"><h2>1. Inhalt</h2></a>
     <ul>
@@ -19,7 +20,12 @@
     <a name="recherche"><h2>2. Ergebnisse der Recherche</h2></a>
     <ul>
         Als Referenz-Seiten haben wir uns an folgenden orientiert:
-        <li>1.</li>
+        <li><a href="https://my-klein-toys.de">1. my-klein-toys</a></li>
+        <br>
+        <img src="assets/images/documentation/otherWebKlein.png" style="height: 700px;"><br>
+        <li><a href="https://www.smoby.com">2. Smoby</a></li>
+        <br>
+        <img src="assets/images/documentation/otherWebSmoby.png" style="height: 700px;"><br>
     </ul>
     <a name="layout"><h2>3. Seitenlayout</h2></a>
     <ul>
@@ -30,15 +36,22 @@
     </ul>
     <a name="design"><h2>4. Design</h2></a>
     <ul>
-        <li>Layout: Möglichst einfach gehalten, aber trotzdem leicht verspielt.</li>
-        <li>Farben: Cremefarbe für den Hintergrund und für die jeweiligen Kategorien jeweils eine zugewiesene Farbe für
-            eine schnelle Unterscheidung
+        <li>
+            Layout: Wir haben unsere Seiten so aufgebaut, dass Erwachsene aber auch Kinder diese Seite möglichst einfach
+            nutzen können.
         </li>
-        <li>Schrift: Unsere Standard Schriftart ist "KGILikeToMoveIt" . Für Login, Registrierung oder Lange Fließtexte
-            wird "Roboto-Regular"
-            verwendet um ein einfachereres lesen zu ermöglichen
+        <li>
+            Farben: Wir nutzen Cremefarben für den Hintergrund und für die jeweiligen Kategorien jeweils eine
+            zugewiesene Farbe für eine schnelle Unterscheidung.
         </li>
-        <li>Bilder: Möglichst farbenfroh und passend zum Thema</li>
+        <li>
+            Schrift: Unsere Standard Schriftart ist "KGILikeToMoveIt". Für Login, Registrierung oder Lange Fließtexte
+            wird "Roboto-Regular" verwendet um ein einfachereres lesen zu ermöglichen.
+        </li>
+        <li>
+            Bilder: Bilder welche auf der Seite verwendet werden sind immer möglichst farbenfroh und passend zum
+            Thema.<br>Produkbilder sollten immer nur das Produkt selbst zeigen.
+        </li>
     </ul>
     <a name="function"><h2>5. Funktionalitäten</h2></a>
     <ul>
@@ -60,7 +73,7 @@
         <br><br><br><br>
 
         <li>Produktseite</li>
-        <img src="assets/images/documentation/webSitePictures/products.png"
+        <img src="assets/images/documentation/webSitePictures/product.png"
              style="height:800px; width: auto; border: 1px solid black;">
         <br><br><br><br>
 
@@ -79,9 +92,44 @@
     </ul>
     <a name="special"><h2>7. Besonderheiten</h2></a>
     <ul>
-        <li></li>
+        <li>Leider haben wir zwei Sachen nicht umsetzten können</li>
+        <li>
+            Zum einen das Entfernen eines Produkts aus dem Warenkorb per JS, da dafür per JS ein Datenbankupdate hätte
+            abgeschickt werden müssen.
+        </li>
+        <li>
+            Das Zweite was wir leider nicht umsetzten konnten war das Prüfen auf bereits vorhandene EMail Adressen bei
+            der Registrierung per JS
+        </li>
+        <li>Ohne JS funktioniert aber beides</li>
     </ul>
-    <a name="managment"><h2>8. Projetkmanagment</h2></a>
+    <a name="challenges"><h2>8. Herausforderungen und Lösungen</h2></a>
+    <ul>
+        <table style="width:100%; border-collapse: collapse;">
+            <tr>
+                <th>Herausforderung</th>
+                <th>Lösung</th>
+            </tr>
+            <tr>
+                <td>Umsetzten und Einbinden von JavaScript und AJAX</td>
+                <td>Erst in einem Test Projekt, welches nich ganz so komplex war, umgesetzt und dann in richtiges
+                    Projekt übertragen
+                </td>
+            </tr>
+            <tr>
+                <td>Filterung von Produkten</td>
+                <td>Durch verschiedene Parameter ein SQL Statement aufbauen</td>
+            </tr>
+            <tr>
+                <td>Speichern von Adressen und Bestellung</td>
+                <td>Adressen nach Eingabe speichern und die ID in der Session speichern um diese beim Checkout
+                    ordentlich zuordnen zu können
+                </td>
+            </tr>
+        </table>
+    </ul>
+
+    <a name="managment"><h2>9. Projetkmanagment</h2></a>
     <ul>
         <table style="width:500px">
             <tr>
@@ -90,7 +138,7 @@
             </tr>
             <tr>
                 <td>Datenstruktur</td>
-                <td>Tom Käppler</td>
+                <td>Beide</td>
             </tr>
             <tr>
                 <td>Aussehen/CSS</td>

@@ -1,5 +1,6 @@
 <div class="imprint">
-    <a href="index.php?a=documentation">Dokumentation</a>
+    <br><br>
+    <a href="index.php?a=documentation"><h2>Dokumentation</h2></a>
     <h1>Impressum</h1>
     <p>Informationspflicht laut § 5 TMG.</p>
     <p>
