@@ -38,7 +38,7 @@
     <ul>
         <li>
             Layout: Wir haben unsere Seiten so aufgebaut, dass Erwachsene aber auch Kinder diese Seite möglichst einfach
-            nutzen können.
+            nutzen können.<br> Des Weiteren ist unsere Seite für die IPad Auflösung(1024x768) responsiv optimiert.
         </li>
         <li>
             Farben: Wir nutzen Cremefarben für den Hintergrund und für die jeweiligen Kategorien jeweils eine
@@ -92,6 +92,8 @@
     </ul>
     <a name="special"><h2>7. Besonderheiten</h2></a>
     <ul>
+        <li>Wir haben unser Responsive Design für StandardDesktop(1920x1080) und IPad(1024x768) optimiert</li>
+        <br>
         <li>Leider haben wir zwei Sachen nicht umsetzten können</li>
         <li>
             Zum einen das Entfernen eines Produkts aus dem Warenkorb per JS, da dafür per JS ein Datenbankupdate hätte
