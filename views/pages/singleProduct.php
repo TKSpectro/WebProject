@@ -1,5 +1,5 @@
 <div class="singleProduct">
-    <img src="<?= $product[0]['photo'] ?>" alt="product">
+    <img id="imgZoom"  src="<?= $product[0]['photo'] ?>" onmousemove="zoomIn(event)" onmouseout="zoomOut()" alt="product">
     <ul class="productsInfo">
         <li><?= $product[0]['descrip'] ?></li>
         <li><?= $product[0]['stdPrice'] ?>€</li>
@@ -14,7 +14,8 @@
         </li>
     </ul>
 </div>
-
+<div id="overlay" style="background-image:url('<?=$product[0]['photo']?>')" onmousemove="zoomIn(event)"></div>  
+</div>
 <div class="slideshow-container">
     <h2>Ähnliche Artikel</h2>
         <? foreach ($allProducts as $otherProduct)

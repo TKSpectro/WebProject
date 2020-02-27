@@ -9,6 +9,7 @@ class CheckoutSucceedController extends \app\core\Controller
 
     public function actionCheckoutSucceed()
     {
+        
         $this->_params['title'] = 'Prozess erledigt';
         $this->_params['Header'] = false;
         $result = null;

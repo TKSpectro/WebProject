@@ -29,6 +29,31 @@
     margin: 3%;
 }
 
+#overlay {
+    display: none;
+    position: absolute;
+    top: 32%;
+    left: 40%;
+    border: 1px solid black;
+    width: 27em;
+    height: 23em;
+    background-color: #EAE7E0;
+    background-repeat: no-repeat;
+}
+
+#zoomIn {
+    background-color: white;
+    visibility: hidden;
+    opacity: 0.4;
+    text-align: center;
+    z-index: 1000;
+    top: 28%;
+    left: 45%;
+    position: absolute;
+    width: 40%;
+    height: auto;
+}
+
 .productsInfo li {
     width: 50%;
     padding: 1.5%;
