@@ -2,7 +2,7 @@
 namespace app\models;
 
 ?>
-<div class="footerMenu  <? if (($_GET['a'] == 'shoppingCart') || ($_GET['a'] == 'aboutUs') || ($_GET['a'] == 'checkout') || ($_GET['a'] == 'checkoutSucceed')) { ?>shoppingcartEmpty<? } ?>">
+<div class="footerMenu  <? if (($_GET['a'] == 'shoppingCart') || ($_GET['a'] == 'aboutUs') || ($_GET['a'] == 'error404') || ($_GET['a'] == 'checkout') || ($_GET['a'] == 'checkoutSucceed')) { ?>shoppingcartEmpty<? } ?>">
     <div class="footerTable">
         <ul>
             <li>

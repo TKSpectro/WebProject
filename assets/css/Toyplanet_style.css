@@ -160,3 +160,10 @@ ul.icons img {
     text-align: center;
     color: rgb(73, 73, 73);
 }
+
+.error404 {
+    margin: auto;
+    margin-top: 3em;
+    font-size: 40px;
+    color: brown;
+}
