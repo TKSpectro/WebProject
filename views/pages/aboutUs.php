@@ -2,7 +2,7 @@
 namespace app\models;
 ?>
 <div class="aboutUsText">
-    Wir sind Tom und Bilal, die Entwickler von TOYPLANET.<br>
+    Wir sind Tom und Bilal, die Entwickler von TOYPLANET .<br>
     Weil Spielzeug vor allem Spaß machen soll, muss unsere Webseite diesen Spaß auch transportieren. <br>
     Frohe Farben und im Gegensatz zu manchen Spielzimmern sehr aufgeräumn. Dies soll schon beim Einkaufen Freude
     bereiten.<br>
