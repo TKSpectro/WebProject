@@ -6,15 +6,10 @@ session_start();
 // all require stuff to work!!
 require_once 'init/20_imports.php';
 
-
-
-
 $controllerName = $_GET['c'] ?? 'pages';
 
 
 $actionName = $_GET['a'] ?? 'index';
-
-
 
 $controllerPath = __DIR__.'/controller/'.$controllerName.'Controller.php';
 
