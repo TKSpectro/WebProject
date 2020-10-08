@@ -5,7 +5,7 @@
             <a href="index.php"><img id="logo" src="assets/images/Logo.png" alt="Toyplanet_logo"></a>
         </li>
         <li class="startListIcon">
-            <a href="index.php?c=shoppingcart&a=shoppingCart"><img id="shoppingCart"
+            <a href="index.php?c=shoppingCart&a=shoppingCart"><img id="shoppingCart"
                                                                    src="assets/images/shopping-cart.png"
                                                                    alt="Warenkorb"></a>
         </li>
