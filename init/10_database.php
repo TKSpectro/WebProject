@@ -1,8 +1,7 @@
 <?php
 
 
-$dns = 'mysql:host=lt80glfe2gj8p5n2.chr7pe7iynqr.eu-west-1.rds.amazonaws.com
-;dbname=toyplanet';
+$dns = 'mysql:host=localhost;dbname=toyplanet';
 $dbuser = 'root';
 $dbpassword = '';
 $options    = [
